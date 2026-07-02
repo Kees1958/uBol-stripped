@@ -1,7 +1,7 @@
 When I asked in the uBol discussions forum, whether uBol was dropping its design philiosophy by adding features 
 (trying to catch up with Adguard Mv3) I was basically told to #$%^&-off and write my own, so I did :-)
 
-Original uBol size: zip = 9,9 MB unpacked = 38  MB
+Original uBol size: zip = 9,9 MB unpacked = 38  MB 
 uBol-stripped size: zip = 752 KB unpacjed = 2,4 MB (that is 90% reduction :-) 
 
 This is a minimalistic version, without default filters and all bloat removed running only in basic mode. I kept the logger and removed the zapper and it still has the create custom rules feature, the option to set filtering modes and and an import ABPrules 
