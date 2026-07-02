@@ -1,5 +1,5 @@
 When I asked in the uBol discussions forum, whether uBol was dropping its design philiosophy by adding features 
-(trying to catch up with Adguard Mv3) I was basically told to #$%^&-off and write my own, so I did :-)
+(trying to catch up with Adguard Mv3) I was basically told to #$%^&-off and write my own (so I did :-)
 
 Original uBol size: zip = 9,9 MB unpacked = 38 MB vs uBol-stripped size: zip = 752 KB unpacked = 2,4 MB (that is 90% reduction :-) 
 
