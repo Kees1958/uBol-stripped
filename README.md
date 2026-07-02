@@ -3,7 +3,7 @@ When I asked in the uBol discussions forum, whether uBol was dropping its design
 
 Original uBol size: zip = 9,9 MB unpacked = 38 MB vs uBol-stripped size: zip = 752 KB unpacked = 2,4 MB (that is 90% reduction :-) 
 
-This is a minimalistic version, without default filters and all bloat removed running only in basic mode. I kept the logger and removed the zapper and it still has the create custom rules feature, the option to set filtering modes and and an import ABPrules 
+This is a minimalistic version, without default filters and all bloat removed running only in basic mode. I removed the zapper and it still has the create custom rules feature, the option to set filtering modes and and an import ABPrules 
 (only you can copy - paste them at one place)
 
 <img width="222" height="259" alt="image" src="https://github.com/user-attachments/assets/d5f39f30-2357-45b3-9ddf-566912019c94" />
