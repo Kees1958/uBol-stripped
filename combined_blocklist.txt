@@ -4,13 +4,12 @@
 ! Version: 2026-07-05
 ! Expires: 7 days
 !
-!
-! Kees1958 base rules:          349
+! Kees1958 most used EU+US:     349
 ! Kees1958 Removeparam rules:   106
 ! YouTube scriptlets:           6
 ! New 3P advertising additions: 430
 ! Top 10 Adult cosmetic rules:  112
-
+!
 ! Total:                        1003
 !
 
