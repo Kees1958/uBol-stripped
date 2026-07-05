@@ -4,13 +4,14 @@
 ! Version: 2026-07-05
 ! Expires: 7 days
 !
-! 1. Kees1958 network rules:                    349
-! 2. URL tracking parameter removal:            106
-! 3. Confirmed 3P-rules for ad networks:        430
-! 4. Cosmetic filters for top 50 news websites: 307
-! 5. Cosmetic filters for top 15 social media & video platforms:         78
-! 6. Cosmetic filters for top 10 adult websites:112
-! Total:                                        1382
+! 1. Kees1958 network rules:                                             349
+! 2. URL tracking parameter removal:                                     106
+! 3. Confirmed 3P-rules for ad networks:                                 430
+! 4. Cosmetic filters for top 50 news websites:                          307
+! 5. Cosmetic filters for top 15 social media & video platforms:          78
+! 6. Cosmetic filters for top 10 adult websites:                         112
+
+! Total:                                                                1382
 !
 
 ! ══════════════════════════════════════════
