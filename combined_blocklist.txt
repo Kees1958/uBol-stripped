@@ -6,10 +6,11 @@
 !
 !
 ! Kees1958 base rules:          349
-! New 3P advertising additions: 430
-! Adult cosmetic rules:         112
+! Kees1958 Removeparam rules:   106
 ! YouTube scriptlets:           6
-! Removeparam rules:            106
+! New 3P advertising additions: 430
+! Top 10 Adult cosmetic rules:  112
+
 ! Total:                        1003
 !
 
