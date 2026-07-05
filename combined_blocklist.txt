@@ -4,12 +4,13 @@
 ! Version: 2026-07-05
 ! Expires: 7 days
 !
-! Kees1958 most used EU+US:     349
+!
+! Kees1958 base rules:          349
 ! Kees1958 Removeparam rules:   106
 ! YouTube scriptlets:           6
 ! New 3P advertising additions: 430
 ! Top 10 Adult cosmetic rules:  112
-!
+
 ! Total:                        1003
 !
 
@@ -812,6 +813,20 @@ youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 youtube.com##+js(set, ytInitialPlayerResponse.adSlots, undefined)
 youtube.com##+js(json-prune-fetch-response, reelWatchSequenceResponse.entries.[-].command.reelWatchEndpoint.adClientParams.isAd entries.[-].command.reelWatchEndpoint.adClientParams.isAd, , propsToMatch, url:/reel_watch_sequence?)
 youtube.com##+js(json-prune, entries.[-].command.reelWatchEndpoint.adClientParams.isAd)
+
+! ══════════════════════════════════════════
+! Remove Google search parameters
+! ══════════════════════════════════════════
+
+||google.com/search$removeparam=biw
+||google.com/search$removeparam=bih
+||google.com/search$removeparam=sa
+||google.com/search$removeparam=source
+||google.com/search$removeparam=aqs
+||google.com/search$removeparam=sourceid
+||google.com/search$removeparam=ei
+||google.com/search$removeparam=gs_lcp
+
 
 ! ══════════════════════════════════════════
 ! URL tracking parameter removal (removeparam)
