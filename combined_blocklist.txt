@@ -4,9 +4,17 @@
 ! Version: 2026-07-05
 ! Expires: 7 days
 !
+! 1. Kees1958 network rules:                    349
+! 2. URL tracking parameter removal:            106
+! 3. Confirmed 3P-rules for ad networks:        430
+! 4. Cosmetic filters for top 50 news websites: 307
+! 5. Cosmetic filters for top 15 social media & video platforms:         78
+! 6. Cosmetic filters for top 10 adult websites:112
+! Total:                                        1382
+!
 
 ! ══════════════════════════════════════════
-! Kees1958 base — EU/US most common ad networks
+! 1. Kees1958 — EU/US most common ad networks
 ! ══════════════════════════════════════════
 
 ||2mdn.net^$third-party
@@ -360,19 +368,121 @@
 ||zemanta.com^$third-party
 
 ! ══════════════════════════════════════════
-! YouTube ad blocking scriptlets
+! 2. URL tracking parameter removal
 ! ══════════════════════════════════════════
 
-youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots)
-youtube.com##+js(set, ytInitialPlayerResponse.playerAds, undefined)
-youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
-youtube.com##+js(set, ytInitialPlayerResponse.adSlots, undefined)
-youtube.com##+js(json-prune-fetch-response, reelWatchSequenceResponse.entries.[-].command.reelWatchEndpoint.adClientParams.isAd entries.[-].command.reelWatchEndpoint.adClientParams.isAd, , propsToMatch, url:/reel_watch_sequence?)
-youtube.com##+js(json-prune, entries.[-].command.reelWatchEndpoint.adClientParams.isAd)
+!
 
+
+$removeparam=utm_ad
+$removeparam=utm_affiliate
+$removeparam=utm_brand
+$removeparam=utm_campaign
+$removeparam=utm_campaignid
+$removeparam=utm_channel
+$removeparam=utm_cid
+$removeparam=utm_content
+$removeparam=utm_emcid
+$removeparam=utm_emmid
+$removeparam=utm_id
+$removeparam=utm_keyword
+$removeparam=utm_medium
+$removeparam=utm_name
+$removeparam=utm_place
+$removeparam=utm_product
+$removeparam=utm_pubreferrer
+$removeparam=utm_reader
+$removeparam=utm_referrer
+$removeparam=utm_serial
+$removeparam=utm_session
+$removeparam=utm_siteid
+$removeparam=utm_social
+$removeparam=utm_social-type
+$removeparam=utm_source
+$removeparam=utm_supplier
+$removeparam=utm_swu
+$removeparam=utm_term
+$removeparam=utm_umguk
+$removeparam=utm_userid
+$removeparam=utm_viz_id
+$removeparam=gbraid
+$removeparam=wbraid
+$removeparam=gclsrc
+$removeparam=gclid
+$removeparam=yclid
+$removeparam=usqp
+$removeparam=fb_action_ids
+$removeparam=fb_action_types
+$removeparam=fb_comment_id
+$removeparam=fb_ref
+$removeparam=fb_source
+$removeparam=fbclid
+$removeparam=mtm_campaign
+$removeparam=mtm_cid
+$removeparam=mtm_content
+$removeparam=mtm_group
+$removeparam=mtm_keyword
+$removeparam=mtm_medium
+$removeparam=mtm_placement
+$removeparam=mtm_source
+$removeparam=pk_campaign
+$removeparam=pk_medium
+$removeparam=pk_source
+$removeparam=adj_label
+$removeparam=adj_campaign
+$removeparam=adj_creative
+$removeparam=gps_adid
+$removeparam=unicorn_click_id
+$removeparam=adjust_creative
+$removeparam=adjust_tracker_limit
+$removeparam=adjust_tracker
+$removeparam=adjust_adgroup
+$removeparam=adjust_campaign
+$removeparam=_hsmi
+$removeparam=__hsfp
+$removeparam=__hssc
+$removeparam=__hstc
+$removeparam=_hsenc
+$removeparam=hsa_acc
+$removeparam=hsa_ad
+$removeparam=hsa_cam
+$removeparam=hsa_grp
+$removeparam=hsa_kw
+$removeparam=hsa_la
+$removeparam=hsa_mt
+$removeparam=hsa_net
+$removeparam=hsa_ol
+$removeparam=hsa_src
+$removeparam=hsa_tgt
+$removeparam=hsa_ver
+$removeparam=hsCtaTracking
+$removeparam=_sgm_campaign
+$removeparam=_sgm_source
+$removeparam=_sgm_action
+$removeparam=ranMID
+$removeparam=ranEAID
+$removeparam=ranSiteID
+$removeparam=link_source
+$removeparam=taid
+$removeparam=adsterra_clid
+$removeparam=adsterra_placement_id
+$removeparam=s_cid
+$removeparam=adobe_mc_ref
+$removeparam=adobe_mc_sdid
+$removeparam=mkt_tok
+$removeparam=cx_click
+$removeparam=_branch_match_id
+$removeparam=vc_lpp
+$removeparam=xtor
+$removeparam=admitad_uid
+$removeparam=msclkid
+$removeparam=dpg_source
+$removeparam=dpg_campaign
+$removeparam=dpg_medium
+$removeparam=dpg_content
 
 ! ══════════════════════════════════════════
-! New advertising additions — $3p only 
+! 3. Confirmed 3P-rules for ad networks
 ! ══════════════════════════════════════════
 
 ||ad.103092804.com^$3p
@@ -806,7 +916,517 @@ youtube.com##+js(json-prune, entries.[-].command.reelWatchEndpoint.adClientParam
 ||zwaar.net^$3p
 ||zwaar.org^$3p
 
+! ══════════════════════════════════════════
+! 4. Cosmetic filters for top 50 news websites
+! ══════════════════════════════════════════
 
+amp.theguardian.com##[data-sort-time="1"]
+apnews.com##.Advertisement
+apnews.com##.LeaderBoardAd-Mobile
+apnews.com##.Page-header-leaderboardAd
+apnews.com##.leaderboard-container
+axios.com##.lg\:min-h-\[200px\]
+axios.com##.min-h-\[200px\]
+axios.com##.shortFormNativeAd
+bbc.com###leaderboard-aside-content
+bbc.com###mpu-side-aside-content
+bbc.com##[data-component="ad-slot"]
+bbc.com##[data-component="advertisement-block"]
+bbc.com##section[data-e2e="advertisement"]
+bbc.com###sticky-mpu:has(.dotcom-ad-inner)
+bbc.com##li[class*="-ListItem"]:has(div.dotcom-ad)
+buzzfeed.com##.Ad
+buzzfeed.com##.ad-awareness
+buzzfeed.com##.card--article-ad
+buzzfeed.com##.desktop-sticky-ad_desktopStickyAdWrapper__a_tyF
+buzzfeed.com##.js-bfa-impression
+buzzfeed.com##.subbuzz-bfp--connatix_video
+cbc.ca,cnn.com,elpais.com,foxnews.com,go.com,news.com.au,news.sky.com,newsweek.com,nytimes.com,nzherald.co.nz,politico.com##.ad
+cbc.ca##.ad-landing
+cbc.ca##.ad-load-more
+cbc.ca##.adContainer-F11hw
+cbc.ca##.bigBoxContainer
+cbsnews.com###taboola-around-the-web-video-door
+cnn.com###js-outbrain-rightrail-ads-module
+cnn.com###partner-zone
+cnn.com###sponsored-outbrain-1
+cnn.com##.ad-feedback__modal
+cnn.com##.ad-slot-dynamic
+cnn.com##.ad-slot-header__wrapper
+cnn.com##.ad-slot__ad-wrapper
+cnn.com##.featured-product__card
+cnn.com##.product-offer-card-container_related-products
+cnn.com##.stack__ads
+cnn.com##.zone__ads
+cnn.com##[data-zone-label="Paid Partner Content"]
+cooking.nytimes.com##.adunit_ad-unit__IhpkS
+dailymail.co.uk###promo-unit
+dailymail.co.uk###sky-left-container
+dailymail.co.uk###sky-right
+dailymail.co.uk###sky-right-container
+dailymail.co.uk##.connatix-wrapper
+dailymail.co.uk##.mol-fe-vouchercodes-redesign
+dailymail.co.uk##.mpu_puff_wrapper
+dailymail.co.uk##.puff_pastel
+dailymail.co.uk##.watermark
+dailymail.co.uk##[data-is-sponsored="true"]
+dailymail.co.uk##.commercial-player
+dailymail.co.uk##.footballco-container
+euronews.com##.c-ad
+euronews.com##.c-card-sponsor
+euronews.com##.enw-MPU
+euronews.com##.qa-dfpLeaderBoard
+euronews.com##.tp-outbrain
+euronews.com##.m-object:has(.m-object__spons-quote)
+euronews.com###connatix-container
+express.co.uk###mantis-recommender-placeholder
+express.co.uk##.superbanner
+express.co.uk##.viafoura-standalone-mpu
+express.co.uk##div[id^="taboola-"]
+express.co.uk###mantis-recommender-top-placeholder
+express.co.uk###ovp-primis
+forbes.com###article-stream-1
+forbes.com###cta-builder
+forbes.com###featured-partners
+forbes.com##.ad-unit
+forbes.com##.fbs-ad--mobile-medianet-wrapper
+forbes.com##.fbs-ad--ntv-deskchannel-wrapper
+forbes.com##.fbs-ad--ntv-home-wrapper
+forbes.com##.inline-article-ed-placeholder
+forbes.com##.inline__zephr
+forbes.com##.mobile-sticky-ed-placeholder
+forbes.com##.monito-widget-wrapper
+forbes.com##.multi-featured-products
+forbes.com##.ntv-loading
+forbes.com##.recirc-right-rail
+forbes.com##.top-ad-container
+forbes.com##.top-ed-placeholder
+forbes.com##.vestpocket
+forbes.com##.video-placeholder
+forbes.com##[data-id="ad-container"]
+forbes.com##[data-testid="locked-top-ad-container"]
+forbes.com##div[class^="fbs-ad"]
+forbes.com##div[data-testid^="fbs-ad"]
+forbes.com##.MWrh7
+foxnews.com,huffpost.com,nbcnews.com,nzherald.co.nz##.ad-container
+foxnews.com##.sticky-pre-header
+foxnews.com##.sticky-pre-header-inner
+foxnews.com##.vendor-unit
+foxnews.com##article[class|="article story"]:has(.sponsored-by)
+ftw.usatoday.com,touchdownwire.usatoday.com###ad--home-well-wrapper
+ftw.usatoday.com##.gdcg-oplist
+games.dailymail.co.uk##div[class^="DisplayAd_"]
+games.dailymail.co.uk##div[class^="GameTemplate__displayAdTop_"]
+games.dailymail.co.uk##div[class^="HomeCategory__adWrapper_"]
+games.dailymail.co.uk##div[class^="HomeTemplate__afterCategoryAd_"]
+games.dailymail.co.uk##div[class^="RightRail__displayAdRight_"]
+games.usatoday.com,games.washingtonpost.com##.DisplayAd__container___lyvUfeBN
+games.usatoday.com##.RightRailDeprecated__displayAdRight___byqVgMD_
+games.washingtonpost.com##.HomeCategory__ads___aFdrmx_3
+huffpost.com##.ad-container--1
+huffpost.com##.advertisement
+huffpost.com##.bottom-right-sticky-container
+huffpost.com##.entry__right-rail-width-placeholder
+huffpost.com##.leaderboard-flex-placeholder
+huffpost.com##.leaderboard-flex-placeholder-desktop
+huffpost.com##.openweb-container
+independent.co.uk###billboard-wrapper
+independent.co.uk###partners
+independent.co.uk###stickyFooterRoot
+independent.co.uk###top-banner-wrapper
+independent.co.uk##[data-mpu1]
+independent.co.uk##.teads:has(.third-party-ad)
+independent.co.uk##[class] > :has(> [data-mpu])
+independent.co.uk##[class]:has(> [data-mpu])
+independent.co.uk###taboola-mid-article-thumbnails-iii
+lemonde.fr##.dfp__container
+metro.co.uk##.ads__index__adWrapper--cz7QL
+metro.co.uk##.metro-discounts
+metro.co.uk##.metro-ow-modules
+metro.co.uk##.wp-block-metro-widget-archive-metro-partners
+metro.co.uk##[rel*="sponsored"]
+mirror.co.uk###comments-standalone-mpu
+mirror.co.uk###takeover
+mirror.co.uk##.ad-placeholder
+mirror.co.uk##.shopwindow-adslot
+mirror.co.uk##.shopwindow-advertorial
+mirror.co.uk##.vf3-conversations-list__promo
+mirror.co.uk##[data-testid="affiliate-contents-embed"]
+mirror.co.uk##[data-tmdatatrack-type="commercial"]
+msn.com##.adlabel
+msn.com###displayAdCard
+msn.com###partners
+msn.com###promotions
+msn.com##.DisplayAdsWC
+msn.com##.ad-banner-wrapper
+msn.com##.ad-container
+msn.com##.articlePage_bannerAd_wrapper-DS-EntryPoint1-1
+msn.com##.articlePage_eoabNativeAd_new-DS-EntryPoint1-1
+msn.com##.banner-placeholder-container
+msn.com##.bannerAdContainer-DS-EntryPoint1-1
+msn.com##.consumption-page-banner-wrapper
+msn.com##.display-ad-container
+msn.com##.display-ads-container
+msn.com##.drrTopAdWrapper
+msn.com##.eocb-ads
+msn.com##.galleryPage_eoabContent_new-DS-EntryPoint1-1
+msn.com##.galleryPage_eoabNativeAd_new-DS-EntryPoint1-1
+msn.com##.gem-display-ad-wrapper
+msn.com##.intra-article-ad-full
+msn.com##.intra-article-ad-half
+msn.com##.me-stripe-tile-content:has(a[href*="?"] .me-stripe-title-subtitle)
+msn.com##.modernRightRail_stickyTopBannerAd-DS-EntryPoint1-1
+msn.com##.modernRightRail_topAd_container_2col_newRR-DS-EntryPoint1-1
+msn.com##.outeradcontainer
+msn.com##.qohvco-DS-EntryPoint1-1
+msn.com##.river-background
+msn.com##.sportsPageHorizontalTopLevelContainer-DS-EntryPoint1-1:has(> div[id*="banner"] > display-ads)
+msn.com##.views-right-rail-top-display
+msn.com##.views-right-rail-top-display-ad
+msn.com##.windowsBannerAdContainer-DS-EntryPoint1-1
+msn.com##[class^="articlePage_eoabContent"]
+msn.com##[data-m*="Infopane_CMSBasicCardstore_article"]
+msn.com##[id^="nativead"]
+msn.com##a[aria-label="AliExpress"]
+msn.com##a[aria-label="Amazon Assistant"]
+msn.com##a[aria-label="Amazon"]
+msn.com##a[aria-label="Bol.com"]
+msn.com##a[aria-label="Booking.com"]
+msn.com##a[aria-label="Ricardo"]
+msn.com##a[aria-label="Today's Deals"]
+msn.com##a[aria-label="eBay"]
+msn.com##a[href*=".booking.com/"]
+msn.com##a[href*="/aff_m?offer_id="]
+msn.com##a[href*="?sub_aff_id="]
+msn.com##a[href="https://aka.ms/QVC"]
+msn.com##a[href^="https://amzn.to/"]
+msn.com##a[href^="https://clk.tradedoubler.com/click?"]
+msn.com##a[href^="https://clkde.tradedoubler.com/click?"]
+msn.com##a[href^="https://disneyplus.bn5x.net/"]
+msn.com##a[href^="https://prf.hn/click/camref:"]
+msn.com##a[href^="https://ww55.affinity.net/"]
+msn.com##above-river-block
+msn.com##cs-native-ad-card
+msn.com##cs-native-ad-card-24
+msn.com##cs-native-ad-card-no-hover
+msn.com##div.body:has(> img[id^="nativead"])
+msn.com##div.footer:has(> a.ad-slug)
+msn.com##div[class^="articlePage_topBannerAdContainer_"]
+msn.com##div[class^="card-DS-card"][data-t*="RiverPlaceholder"]
+msn.com##div[class^="galleryPage_bannerAd"]
+msn.com##div[id^="mrr-topad-"]
+msn.com##div[id^="nativeAd"]
+msn.com##div[id^="watch-feed-native-ad-"]
+msn.com##li[data-m*="NativeAdItem"] > a > *
+msn.com##li[data-provider="gemini"]
+msn.com##li[data-provider="outbrain"]
+msn.com##msft-article-card[class=""]
+msn.com##msft-content-card[data-t*="NativeAd"]
+msn.com##msft-content-card[href^="https://api.taboola.com/"]
+msn.com##msft-content-card[id^="contentcard_nativead-"]
+msn.com##msn-info-pane-panel[id^="tab_panel_nativead-"]
+msn.com##partner-upsell-card
+news.sky.com###leaderboard
+news.sky.com###mpu-1
+news.sky.com##.mpu-1
+news.sky.com##.ui-advert
+news.sky.com##[data-format="leaderboard"]
+news.sky.com##[data-role="ad-label"]
+news.sky.com##.ui-box:has(.ui-advert)
+newsweek.com##.ArticleTwoColumnLayout_stickyAdContainer__fQzyz
+newsweek.com##[data-mgid-container="true"]
+newsweek.com##.FeaturedMedia_articleFeaturedMedia__LEpVY
+nypost.com##.billboard-overlay
+nypost.com##.single__outbrain
+nypost.com##.widget_nypost_dfp_ad_widget
+nytimes.com###bottom-wrapper
+nytimes.com###top-wrapper
+nytimes.com##.css-142l3g4
+nytimes.com##.css-bs95eu
+nytimes.com##.css-oeful5
+nytimes.com##.css-wmyc1
+nytimes.com##.e1xxpj0j1.css-4vtjtj
+nytimes.com##.g-paid
+nytimes.com##[data-ad-element="outer_ad_container"]
+nytimes.com##[data-testid="StandardAd"]
+nytimes.com##[class]:has(> [id="ad-top"])
+nzherald.co.nz###bayleys-carousel
+nzherald.co.nz###oneroof_nzh_homepage
+nzherald.co.nz##.paid-promoted-content
+nzherald.co.nz##.recommended-articles > .recommended-articles__heading
+nzherald.co.nz##.section-iframe
+nzherald.co.nz##.story-card--sponsored--headline
+nzherald.co.nz##.story-card--sponsored-text-below
+nzherald.co.nz##.ticker-banner
+play.usatoday.com##.zdFVI1__zdFVI1
+politico.com###pol-01-wrap
+politico.com##.adlib-sticky-footer
+politico.com##.styles_container__zuzL0
+politico.com##div[class][rowindex]:has(> .ad)
+politico.com##.border-gray-vulcan-92:has(> #banner-wrap)
+reuters.com##.workspace-article-banner-module__image__F14iP
+reuters.com##[data-testid="CnxPlayer"]
+reuters.com##[data-testid="Leaderboard"]
+reuters.com##[data-testid="ResponsiveAdSlot"]
+smh.com.au###articlePartnerStories
+smh.com.au##.BGXXr
+smh.com.au##.TPT1c
+smh.com.au##._34z61
+smh.com.au##.gF8wY
+smh.com.au##[class] > [class]:has(> [data-testid="ad"])
+spiegel.de##div[data-advertisement$=":mobile"]
+spiegel.de##.ob-dynamic-rec-container.ob-p
+stuff.co.nz##.between-ad-slot
+stuff.co.nz##.header-ads-block
+stuff.co.nz##.header-container
+stuff.co.nz##.horizontal-ad-slot
+stuff.co.nz##.min-h-\[133px\]
+telegraph.co.uk##.commercial-unit
+telegraph.co.uk##.article-betting-unit-container
+theguardian.com##.dcr-1aq0rzi
+theguardian.com##.js-top-banner
+theguardian.com##.top-fronts-banner-ad-container
+thesun.co.uk###article-footer div[id*="-ads-"]
+thesun.co.uk##.billboard
+thesun.co.uk##.customiser-v2-layout-1-billboard
+thesun.co.uk##.customiser-v2-layout-three-native-ad-container
+thesun.co.uk##.dpa-slot
+thesun.co.uk##.section-sponsorship-wrapper-article
+thesun.co.uk##.section-sponsorship-wrapper-section
+thesun.co.uk##[data-aspc="newBILL"]
+thesun.co.uk##.article-sidebar .widget-sticky:has([class*="ad_widget"])
+thesun.co.uk##.sun-grid-container:has([class*="ad_widget"])
+usatoday.com###acm-ad-tag-lawrence_dfp_desktop_arkadium
+usatoday.com###acm-ad-tag-lawrence_dfp_desktop_arkadium_after_share
+usatoday.com##.affiliate-widget-wrapper
+washingtonpost.com###leaderboard-wrapper
+washingtonpost.com##.ad--enterprise
+washingtonpost.com##.adMainImg
+washingtonpost.com##.adslot-c
+washingtonpost.com##.border-box.dn-hp-sm-to-mx
+washingtonpost.com##.border-box.dn-hp-xs
+washingtonpost.com##.pb-sm.pt-sm.b
+washingtonpost.com##[data-qa="article-body-ad"]
+washingtonpost.com##[data-qa="right-rail-ad"]
+washingtonpost.com##[data-testid="fixed-bottom-ad"]
+washingtonpost.com##[data-testid="outbrain"]
+washingtonpost.com##[data-testid="placeholder-box"]
+washingtonpost.com##wp-ad-wrapper
+washingtonpost.com##.PJLV-ifmxCWD-css:has([data-qa="outbrain"])
+wsj.com###coupon-links
+wsj.com###cx-deloitte-insight
+wsj.com###dianomi-module
+wsj.com##.e4jtj9920.css-ma9lnu
+wsj.com##.ez6zued3.css-sw5cyu
+wsj.com##.ez6zued6
+wsj.com##.uds-ad-container
+wsj.com##.w27771
+wsj.com##[aria-label="Sponsored Offers"]
+wsj.com##[data-parsely-slot] > p[style="text-align:center"]
+wsj.com##div[class*="WSJTheme--adWrapper"]
+wsj.com###other-buckets > div > div:has(> .uds-ad-container)
+wsj.com##.e1ewmsuz20:has(> .uds-ad-container)
+wsj.com##.e1vnmyci0:has(> .adWrapper)
 
-! *** END
+! ══════════════════════════════════════════
+! 5. Cosmetic filters for top 15 social media & video platforms
+! ══════════════════════════════════════════
 
+dailymotion.com##div[class^="AdBanner"]
+dailymotion.com##div[class^="DisplayAd"]
+dailymotion.com##div[class^="NewWatchingDiscovery__adSection"]
+dailymotion.com##div[class^="VideoInfo__videoInfoAdContainer"]
+facebook.com##a[ajaxify*="&eid="] + a[href^="https://l.facebook.com/l.php?u="]
+facebook.com##a[aria-label="Advertiser link"]
+facebook.com##a[aria-label="Advertiser"]
+facebook.com##article[data-ft*="\"ei\":\""]
+facebook.com##._6y8t:has(a[href="/ads/about/?entry_product=ad_preferences"])
+facebook.com##div[style="max-width: 390px; min-width: 190px;"]:has(a[href^="/ads/"])
+linkedin.com##.ad-banner
+linkedin.com##[componentkey*="urn:li:sponsoredContentV2"]
+linkedin.com##[data-sponsored-tracking-url]
+linkedin.com##article[data-is-sponsored]
+linkedin.com##iframe[componentkey$="_ad"]
+linkedin.com##iframe[height="250"][width="300"]
+linkedin.com##iframe[title="Advertisement"]
+linkedin.com##iframe[title="advertisement"]
+linkedin.com##li[data-is-sponsored="true"]
+old.reddit.com##.native-ad-container
+pinterest.com##a[href*="&epik="]
+pinterest.com##div[data-grid-item]:has([data-test-pin-id] [data-test-id^="one-tap-desktop"] > a[href^="http"][rel="nofollow"]):not(body > div)
+quora.com##.dom_annotate_ad_image_ad
+quora.com##.dom_annotate_ad_promoted_answer
+quora.com##.dom_annotate_ad_text_ad
+quora.com##.spacing_log_question_page_ad
+quora.com##.q-sticky[style*="box-sizing: border-box; position: sticky;"]:has(.qu-flexDirection--column[style*="min-height:"] > .dom_annotate_google_ad)
+reddit.com##.promotedlink:not([style^="height: 1px;"])
+reddit.com##[data-faceplate-tracking-context*="\"promoted\":true"]
+reddit.com##div[data-before-content="advertisement"]
+reddit.com##shreddit-ad-post
+reddit.com##shreddit-comments-page-ad
+rumble.com##.a-break
+tiktok.com##.banner-ads
+tumblr.com##.Qrht9
+tumblr.com##.XJ7bf
+tumblr.com##.Yc2Sp
+twitch.tv##.stream-display-ad__wrapper
+twitch.tv##[data-test-selector="sda-wrapper"]
+twitch.tv##button[aria-label="Learn more about this ad"]
+twitter.com,x.com##.promoted-account
+twitter.com,x.com##.promotion
+twitter.com,x.com##.stream-item-group-start[label="promoted"]
+twitter.com,x.com##a[href*="src=promoted_trend_click"]
+twitter.com,x.com##a[href*="src=promoted_trend_click"] + div
+twitter.com,x.com##div[data-testid="cellInnerDiv"] > div > div[class] > div[class][data-testid="placementTracking"]
+twitter.com,x.com##div[data-testid="cellInnerDiv"] a[aria-label="Follow the action"]
+twitter.com,x.com##.tweet:has(.promo)
+twitter.com,x.com##div[data-testid="UserCell"]:has(path[d$="10H8.996V8h7v7z"])
+twitter.com,x.com##div[data-testid="eventHero"]:has(path[d$="10H8.996V8h7v7z"])
+twitter.com,x.com##div[data-testid="placementTracking"]:has(div[data-testid$="-impression-pixel"])
+twitter.com,x.com##div[data-testid="trend"]:has(path[d$="10H8.996V8h7v7z"])
+web.telegram.org##.SponsoredMessage
+web.telegram.org##div.bubbles > div.scrollable > div.bubbles-inner > div.is-sponsored
+
+! YouTube scriptlets to hide in-video ads
+
+m.youtube.com##lazy-list > ad-slot-renderer
+m.youtube.com##ytm-companion-slot[data-content-type] > ytm-companion-ad-renderer
+m.youtube.com##ytm-rich-item-renderer > ad-slot-renderer
+youtube.com###contents > ytd-rich-item-renderer:has(> ytd-ad-slot-renderer)
+youtube.com###description-inner > ytd-merch-shelf-renderer > #main.ytd-merch-shelf-renderer
+youtube.com###shopping-timely-shelf
+youtube.com###shorts-inner-container > .ytd-shorts:has(> .ytd-reel-video-renderer > ytd-ad-slot-renderer)
+youtube.com###sticker-layer
+youtube.com##.ytReelMetapanelViewModelHost > .ytReelMetapanelViewModelMetapanelItem > .ytShortsSuggestedActionViewModelStaticHost
+youtube.com##.ytd-section-list-renderer > .ytd-item-section-renderer > ytd-search-pyv-renderer.ytd-item-section-renderer
+youtube.com##.ytd-two-column-browse-results-renderer > ytd-rich-grid-renderer > #masthead-ad.ytd-rich-grid-renderer
+youtube.com##.ytd-watch-flexy > .ytd-watch-next-secondary-results-renderer > ytd-ad-slot-renderer.ytd-watch-next-secondary-results-renderer
+youtube.com##.ytd-watch-flexy > ytd-merch-shelf-renderer > #main.ytd-merch-shelf-renderer
+youtube.com##.ytp-suggested-action > .ytp-suggested-action-badge
+youtube.com##ytd-rich-item-renderer:has(> #content > ytd-ad-slot-renderer)
+youtube.com##.grid.ytd-browse > #primary > .style-scope > .ytd-rich-grid-renderer > .ytd-rich-grid-renderer > .ytd-ad-slot-renderer
+youtube.com##.ytd-rich-item-renderer.style-scope > .ytd-rich-item-renderer > .ytd-ad-slot-renderer.style-scope
+youtube.com##ytd-item-section-renderer > .ytd-item-section-renderer > ytd-ad-slot-renderer.style-scope
+youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots)
+youtube.com##+js(set, ytInitialPlayerResponse.playerAds, undefined)
+youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
+youtube.com##+js(set, ytInitialPlayerResponse.adSlots, undefined)
+youtube.com##+js(json-prune-fetch-response, reelWatchSequenceResponse.entries.[-].command.reelWatchEndpoint.adClientParams.isAd entries.[-].command.reelWatchEndpoint.adClientParams.isAd, , propsToMatch, url:/reel_watch_sequence?)
+youtube.com##+js(json-prune, entries.[-].command.reelWatchEndpoint.adClientParams.isAd)
+
+! ══════════════════════════════════════════
+! 6. Cosmetic filters for top 10 adult websites
+! ══════════════════════════════════════════
+
+eporner.com###addesktop
+eporner.com###admobileoutstream
+eporner.com###btasd
+eporner.com###deskadmiddle
+eporner.com###movieplayer-box-adv
+eporner.com##.hptab
+eporner.com##.vjs-inplayer-container
+eporner.com##[style="margin: 20px auto; height: 275px; width: 900px;"]
+pornhub.com,youporn.com###pb_template
+pornhub.com###singleFeedSection > .emptyBlockSpace
+pornhub.com##.js_promoItem
+pornhub.com##.realsex
+pornhub.com##.sideAds
+pornhub.com##.sniperModeEngaged
+pornhub.com,redtube.com,tube8.com,xvideos.com,youporn.com##[href*="base64"]
+pornhub.com,redtube.com,tube8.com,xvideos.com,youporn.com##[href*="data:"]
+pornhub.com##[srcset*="bloB:"]
+pornhub.com,redtube.com,tube8.com,youporn.com##[style*="base64"]
+pornhub.com,redtube.com,tube8.com,youporn.com##[style*="blob:"]:not(video)
+pornhub.com##a[data-event="header_paid_tabs"]
+pornhub.com,spankbang.com,tube8.com##a[href*="?ats="]
+pornhub.com,redtube.com##a[href^="https://ads.trafficjunky.net/"]
+pornhub.com##a[href^="https://www.uviu.com"]
+pornhub.com##div[onclick*="bp1.com"]
+pornhub.com,tube8.com,xvideos.com##img[src*="blob:" i]:not(video)
+pornhub.com##img[srcset]
+pornhub.com##img[width="300"]
+pornhub.com##.sectionWrapper:has(> #bottomVideos > .wrapVideoBlock)
+pornhub.com##div[class="video-wrapper"] > .clear.hd:has(.adsbytrafficjunky)
+pornhub.com,youporn.com##:-abp-properties(float: right; margin-top: 30px; width: 50%;)
+pornhub.com##:-abp-properties(height: 300px; width: 315px;)
+redtube.com###live_models_row_wrap
+redtube.com###pb_block
+redtube.com###popsByTrafficJunky
+redtube.com###video_right_col > .clearfix
+redtube.com##.hd
+redtube.com,tube8.com,youporn.com##.upgradeButtonContainer
+redtube.com,tube8.com,youporn.com##a[class*="gtm-event-header-paidtabs"]
+redtube.com##div > iframe
+redtube.com##div[class*="display: block; height:"]
+redtube.com##svg
+redtube.com##video[autoplay][src*="blob:" i]
+redtube.com##video[autoplay][src*="data:" i]
+redtube.com,tube8.com,xvideos.com,youporn.com##:-abp-properties(*data:image*)
+redtube.com,tube8.com,xvideos.com,youporn.com##:-abp-properties(base64)
+redtube.com,tube8.com,xvideos.com,youporn.com##:-abp-properties(data:)
+redtube.com,tube8.com,xvideos.com,youporn.com##:-abp-properties(image/)
+spankbang.com###shorts-frame
+spankbang.com##.js-inline-ad
+spankbang.com##.live-rotate
+spankbang.com##.livecam-rotate
+spankbang.com,tube8.com,youporn.com##a[href*=".com/track/"]
+spankbang.com##a[href^="https://deliver.ptgncdn.com/"]
+spankbang.com##a[href^="https://www.iyalc.com/"]
+tube8.com##.adsbytrafficjunky
+tube8.com##.col-3-lg.col-4-md.col-4
+tube8.com##.e8-column
+tube8.com##.paidTab
+tube8.com##[data-spot-id]
+tube8.com##[data-spot]
+xhamster.com##._029ef-containerBottomSpot
+xhamster.com##._80e65-containerBottomSpot
+xhamster.com##._80e65-containerPauseSpot
+xhamster.com##.auto-generated-banner-container
+xhamster.com##.bottom-widget-section
+xhamster.com##.clipstore-bottom
+xhamster.com##.player-add-overlay
+xhamster.com##.promo-message
+xhamster.com##.sponsor
+xhamster.com##.video-view-ads
+xhamster.com##.wio-p
+xhamster.com##.wio-pcam-thumb
+xhamster.com##.wio-psp-b
+xhamster.com,xhamster2.com##.wio-xbanner
+xhamster.com##.wixx-ebanner
+xhamster.com##.wixx-ecam-thumb
+xhamster.com##.wixx-ecams-widget
+xhamster.com##.xplayer-b
+xhamster.com##.xplayer-hover-menu
+xhamster.com##.yfd-fdcam-thumb
+xhamster.com##.yfd-fdcams-widget
+xhamster.com##.yfd-fdclipstore-bottom
+xhamster.com##.yfd-fdsp-b
+xhamster.com##.yld-mdcam-thumb
+xhamster.com##.yld-mdsp-b
+xhamster.com##.yld-pcxplayer-hover-menu
+xhamster.com##.ytd-jcam-thumb
+xhamster.com##.ytd-jcams-widget
+xhamster.com##.ytd-jsp-a
+xhamster.com##.yxd-jcam-thumb
+xhamster.com##.yxd-jcams-widget
+xhamster.com##.yxd-jdbanner
+xhamster.com##.yxd-jdcam-thumb
+xhamster.com##.yxd-jdcams-widget
+xhamster.com##.yxd-jdplayer
+xhamster.com##.yxd-jdsp-b
+xhamster.com##.yxd-jdsp-l-tab
+xhamster.com##.yxd-jsp-a
+xhamster.com,xhamster2.com##[class^="xplayer-banner"]
+xhamster.com,xhamster2.com##a[href^="https://flirtify.com/"]
+xhamster.com,xhamster2.com##div[class*="cams-wgt"]
+xhamster.com##div[data-testid="right-banner-section"]
+xhamster2.com##.wio-xspa
+xnxx.com###ad-footer
+xnxx.com##.ad-footer
+xnxx.com,xvideos.com##.thumb-ad
+xvideos.com###video-right
+xvideos.com###video-sponsor-links
+xvideos.com##.player-video.xv-cams-block
+xvideos.com##.video-ad
+youporn.com##.footer-element-container
+youporn.com##aside:has(a.ad-remove)
