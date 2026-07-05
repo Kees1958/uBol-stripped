@@ -1431,3 +1431,5 @@ xvideos.com##.player-video.xv-cams-block
 xvideos.com##.video-ad
 youporn.com##.footer-element-container
 youporn.com##aside:has(a.ad-remove)
+porntrex.com###exclusive-link
+porntrex.com##.pop-fade
