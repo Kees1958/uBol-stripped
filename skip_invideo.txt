@@ -1,3 +1,8 @@
+[AdBlock Plus 2.0]
+!
+! Title: Skip youtube startup invideo ads
+! Version: 2026-07-10
+! Expires: 7 days
 ! ══════════════════════════════════════════
 ! YouTube scriptlets to hide in-video ads
 ! ══════════════════════════════════════════
