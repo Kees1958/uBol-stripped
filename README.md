@@ -51,8 +51,9 @@ Create DNR rules — real-time request monitor shows every third-party request o
 Element picker — click any page element to create a CSS hide rule. Saved per hostname, applied on every future visit.
 View and manage — the Custom Rules pane lists all your cosmetic and DNR rules with per-rule deletion and clear-all.
 
-MANAGE THE CUSTOM & COSMETIC RULES YOU CREATED YOURSELF
-<img width="640" height="400" alt="02-abp-filters" src="https://github.com/user-attachments/assets/1063e5fb-5168-4c66-a753-6f7ea2b6ea9d" />
+MANAGE THE CUSTOM & COSMETIC RULES YOU CREATED YOURSELF IN ONE PLACE
+<img width="640" height="400" alt="05-custom-rules" src="https://github.com/user-attachments/assets/33b8f67c-774b-443d-9a8f-24aaefe6cd07" />
+
 
 
 
