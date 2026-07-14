@@ -73,7 +73,6 @@ Every file has exactly one job. HTML describes the structure of the page. CSS ha
 
 2. FIVE-TIER FOLDER STRUCTURE
 The codebase is organised into five layers, and code is only allowed to call downward — never upward or sideways:
-
 ui — what the user sees and clicks
 workflow — the service worker that coordinates everything
 core — the actual blocking and filtering logic
