@@ -15,9 +15,9 @@ OPTIMAL — everything in BASIC, plus automatic removal of cookie consent banner
 HOW UBOL-STRIPPED COMPARES TO UBO LITE
 
 uBol-stripped has 3 states on the slider (OFF_BASIC-OPTIMAL), uBO-lite four (also has COMPLETE). 
-uBO Lite ships with more filter lists enabled by default — EasyList, EasyPrivacy, Peter Lowe and others (in my opinion useless malware filters with a slow 12 hour update cycle) — which gives broader coverage but can block cookie consent flows that prevent login on some sites. uBol-stripped uses a smaller, curated set (Kees1958, AdGuard Base, AdGuard tracking parameters) chosen to block ads and trackers without breaking site functionality. 
+uBO Lite ships with more filter lists enabled by default — EasyList, EasyPrivacy, Peter Lowe and others (in my opinion useless malware filters with a slow 12 hour update cycle) — which gives broader coverage but can block cookie consent flows that prevent login on some sites. uBol-stripped uses a smaller, curated set (Kees1958, AdGuard Base, AdGuard tracking parameters) chosen to block ads and trackers with low (website) breakage maintenance.  
 
-Cookie banner removal only activates in Optimal mode, using scriptlets that hide banners rather than blocking the network requests that logins depend on.
+Cookie banner removal only activates in Optimal mode, using scriptlets that hide banners rather than blocking the network requests that logins depend on. This prevents websites breakage (cookies are needed for login).
 
 
 
