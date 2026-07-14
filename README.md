@@ -59,15 +59,9 @@ Paste your own ABP/uBlock filter rules
 
 
 
-5 Set per-site blocking levels in a simple text editor.
-
-This is the existing Filtering mode panel which was hidden behind ¨developer mode"
-You can easily copy paste domains per blocking level (OFF- BASIC - OPTIMAL)
+5 Set per-site blocking levels in a simple text editor (This is the existing Filtering mode panel)
 <img width="905" height="701" alt="image" src="https://github.com/user-attachments/assets/749a7aff-71a9-4a33-8700-7949bbc5d163" />
-
-
-
-
+This (easy to use) panel was hidden behind ¨developer mode" where you can easily copy paste domains per blocking level.
 
 
 PRIVACY FIRST
