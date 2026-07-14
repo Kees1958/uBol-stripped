@@ -44,7 +44,8 @@ Paste your own ABP/uBlock filter rules
 
 
 4. Enable advanced Security & Privacy options
-<img width="864" height="697" alt="image" src="https://github.com/user-attachments/assets/d96898cc-6592-4db1-979d-702e0d022999" />
+<img width="868" height="715" alt="image" src="https://github.com/user-attachments/assets/ff566234-ad67-452d-b509-6458b94e0b51" />
+
 
 
 
