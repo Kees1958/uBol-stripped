@@ -74,11 +74,11 @@ Every file has exactly one job. HTML describes the structure of the page. CSS ha
 2. FIVE-TIER FOLDER STRUCTURE
 The codebase is organised into five layers, and code is only allowed to call downward — never upward or sideways:
 
-ui/ — what the user sees and clicks
-workflow/ — the service worker that coordinates everything
-core/ — the actual blocking and filtering logic
-util/ — small shared helper functions
-data/ — storage, configuration and external API calls
+ui — what the user sees and clicks
+workflow — the service worker that coordinates everything
+core — the actual blocking and filtering logic
+util — small shared helper functions
+data — storage, configuration and external API calls
 
 This means a bug in the UI can never corrupt the filter logic, and the filter logic can never accidentally write to the UI. Every dependency is explicit and traceable.
 
