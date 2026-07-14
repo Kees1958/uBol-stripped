@@ -76,7 +76,7 @@ BASED ON UBLOCK ORIGIN LITE
 Built on the open-source uBlock Origin Lite (MV3), refactored for simplicity and extended with per-site modes, a live traffic monitor, custom rule management and advanced security & privacy toggles.
 
 WHAT IS CHANGED?
-In layman's terms we used the strong bones of uBO-lite and stripped it from (less well programmed features to keep up with AdGuard Mv3). Next we added some open source AdGuard skills (for a one man band it is hard to beat a team of developers). Next I added some features which in my opinion were missing in uBO-lite (see pictures). To make the code easy to understand, extend and debug we refactored the strong uBO-lite bones using four principles (nerd alert): 
+In layman's terms we (Claude AI and me) used the strong bones of uBO-lite and stripped it from (less well programmed features to keep up with AdGuard Mv3). Next we added some open source AdGuard skills (for a one man band it is hard to beat a team of developers). Next I added some features which in my opinion were missing in uBO-lite (see pictures). To make the code easy to understand, extend and debug I refactored the strong uBO-lite bones using four (old structured programming) principles (nerd alert): 
 
 1. SEPARATION OF CONCERNS — HTML, CSS AND JAVASCRIPT
 Every file has exactly one job. HTML describes the structure of the page. CSS handles all visual styling. JavaScript handles all behaviour. No styling is written inside JavaScript. No logic is embedded in HTML. This means you can change how something looks without touching the code that makes it work, and vice versa. Each dashboard tab, each popup panel and each background module is its own isolated file.
@@ -90,3 +90,5 @@ The service worker startup sequence follows the same pattern: it tracks whether 
 
 4. MAINTAINABILITY AND BOUNDARY GUARDS
 Every capacity limit — the maximum number of custom DNR rules, the maximum number of cosmetic rules, the ID ranges for each rule type — is defined in a single file (dnr-budgets.js) and imported everywhere else. Changing a limit means editing one number in one place. Every module that manages a resource also owns the cleanup of that resource. Timers live inside the state vector they belong to, not scattered across the module. Every future scaling limitation is marked with a comment explaining what the ceiling is and what a future developer would need to change to raise it.
+
+Because I added AdGuard skills (and uBO-lite is more programmed towards efficiency and performance than AdGuard Mv3) I wanted to regain the efficieny and low impact by using old and forgotten programming principles (yes I am 67 and programmed assembler in 16KB mainframes routines) to streamline and optimize the original coriginal code even further. 
