@@ -60,7 +60,8 @@ Paste your own ABP/uBlock filter rules
 
 
 5 Set per-site blocking levels in a simple text editor (This is the existing Filtering mode panel)
-<img width="905" height="701" alt="image" src="https://github.com/user-attachments/assets/749a7aff-71a9-4a33-8700-7949bbc5d163" />
+<img width="875" height="275" alt="image" src="https://github.com/user-attachments/assets/7bc7b9f2-40cc-492b-8ba6-75c4803173f0" />
+
 This (easy to use) panel was hidden behind ¨developer mode" where you can easily copy paste domains per blocking level.
 
 
