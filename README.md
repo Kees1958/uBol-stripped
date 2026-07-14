@@ -1,61 +1,88 @@
-When I asked in the uBol discussions forum, whether uBol was dropping its design philiosophy by adding features 
-(trying to catch up with Adguard Mv3) I was basically told to #$%^-off and write my own extension (so I did and made it better :-)
+uBol-stripped — Smart ad & tracker blocker
+uBol-stripped blocks ads, trackers and privacy threats while you browse — without slowing your browser down. It works silently in the background the moment you install it. No account, no settings, no hassle.
 
-uBol-stripped is a lean, transparent MV3 content blocker built on Chrome's native Declarative Net Request engine — and a deliberate improvement over uBlock Origin Lite (uBol) for users who want real control over what gets blocked and why. Everything runs inside Chrome's native DNR engine. The extension never reads, inspects, or transmits the content of any web request. No telemetry, no analytics, no external servers of any kind.
+HOW IT WORKS
+Every website gets a three-position slider in the popup. You set it once per site and forget it.
 
-<img width="640" height="400" alt="01-popup" src="https://github.com/user-attachments/assets/3419f7cc-e808-4c38-97e4-f2753cbf35af" />
+OFF — no filtering on this site (use this if a site is broken)
+BASIC — blocks ads and trackers (the default for every site)
+OPTIMAL — everything in BASIC, plus automatic removal of cookie consent banners and popup overlays
 
-
-WHY USE uBol-stripped OVER uBo-lite?
-More scriptlets, better compatibility. uBol-stripped ships the full AdGuard scriptlet library alongside the uBlock Origin scriptlets. Where uBol fails silently on sites that need AG-specific scriptlets, uBol-stripped handles them correctly.
-
-No fake security. uBol bundles malware and phishing domain lists that update on a 12-hour extension release cycle. By the time a new domain clears that pipeline, it has already done its damage. uBol-stripped replaces that false confidence with two things that actually work: a live-fetched DDNS and free-hosting blocklist pulled directly from GitHub when you enable it, and browser-level resource type blocks (punycode, web bundles, beacons) that stop entire attack categories rather than chasing individual domains.
-
-Point-and-click rule creation — both cosmetic and DNR. uBol has no built-in traffic inspector. uBol-stripped includes a real-time request monitor: open it from the popup, watch every third-party request on the active tab, tick the domains you want blocked, and click Continue. DNR block rules are written instantly. For cosmetic rules, the element picker lets you click any page element to hide it permanently. No filter syntax needed for either.
-
-One place to import rules, not two. uBol splits rule imports across a filters tab and a separate advanced pane. uBol-stripped has a single ABP sandbox editor: paste your network rules, cosmetic rules, and scriptlets in one place, save once, done.
-
-You own the rule budget. uBol-stripped exposes Chrome's full 30,000 dynamic rule capacity with a clear, documented allocation: 1,000 slots for your monitor-created rules, 2 for the DDNS blocklist, and 28,998 for your own imported ABP sandbox rules.
-<img width="640" height="400" alt="02-abp-filters" src="https://github.com/user-attachments/assets/1063e5fb-5168-4c66-a753-6f7ea2b6ea9d" />
-
-IMPORT YOUR OWN ABP-FORMAT RULES
-The built-in sandbox editor accepts standard ABP-format network rules, CSS cosmetic rules (##), and scriptlets (##+js()), including the full AdGuard scriptlet set. Up to 28,998 compiled DNR rules and 2,000 cosmetic rules.
-
-THREE BUILT-IN FILTER LISTS 
-Compiled into the extension and toggled from the ABP-filters tab, just enable them. 
-
-EU & US Ads & Trackers (Kees1958) — 350 rules targeting the most-used ad and tracking networks in Europe and North America
-AdGuard URL Tracking Parameter Removal — 897 rules that strip UTM tags, click IDs, and similar tracking parameters from URLs
-AdGuard Base Filter — 76,800+ rules covering a broad range of ads, trackers, and malicious content worldwide
+<img width="294" height="384" alt="image" src="https://github.com/user-attachments/assets/b394c3ea-f81b-4f6f-aed1-675ce1bc6d29" />
 
 
 
-SECURITY & PRIVACY TOGGLES
-A dedicated Security & Privacy tab — gated behind an advanced-user confirmation — gives fine-grained control over browser-level threats:
-Security
+WHAT GETS BLOCKED
 
-<img width="640" height="400" alt="03-security" src="https://github.com/user-attachments/assets/6f13353a-0246-4cf2-b4e5-2b843d64d81c" />
+Ads and tracking scripts (AdGuard Base + Kees1958 EU/US list)
+URL tracking parameters  (AdGuard URL parameter removal list)
+Cookie consent banners and popup overlays (in Optimal mode also from AdGuard)
+Optional user enabled blocks in the Security & Privacy tab
 
-
-Block punycode links — blocks requests to domains using ACE-encoded (xn--) labels, the encoding attackers use to register look-alike phishing domains. Blocks first- and third-party.
-Block suspicious hosting & DDNS — live-fetched list of free hosting platforms and DDNS services frequently abused to distribute malware. Applied as two DNR rules covering 570+ domains and all their subdomains. Block plugin objects — blocks Flash, Java, Silverlight and similar legacy embeds on all sites. Block Web Bundles — blocks the webbundle resource type, exploited to smuggle ad and tracker payloads past conventional network filtering.
-
-Privacy
-
-Block third-party pings — stops hyperlink auditing requests that notify advertisers when you click links. Block beacons (sendBeacon) — blocks navigator.sendBeacon() calls, the mechanism analytics platforms use to fire tracking pings on page unload.
+<img width="856" height="746" alt="image" src="https://github.com/user-attachments/assets/6c95cfdf-b25f-41e8-98c9-bbf9e717d4ec" />
 
 
-POINT-AND-CLICK RULE CREATION
 
-Create DNR rules — real-time request monitor shows every third-party request on the active tab. Pause, tick domains, continue. Rules are written immediately.
-Element picker — click any page element to create a CSS hide rule. Saved per hostname, applied on every future visit.
-View and manage — the Custom Rules pane lists all your cosmetic and DNR rules with per-rule deletion and clear-all.
+FOR USERS WHO WANT MORE CONTROL
 
-MANAGE THE CUSTOM & COSMETIC RULES YOU CREATED YOURSELF IN ONE PLACE
-<img width="640" height="400" alt="05-custom-rules" src="https://github.com/user-attachments/assets/33b8f67c-774b-443d-9a8f-24aaefe6cd07" />
+1. Create custom cosmetic rules (uBO-lite element picker)
+Draw a box around any annoying element on a page to permanently hide it
+<img width="1197" height="582" alt="image" src="https://github.com/user-attachments/assets/369ed757-c5d4-4beb-8f95-5adc786c937a" />
+
+
+
+2. Create custom DNR rules
+Watch live which external services a website contacts and block them with one click
+<img width="1488" height="650" alt="image" src="https://github.com/user-attachments/assets/d6a6585c-4390-44e1-a63b-c0f2bf28c55a" />
+
+
+
+3. Import ABP-rules in one place
+Paste your own ABP/uBlock filter rules
+<img width="880" height="705" alt="image" src="https://github.com/user-attachments/assets/654bffba-599f-417b-a010-de7701eb55d3" />
+
+
+4. Enable advanced Security & Privacy options
+<img width="864" height="697" alt="image" src="https://github.com/user-attachments/assets/d96898cc-6592-4db1-979d-702e0d022999" />
+
+
+
+5 Set per-site blocking levels in a simple text editor.
+This is the existing Filtering mode panel which was hidden behind ¨developer mode"
+You can easily copy paste domains per blocking level (OFF- BASIC - OPTIMAL)
+<img width="905" height="701" alt="image" src="https://github.com/user-attachments/assets/749a7aff-71a9-4a33-8700-7949bbc5d163" />
 
 
 
 
-PRIVACY
-uBol-stripped does not collect, store, or transmit any personal data, browsing history, or page content. Filter lists are retrieved from GitHub. Full privacy policy included with the
+
+
+PRIVACY FIRST
+uBol-stripped contains no analytics, no telemetry and no ads. It never sends any data about your browsing to anyone. Filter lists are compiled and bundled inside the extension — no external servers are contacted except to check one optional list of suspicious hosting domains when you enable that feature.
+
+BASED ON UBLOCK ORIGIN LITE
+Built on the open-source uBlock Origin Lite (MV3), refactored for simplicity and extended with per-site modes, a live traffic monitor, custom rule management and advanced security & privacy toggles.
+
+WHAT IS CHANGED?
+In layman's terms we used the strong bones of uBO-lite and stripped it from (less well programmed features to keep up with AdGuard Mv3). Next we added some open source AdGuard skills (for a one man band it is hard to beat a team of developers). Next I added some features which in my opinion were missing in uBO-lite (see pictures). To make the code easy to understand, extend and debug we refactored the strong uBO-lite bones using four principles (nerd alert): 
+
+1. SEPARATION OF CONCERNS — HTML, CSS AND JAVASCRIPT
+Every file has exactly one job. HTML describes the structure of the page. CSS handles all visual styling. JavaScript handles all behaviour. No styling is written inside JavaScript. No logic is embedded in HTML. This means you can change how something looks without touching the code that makes it work, and vice versa. Each dashboard tab, each popup panel and each background module is its own isolated file.
+
+2. FIVE-TIER FOLDER STRUCTURE
+The codebase is organised into five layers, and code is only allowed to call downward — never upward or sideways:
+
+ui/ — what the user sees and clicks
+workflow/ — the service worker that coordinates everything
+core/ — the actual blocking and filtering logic
+util/ — small shared helper functions
+data/ — storage, configuration and external API calls
+
+This means a bug in the UI can never corrupt the filter logic, and the filter logic can never accidentally write to the UI. Every dependency is explicit and traceable.
+
+3. STATE VECTORS AND SWIMMING LANES
+Every multi-step process owns a single named state object — called a state vector — that holds all its data and a phase field describing exactly where in its lifecycle it currently is. For example the monitor session can only be in one of four states: idle, starting, running or paused. A guard function checks the phase at the start of every operation and logs a warning if something tries to happen out of order. This means bugs that used to be silent — a session that got stuck halfway, a timer that never fired — are now immediately visible in the browser console with the exact step that failed.
+The service worker startup sequence follows the same pattern: it tracks whether it is booting, starting, ready or in error, and records which sub-step it was on if something goes wrong. If the extension ever fails to start, the error message tells you exactly where.
+
+4. MAINTAINABILITY AND BOUNDARY GUARDS
+Every capacity limit — the maximum number of custom DNR rules, the maximum number of cosmetic rules, the ID ranges for each rule type — is defined in a single file (dnr-budgets.js) and imported everywhere else. Changing a limit means editing one number in one place. Every module that manages a resource also owns the cleanup of that resource. Timers live inside the state vector they belong to, not scattered across the module. Every future scaling limitation is marked with a comment explaining what the ceiling is and what a future developer would need to change to raise it.
