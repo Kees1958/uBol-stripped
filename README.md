@@ -26,6 +26,7 @@ Optional user enabled blocks in the Security & Privacy tab
 FOR USERS WHO WANT MORE CONTROL
 
 1. Create custom cosmetic rules (uBO-lite element picker)
+
 Draw a box around any annoying element on a page to permanently hide it
 <img width="1197" height="582" alt="image" src="https://github.com/user-attachments/assets/369ed757-c5d4-4beb-8f95-5adc786c937a" />
 
