@@ -20,7 +20,8 @@ URL tracking parameters  (AdGuard URL parameter removal list)
 Cookie consent banners and popup overlays (in Optimal mode also from AdGuard)
 Optional user enabled blocks in the Security & Privacy tab
 
-<img width="856" height="746" alt="image" src="https://github.com/user-attachments/assets/6c95cfdf-b25f-41e8-98c9-bbf9e717d4ec" />
+<img width="884" height="352" alt="image" src="https://github.com/user-attachments/assets/8224452b-0e61-4327-8246-2e145050c9b0" />
+
 
 
 
