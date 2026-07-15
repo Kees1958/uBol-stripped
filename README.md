@@ -1,14 +1,7 @@
 uBol-stripped — Smart ad & tracker blocker
 uBol-stripped blocks ads, trackers and privacy threats while you browse — without slowing your browser down. It works silently in the background the moment you install it. No account, no settings, no hassle.
 
-HOW IT WORKS
-Every website gets a three-position slider in the popup. You set it once per site and forget it.
-
-OFF — no filtering on this site (use this if a site is broken)
-BASIC — blocks ads and trackers (the default for every site)
-OPTIMAL — everything in BASIC, plus automatic removal of cookie consent banners and popup overlays
-
-<img width="294" height="384" alt="image" src="https://github.com/user-attachments/assets/b394c3ea-f81b-4f6f-aed1-675ce1bc6d29" />
+/home/kees/FILE MANAGER/Downloads/1.png
 
 
 
