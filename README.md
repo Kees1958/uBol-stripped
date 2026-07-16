@@ -17,7 +17,7 @@ uBO Lite ships with more filter lists enabled by default — EasyList, EasyPriva
 
 
 
-FOR USERS WHO WANT MORE CONTROL (OR HIGH TOUCH OF ADGUARD-MV3 AND HIGH-TECH OF UBO-LITE)
+FOR USERS WHO WANT MORE CONTROL (OR LIKE THE HIGH TOUCH OF ADGUARD-MV3 AND HIGH-TECH OF UBO-LITE)
 
 1. Create custom cosmetic rules (uBO-lite element picker)
 
