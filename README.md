@@ -54,8 +54,6 @@ This (easy to use) panel was hidden behind ¨developer mode" where you can copy 
 PRIVACY FIRST
 uBol-stripped contains no analytics, no telemetry and no ads. It never sends any data about your browsing to anyone. Filter lists are compiled and bundled inside the extension — no external servers are contacted except to check one optional list of suspicious hosting domains when you enable that feature.
 
-BASED ON UBLOCK ORIGIN LITE
-Built on the open-source uBlock Origin Lite (MV3), refactored for simplicity and extended with per-site modes, a live traffic monitor, custom rule management and advanced security & privacy toggles.
 
 WHAT IS CHANGED?
 In layman's terms we (Claude AI and me) used the strong bones of uBO-lite and stripped it from (less well programmed features to keep up with AdGuard Mv3). Next we added some open source AdGuard skills (for a one man band it is hard to beat a team of developers). Next I added some features which in my opinion were missing in uBO-lite (see pictures). To make the code easy to understand, extend and debug I refactored the strong uBO-lite bones using four (old structured programming) principles (nerd alert): 
