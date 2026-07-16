@@ -10,7 +10,8 @@ HOW UBOL-STRIPPED COMPARES TO UBO LITE
 HOW UBOL-STRIPPED COMPARES TO UBO LITE
 uBO Lite ships with more filter lists enabled by default — EasyList, EasyPrivacy, Peter Lowe and others — which gives broader coverage but can block cookie consent flows that prevent login on some sites. uBol-stripped uses only three well curated set (Kees1958, AdGuard Base, AdGuard tracking parameters) and only precesses rules from extended EU-zone and 5 Eyes Countries. That is why it is called ¨stripped". On the plus site uBol-stripped has gained some AG-skills, it processes all scriptlets present in the AG base filter (and it offers to add additional EU-langauge filters). 
 
-<img width="744" height="493" alt="image" src="https://github.com/user-attachments/assets/8c5f5a37-27af-4e04-8f2d-4bf22e510716" />
+<img width="757" height="511" alt="image" src="https://github.com/user-attachments/assets/26d1198f-784f-43d2-909c-34719d1e0619" />
+
 
 * Reason why AdGuard raw entries generate more DNR rules is that they are finer grained (DNR rules re hanlded by the browser and are processed very efficiently).
 * Reason why uBol-Stripped does not offer generic cosmetic filters (and only processes native procedural filters) is to compensate for the additional AsGuard scriplets
