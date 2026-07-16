@@ -13,7 +13,7 @@ uBO Lite ships with more filter lists enabled by default — EasyList, EasyPriva
 <img width="757" height="511" alt="image" src="https://github.com/user-attachments/assets/26d1198f-784f-43d2-909c-34719d1e0619" />
 
 
-* Reason why AdGuard raw entries generate more DNR rules is that they are finer grained (DNR rules re hanlded by the browser and are processed very efficiently).
+* Reason why AdGuard raw entries generate more DNR rules is that they are finer grained (DNR rules are hanlded by the browser and are processed very efficiently).
 * Reason why uBol-Stripped does not offer generic cosmetic filters (and only processes native procedural filters) is to compensate for the additional AsGuard scriplets
    (so page injection size is more or less the same as uBO-lite in default optimal mode).
 
