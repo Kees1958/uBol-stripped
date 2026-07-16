@@ -1,6 +1,8 @@
 uBol-stripped — Smart ad & tracker blocker
 uBol-stripped blocks ads, trackers and privacy threats while you browse — without slowing your browser down. It works silently in the background the moment you install it. No account, no settings, no hassle.
 
+Chrome webstore: https://chromewebstore.google.com/detail/ubol-stripped/femdnbckdgobaelpmbbajpidneljkjaa?pli=1
+
 <img width="317" height="384" alt="image" src="https://github.com/user-attachments/assets/a986406f-279b-44eb-b516-f89a5c1be396" />
 
 
