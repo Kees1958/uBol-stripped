@@ -56,6 +56,7 @@ uBol-stripped contains no analytics, no telemetry and no ads. It never sends any
 
 
 WHAT IS CHANGED?
+
 In layman's terms we (Claude AI and me) used the strong bones of uBO-lite and stripped it (removed less well programmed features to keep up with AdGuard Mv3). Next we added some open source AdGuard skills (it is open source so why not use what is available in stead of competing as a one man band with a team of developers). Next I added some features which in my opinion were missing in uBO-lite (see pictures). To make the code easy to understand, extend and debug I refactored the strong uBO-lite bones using four (old structured programming) principles (nerd alert): 
 
 1. SEPARATION OF CONCERNS — HTML, CSS AND JAVASCRIPT
