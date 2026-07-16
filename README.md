@@ -6,10 +6,13 @@ uBol-stripped blocks ads, trackers and privacy threats while you browse — with
 
 HOW UBOL-STRIPPED COMPARES TO UBO LITE
 
-uBol-stripped has 3 states on the slider (OFF_BASIC-OPTIMAL), uBO-lite four (also has COMPLETE). 
-uBO Lite ships with more filter lists enabled by default — EasyList, EasyPrivacy, Peter Lowe and many others (in my opinion useless malware filters with a slow 12 hour update cycle) — which gives broader coverage but can block cookie consent flows that prevent login on some sites. uBol-stripped uses a smaller, curated set (Kees1958, AdGuard Base, AdGuard tracking parameters) chosen to block ads and trackers with low (website) breakage risk and maintenance (this is also the reason uBol-stripped does not need uBO-unbreak filter).
-.
-<img width="739" height="273" alt="image" src="https://github.com/user-attachments/assets/b4e152da-956d-4146-a881-418fd8d19c5f" />
+HOW UBOL-STRIPPED COMPARES TO UBO LITE
+uBO Lite ships with more filter lists enabled by default — EasyList, EasyPrivacy, Peter Lowe and others — which gives broader coverage but can block cookie consent flows that prevent login on some sites. uBol-stripped uses only three well curated set (Kees1958, AdGuard Base, AdGuard tracking parameters) and only precesses rules from extended EU-zone and 5 Eyes Countries. That is why it is called ¨stripped". On the plus site uBol-stripped has gained some AG-skills, it processes all scriptlets present in the AG base filter (and it offers to add additional EU-langauge filters). 
+
+SO WHY CONSIDER USING UBOL-STRIPPED? 
+Well it offers some extra's for user who want more control:
+<img width="281" height="363" alt="image" src="https://github.com/user-attachments/assets/17e26ee4-1210-4bd1-8cdb-c9cb36fdfecc" />
+
 
 
 
