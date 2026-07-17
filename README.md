@@ -10,6 +10,12 @@ HOW UBOL-STRIPPED COMPARES TO UBO-LITE
 
 uBO Lite ships with more filter lists enabled by default — EasyList, EasyPrivacy, Peter Lowe and others — which gives broader coverage but can block cookie consent flows that prevent login on some sites. uBol-stripped uses only three well curated set (Kees1958, AdGuard Base, AdGuard tracking parameters) and only precesses rules from extended EU-zone and 5 Eyes Countries (and it only offers to add additional EU-langauge filters). That is why it is called ¨stripped". On the plus site uBol-stripped has gained some AG-skills, it processes all scriptlets present in the AG base filter. 
 
+<img width="865" height="730" alt="image" src="https://github.com/user-attachments/assets/72db033e-bb98-4889-ba1c-460f62423a49" />
+
+
+
+
+
 
 FOR USERS WHO WANT MORE CONTROL (OR LIKE THE HIGH-TECH OF UBO-LITE & THE HIGH TOUCH OF AG-MV3)
 
