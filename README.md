@@ -25,31 +25,29 @@ FOR USERS WHO WANT MORE CONTROL (OR LIKE THE HIGH-TECH OF UBO-LITE & THE HIGH TO
 
 Draw a box around any annoying element on a page to permanently hide it
 <img width="1197" height="582" alt="image" src="https://github.com/user-attachments/assets/369ed757-c5d4-4beb-8f95-5adc786c937a" />
-
+_
 
 
 2. Create custom DNR rules
 Watch live which external services a website contacts and block them with one click
 <img width="1488" height="650" alt="image" src="https://github.com/user-attachments/assets/d6a6585c-4390-44e1-a63b-c0f2bf28c55a" />
-
+_
 
 
 3. Import ABP-rules in one place
 Paste your own ABP/uBlock filter rules
 <img width="884" height="706" alt="image" src="https://github.com/user-attachments/assets/860c189f-4402-48e7-9a24-afa2df3f97d6" />
-
+_
 
 
 4. Enable advanced Security & Privacy options
 <img width="861" height="809" alt="image" src="https://github.com/user-attachments/assets/6f39e4ff-cc3e-4c10-87a6-1b5ac753598f" />
-
-
-
-
+_
 
 
 5 Set per-site blocking levels in a simple text editor (This is the existing Filtering mode panel which is hidden behind developer mode)
 <img width="875" height="275" alt="image" src="https://github.com/user-attachments/assets/7bc7b9f2-40cc-492b-8ba6-75c4803173f0" />
+_
 
 
 PRIVACY FIRST
