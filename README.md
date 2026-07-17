@@ -4,7 +4,7 @@ uBol-stripped blocks ads, trackers and privacy threats while you browse — with
 Chrome webstore: https://chromewebstore.google.com/detail/ubol-stripped/femdnbckdgobaelpmbbajpidneljkjaa?pli=1
 
 <img width="317" height="384" alt="image" src="https://github.com/user-attachments/assets/a986406f-279b-44eb-b516-f89a5c1be396" />
-
+  
 
 HOW UBOL-STRIPPED COMPARES TO UBO-LITE
 
@@ -25,8 +25,7 @@ FOR USERS WHO WANT MORE CONTROL (OR LIKE THE HIGH-TECH OF UBO-LITE & THE HIGH TO
 
 Draw a box around any annoying element on a page to permanently hide it
 <img width="1197" height="582" alt="image" src="https://github.com/user-attachments/assets/369ed757-c5d4-4beb-8f95-5adc786c937a" />
-</br>
-</br>
+
 
 2. Create custom DNR rules
 Watch live which external services a website contacts and block them with one click
