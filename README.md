@@ -10,7 +10,8 @@ HOW UBOL-STRIPPED COMPARES TO UBO-LITE
 
 uBO Lite ships with more filter lists enabled by default — EasyList, EasyPrivacy, Peter Lowe and others — which gives broader coverage but can block cookie consent flows that prevent login on some sites. uBol-stripped uses only three well curated set (Kees1958, AdGuard Base, AdGuard tracking parameters) and only precesses rules from extended EU-zone and 5 Eyes Countries (and it only offers to add additional EU-langauge filters). That is why it is called ¨stripped". On the plus site uBol-stripped has gained some AG-skills, it processes all scriptlets present in the AG base filter. 
 
-<img width="865" height="730" alt="image" src="https://github.com/user-attachments/assets/72db033e-bb98-4889-ba1c-460f62423a49" />
+<img width="295" height="399" alt="image" src="https://github.com/user-attachments/assets/b87cfbe4-beb7-4714-89b3-2c7de1dddfa3" />
+
 
 
 
@@ -42,8 +43,9 @@ _
 _
 
 
-5 Set per-site blocking levels in a simple text editor (This is the existing Filtering mode panel which is hidden behind developer mode)
-<img width="875" height="275" alt="image" src="https://github.com/user-attachments/assets/7bc7b9f2-40cc-492b-8ba6-75c4803173f0" />
+5 Privacy Inspector to be used on-demand for websites you often visit but never log in to
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d716b99a-68ee-400c-a812-ebbc378b5349" />
+
 _
 
 
@@ -68,3 +70,16 @@ The service worker startup sequence follows the same pattern: it tracks whether 
 4. MAINTAINABILITY AND BOUNDARY GUARDS
 Every capacity limit — the maximum number of custom DNR rules, the maximum number of cosmetic rules, the ID ranges for each rule type — is defined in a single file (dnr-budgets.js) and imported everywhere else. Changing a limit means editing one number in one place. Every module that manages a resource also owns the cleanup of that resource. Timers live inside the state vector they belong to, not scattered across the module. Every future scaling limitation is marked with a comment explaining what the ceiling is and what a future developer would need to change to raise it.
 
+
+
+WHAT CORE-MODULES ARE ADOPTED BUT STRUCTURALLY  KEP AS IS (V5.0.17 and higher)
+
+background.js used to route every message through three giant, stacked decision-trees — a message's security check depended on which tree it was written in, invisibly. Those three trees are now gone, replaced by one clear table, message-routes.js, where every message's rules sit right next to its name instead of being implied by position (in simple terms: made transparent what was in the head of Mr Hill when he coded this module).
+
+scripting-manager.js (turns filter rules on/off) had its "only one thing at a time" safety rule copy-pasted twice in the same file. That rule now lives once, in a new small file, async-lock.js, shared by both places instead of two copies that could quietly drift apart. Everything scripting-manager.js does shares the same safety rule and touches the same browser feature, so splitting it apart would mean the safety rule could easily end up duplicated again — this time across separate files instead of within one, which is harder to notice and easier to get wrong (so it is better to keep in one place = one JS-module).
+
+Scattered duplicate settings got merged, a few bugs were caught and fixed along the way (also the darkmode), and the ESlinter (code check tool) is clean now.
+a) cripting-manager.js — a repeated timing value (15-minute cache-cleanup interval) was written out twice in the same file; now written once.
+b) timing-constants.js (new) — a 5-minute timeout value that four different files had each separately written out by coincidence, now all read from one place.
+
+background.js and scripting-manager.js both grew rather than shrank — nothing was deleted, each piece of logic just got its own clearly-named home plus an explanation of why it works the way it does, and that documentation takes real space (to prevent coding landmines and warn others not structure code in smaller chunks, the code shows Mr Hill is an exceptional programmer).
