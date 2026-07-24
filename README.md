@@ -67,10 +67,13 @@ The service worker startup sequence follows the same pattern: it tracks whether 
 
 4. MAINTAINABILITY AND BOUNDARY GUARDS
 Every capacity limit — the maximum number of custom DNR rules, the maximum number of cosmetic rules, the ID ranges for each rule type — is defined in a single file (dnr-budgets.js) and imported everywhere else. Changing a limit means editing one number in one place. Every module that manages a resource also owns the cleanup of that resource. Timers live inside the state vector they belong to, not scattered across the module. Every future scaling limitation is marked with a comment explaining what the ceiling is and what a future developer would need to change to raise it.
+_
 
 
+_
 
-WHAT CORE-MODULES ARE ADOPTED BUT STRUCTURALLY  KEP AS IS (V5.0.17 and higher)
+
+WHAT CORE-MODULES ARE ADOPTED BUT STRUCTURALLY  KEPT AS IS (V5.0.17 and higher)
 
 background.js used to route every message through three giant, stacked decision-trees — a message's security check depended on which tree it was written in, invisibly. Those three trees are now gone, replaced by one clear table, message-routes.js, where every message's rules sit right next to its name instead of being implied by position (in simple terms: made transparent what was in the head of Mr Hill when he coded this module).
 
