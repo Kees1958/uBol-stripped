@@ -3,18 +3,12 @@ uBol-stripped blocks ads, trackers and privacy threats while you browse — with
 
 Chrome webstore: https://chromewebstore.google.com/detail/ubol-stripped/femdnbckdgobaelpmbbajpidneljkjaa?pli=1
 
-<img width="317" height="384" alt="image" src="https://github.com/user-attachments/assets/a986406f-279b-44eb-b516-f89a5c1be396" />
+<img width="295" height="399" alt="image" src="https://github.com/user-attachments/assets/b87cfbe4-beb7-4714-89b3-2c7de1dddfa3" />
   
 
 HOW UBOL-STRIPPED COMPARES TO UBO-LITE
 
 uBO Lite ships with more filter lists enabled by default — EasyList, EasyPrivacy, Peter Lowe and others — which gives broader coverage but can block cookie consent flows that prevent login on some sites. uBol-stripped uses only three well curated set (Kees1958, AdGuard Base, AdGuard tracking parameters) and only precesses rules from extended EU-zone and 5 Eyes Countries (and it only offers to add additional EU-langauge filters). That is why it is called ¨stripped". On the plus site uBol-stripped has gained some AG-skills, it processes all scriptlets present in the AG base filter. 
-
-<img width="295" height="399" alt="image" src="https://github.com/user-attachments/assets/b87cfbe4-beb7-4714-89b3-2c7de1dddfa3" />
-
-
-
-
 
 
 
