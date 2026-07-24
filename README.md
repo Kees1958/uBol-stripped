@@ -83,4 +83,4 @@ Scattered duplicate settings got merged, a few bugs were caught and fixed along 
 a) cripting-manager.js — a repeated timing value (15-minute cache-cleanup interval) was written out twice in the same file; now written once.
 b) timing-constants.js (new) — a 5-minute timeout value that four different files had each separately written out by coincidence, now all read from one place.
 
-background.js and scripting-manager.js both grew rather than shrank — nothing was deleted, each piece of logic just got its own clearly-named home plus an explanation of why it works the way it does, and that documentation takes real space (to prevent coding landmines and warn others not structure code in smaller chunks, the code shows Mr Hill is an exceptional programmer).
+background.js and scripting-manager.js both grew rather than shrank — nothing was deleted, each piece of logic just got its own clearly-named home plus an explanation of why it works the way it does, and that documentation takes real space (to prevent coding landmines and warn others to NOT re-structure code in smaller chunks, the code shows Mr Hill is an exceptional programmer).
