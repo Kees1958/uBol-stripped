@@ -25,8 +25,10 @@ Watch live which external services a website contacts and block them with one cl
 <img width="1488" height="650" alt="image" src="https://github.com/user-attachments/assets/d6a6585c-4390-44e1-a63b-c0f2bf28c55a" />
 
 
+
 3 Privacy Inspector to be used on-demand for websites you often visit but never log in to
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d716b99a-68ee-400c-a812-ebbc378b5349" />
+
 
 
 4. Import ABP-rules in one place
