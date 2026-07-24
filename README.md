@@ -23,22 +23,23 @@ Draw a box around any annoying element on a page to permanently hide it
 2. Create custom DNR rules
 Watch live which external services a website contacts and block them with one click
 <img width="1488" height="650" alt="image" src="https://github.com/user-attachments/assets/d6a6585c-4390-44e1-a63b-c0f2bf28c55a" />
-_
 
 
-3. Import ABP-rules in one place
+3 Privacy Inspector to be used on-demand for websites you often visit but never log in to
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d716b99a-68ee-400c-a812-ebbc378b5349" />
+
+
+4. Import ABP-rules in one place
 Paste your own ABP/uBlock filter rules
 <img width="884" height="706" alt="image" src="https://github.com/user-attachments/assets/860c189f-4402-48e7-9a24-afa2df3f97d6" />
-_
+ 
 
-
-4. Enable advanced Security & Privacy options
+5 Enable advanced Security & Privacy options
 <img width="861" height="809" alt="image" src="https://github.com/user-attachments/assets/6f39e4ff-cc3e-4c10-87a6-1b5ac753598f" />
 _
 
 
-5 Privacy Inspector to be used on-demand for websites you often visit but never log in to
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d716b99a-68ee-400c-a812-ebbc378b5349" />
+
 
 _
 
