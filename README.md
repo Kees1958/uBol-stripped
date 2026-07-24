@@ -83,7 +83,9 @@ background.js used to route every message through three giant, stacked decision-
 scripting-manager.js (turns filter rules on/off) had its "only one thing at a time" safety rule copy-pasted twice in the same file. That rule now lives once, in a new small file, async-lock.js, shared by both places instead of two copies that could quietly drift apart. Everything scripting-manager.js does shares the same safety rule and touches the same browser feature, so splitting it apart would mean the safety rule could easily end up duplicated again — this time across separate files instead of within one, which is harder to notice and easier to get wrong (so it is better to keep in one place = one JS-module).
 
 Scattered duplicate settings got merged, a few bugs were caught and fixed along the way and the ESlinter (code check tool) is clean now.
+
 a) cripting-manager.js — a repeated timing value (15-minute cache-cleanup interval) was written out twice in the same file; now written once.
+
 b) timing-constants.js (new) — a 5-minute timeout value that four different files had each separately written out by coincidence, now all read from one place.
 
 background.js and scripting-manager.js both grew rather than shrank — nothing was deleted, each piece of logic just got its own clearly-named home plus an explanation of why it works the way it does, and that documentation takes real space (to prevent coding landmines and warn others to NOT re-structure code in smaller chunks, the code shows Mr Hill is an exceptional programmer).
