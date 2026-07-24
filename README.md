@@ -32,7 +32,8 @@ Watch live which external services a website contacts and block them with one cl
 
 4. Import ABP-rules in one place
 Paste your own ABP/uBlock filter rules
-<img width="884" height="706" alt="image" src="https://github.com/user-attachments/assets/860c189f-4402-48e7-9a24-afa2df3f97d6" />
+<img width="882" height="676" alt="image" src="https://github.com/user-attachments/assets/7d75d5eb-32dd-415d-94c5-dc12d0d01c2c" />
+
  
 
 5 Enable advanced Security & Privacy options
