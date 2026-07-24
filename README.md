@@ -19,13 +19,11 @@ FOR USERS WHO WANT MORE CONTROL (OR LIKE THE HIGH-TECH OF UBO-LITE & THE HIGH TO
 Draw a box around any annoying element on a page to permanently hide it
 <img width="1197" height="582" alt="image" src="https://github.com/user-attachments/assets/369ed757-c5d4-4beb-8f95-5adc786c937a" />
 
-
+ 
 2. Create custom DNR rules
 Watch live which external services a website contacts and block them with one click
 <img width="1488" height="650" alt="image" src="https://github.com/user-attachments/assets/d6a6585c-4390-44e1-a63b-c0f2bf28c55a" />
 
-
--
 
 3 Privacy Inspector to be used on-demand for websites you often visit but never log in to
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d716b99a-68ee-400c-a812-ebbc378b5349" />
