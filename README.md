@@ -53,7 +53,10 @@ uBol-stripped contains no analytics, no telemetry and no ads. It never sends any
 
 WHAT IS CHANGED?
 
-In layman's terms we (Claude AI and me) used the strong bones of uBO-lite and stripped it (removed less well programmed features to keep up with AdGuard Mv3). Next we added some open source AdGuard skills (it is open source so why not use what is available in stead of competing as a one man band with a team of developers). Next I added some features which in my opinion were missing in uBO-lite (see pictures). To make the code easy to understand, extend and debug I refactored the strong uBO-lite bones using four (old structured programming) principles (nerd alert): 
+In layman's terms we (Claude AI and me) used the strong bones of uBO-lite and stripped it (removed less well programmed features to keep up with AdGuard Mv3). Next we added some open source AdGuard skills (it is open source so why not use what is available in stead of competing as a one man band with a team of developers). Next I added some features which in my opinion were missing in uBO-lite (see pictures above). 
+
+
+NEW CODE IS DEVELOPED AND EXISTING CODE IS REFACTORED (WHEN POSSIBLE) USING OLD STRUCTURED PROGRAMMING PRINCIPLES (nerd alert): 
 
 1. SEPARATION OF CONCERNS — HTML, CSS AND JAVASCRIPT
 Every file has exactly one job. HTML describes the structure of the page. CSS handles all visual styling. JavaScript handles all behaviour. No styling is written inside JavaScript. No logic is embedded in HTML. This means you can change how something looks without touching the code that makes it work, and vice versa. Each dashboard tab, each popup panel and each background module is its own isolated file.
@@ -73,7 +76,7 @@ _
 _
 
 
-WHAT CORE-MODULES ARE ADOPTED BUT STRUCTURALLY  KEPT AS IS (V5.0.17 and higher)
+WHAT CORE-MODULES ARE ADOPTED BUT STRUCTURALLY KEPT IN TACT?
 
 background.js used to route every message through three giant, stacked decision-trees — a message's security check depended on which tree it was written in, invisibly. Those three trees are now gone, replaced by one clear table, message-routes.js, where every message's rules sit right next to its name instead of being implied by position (in simple terms: made transparent what was in the head of Mr Hill when he coded this module).
 
