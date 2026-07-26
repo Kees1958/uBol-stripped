@@ -26,7 +26,8 @@ Watch live which external services a website contacts and block them with one cl
 
 
 3 Privacy Inspector to be used on-demand for websites you often visit but never log in to
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d716b99a-68ee-400c-a812-ebbc378b5349" />
+<img width="1029" height="833" alt="image" src="https://github.com/user-attachments/assets/edd8dc20-be45-460b-b7b0-c5d27e84f024" />
+
 
 
 
