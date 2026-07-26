@@ -1,61 +1,64 @@
-uBol-stripped — Smart ad & tracker blocker
-uBol-stripped blocks ads, trackers and privacy threats while you browse — without slowing your browser down. It works silently in the background the moment you install it. No account, no settings, no hassle.
+UBOL-STRIPPED SMART AND LEAN ADVERTISING & TRACKERS BLOCKER
+
+uBol-stripped blocks ads, trackers, and privacy threats while you browse — without slowing your browser down. It works silently in the background from the moment you install it. It offers the AdGuard like functionality with uBO-lite efficiency AND has some unique features like the Privacy Inspector and the Create Custom DNR rules monitors. 
 
 Chrome webstore: https://chromewebstore.google.com/detail/ubol-stripped/femdnbckdgobaelpmbbajpidneljkjaa?pli=1
 
 <img width="295" height="399" alt="image" src="https://github.com/user-attachments/assets/b87cfbe4-beb7-4714-89b3-2c7de1dddfa3" />
   
 
-HOW UBOL-STRIPPED COMPARES TO UBO-LITE
+IMPORT ABP-RULES
+Based on AdGuard's user rules panel. You can paste your own ABP filter rules into it (up to 5,000 rules). It also processes all uBO-lite and all AdGuard scritplet's used in the AG Base filter 
 
-uBO Lite ships with more filter lists enabled by default — EasyList, EasyPrivacy, Peter Lowe and others — which gives broader coverage but can block cookie consent flows that prevent login on some sites. uBol-stripped uses only three well curated set (Kees1958, AdGuard Base, AdGuard tracking parameters) and only precesses rules from extended EU-zone and 5 Eyes Countries (and it only offers to add additional EU-langauge filters). That is why it is called ¨stripped". On the plus site uBol-stripped has gained some AG-skills, it processes all scriptlets present in the AG base filter. 
-
-
-
-FOR USERS WHO WANT MORE CONTROL (OR LIKE THE HIGH-TECH OF UBO-LITE & THE HIGH TOUCH OF AG-MV3)
-
-1. Create custom cosmetic rules (uBO-lite element picker)
-
-Draw a box around any annoying element on a page to permanently hide it
-<img width="1197" height="582" alt="image" src="https://github.com/user-attachments/assets/369ed757-c5d4-4beb-8f95-5adc786c937a" />
-
- 
-2. Create custom DNR rules
-Watch live which external services a website contacts and block them with one click
-<img width="1488" height="650" alt="image" src="https://github.com/user-attachments/assets/d6a6585c-4390-44e1-a63b-c0f2bf28c55a" />
-
-
-3 Privacy Inspector to be used on-demand for websites you often visit but never log in to
-<img width="1029" height="833" alt="image" src="https://github.com/user-attachments/assets/edd8dc20-be45-460b-b7b0-c5d27e84f024" />
-
-
-
-
-4. Import ABP-rules in one place
-Paste your own ABP/uBlock filter rules
 <img width="882" height="676" alt="image" src="https://github.com/user-attachments/assets/7d75d5eb-32dd-415d-94c5-dc12d0d01c2c" />
-
- 
-
-5 Enable advanced Security & Privacy options
-<img width="869" height="897" alt="image" src="https://github.com/user-attachments/assets/96b096d0-374f-4699-b208-06efde2a3fef" />
+.
 
 
-_
+PRIVACY INSPECTOR
+Inspired by the work of the JShelter project. Protect yourself against fingerprinting, see what tracking techniques are used in a website and simply block them by selecting that fingerprinting mechanism (or choose block all).
+
+<img width="1029" height="833" alt="image" src="https://github.com/user-attachments/assets/edd8dc20-be45-460b-b7b0-c5d27e84f024" />
+.
+
+
+CREATE CUSTOM COSMETIC RULES
+This is uBO's element picker (only a popup is added to explain how it works). Draw a box around any annoying element on a page to permanently hide it. 
+
+<img width="1197" height="582" alt="image" src="https://github.com/user-attachments/assets/369ed757-c5d4-4beb-8f95-5adc786c937a" />
+.
+
+
+CREATE CUSTOM DNR RULES
+A new and user-friendly DNR rule "picker" feature, whose user interface is inspired on the NoScript project. Watch live which external services a website contacts, and block them with one click.
+
+<img width="1488" height="650" alt="image" src="https://github.com/user-attachments/assets/d6a6585c-4390-44e1-a63b-c0f2bf28c55a" />
+.
+
+
+FILTER (BLOCK) LISTS
+By default uBol-stripped uses three well curated filter lists: Kees1958 most used EU-US, AdGuard Base filter and AdGuard parameter protection. Only rules with country code (TLD) existing in 5Eyes countries and extended EU-zone are used (others are silently dropped as well as generic cosmetic rules for performance reasons). Rules for websites not in Chrome's top 1 million used websites are also silently dropped. Optionally you can enable the AdGuard anti-adblock list. Language filters of AG and EL from (only) EU-countries are enabled based on your browser language setting automatically (users can undo that when they want).
+
+<img width="877" height="729" alt="image" src="https://github.com/user-attachments/assets/5f2fadb9-824f-4240-b753-bd4736b3f0d3" />
+.
+
+
+ALLOW LIST 
+Based on AdGuard's allowlist. Easily copy and paste domains into the allow list to disable filtering on that domain (uBO-lite also has a filtering modes panel, but that is hidden behind the developer's option). 
+
+<img width="891" height="334" alt="image" src="https://github.com/user-attachments/assets/588131d8-8cc1-4f9e-bd39-0591b1421e94" />
+.
+
+
+PRIVACY & SECURITY 
+Enable additional Security & Privacy protections with a very low  website breakage risk. These options provide real world protection (not like the malware lists of uBO-Lite and AG Mv3 which are  refreshed only every 12 hours due to Mv3 restrictions, making them near useless). Better use a DNS with malware protection and enable safe browsing.
+.
+<img width="881" height="883" alt="image" src="https://github.com/user-attachments/assets/56ab3937-92ef-4359-a340-5be1eddf6739" />
 
 
 
+WHY NAME IT UBOL-STRIPPED?
+UBO-lite has strong bones and started as a permission less extension (AdGuard requires user script permission to use scriptlet's in the user rules). It shows what an extraordinary programmer mr Hill is. But it also has some less well coded parts, which were (hastily) added to keep up with AdGuard Mv3. So I stripped uBO-lite's AG-like functionality and used (the stronger and better designed) AG functions instead. I also looked at other extensions (JShelter for the Privacy Inspector detections and NoScript for the DNR rules monitor user interface). 
 
-_
-
-
-PRIVACY FIRST
-uBol-stripped contains no analytics, no telemetry and no ads. It never sends any data about your browsing to anyone. Filter lists are compiled and bundled inside the extension — no external servers are contacted except to check one optional list of suspicious hosting domains when you enable that feature.
-
-
-WHAT IS CHANGED?
-
-In layman's terms we (Claude AI and me) used the strong bones of uBO-lite and stripped it (removed less well programmed features to keep up with AdGuard Mv3). Next we added some open source AdGuard skills (it is open source so why not use what is available in stead of competing as a one man band with a team of developers). Next I added some features which in my opinion were missing in uBO-lite (see pictures above). 
 
 
 NEW CODE IS DEVELOPED AND EXISTING CODE IS REFACTORED (WHEN POSSIBLE) USING OLD STRUCTURED PROGRAMMING PRINCIPLES (nerd alert): 
@@ -72,9 +75,6 @@ The service worker startup sequence follows the same pattern: it tracks whether 
 
 4. MAINTAINABILITY AND BOUNDARY GUARDS
 Every capacity limit — the maximum number of custom DNR rules, the maximum number of cosmetic rules, the ID ranges for each rule type — is defined in a single file (dnr-budgets.js) and imported everywhere else. Changing a limit means editing one number in one place. Every module that manages a resource also owns the cleanup of that resource. Timers live inside the state vector they belong to, not scattered across the module. Every future scaling limitation is marked with a comment explaining what the ceiling is and what a future developer would need to change to raise it.
-_
-
-
 _
 
 
