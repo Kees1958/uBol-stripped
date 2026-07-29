@@ -30,7 +30,7 @@ Enable additional Security & Privacy protections with very low website-breakage 
 Chrome webstore: https://chromewebstore.google.com/detail/ubol-stripped/femdnbckdgobaelpmbbajpidneljkjaa?pli=1
 
 
-DETAILED EXPLANATION
+VISUALS
 
 IMPORT ABP RULES (is similar to AdGuard's Mv3 user rules)
 <img width="872" height="743" alt="image" src="https://github.com/user-attachments/assets/9384cffd-36d8-4fa7-bcaa-53a12e152cef" />
