@@ -1,4 +1,4 @@
-# UBOL-STRIPPED — SMART AND LEAN ADVERTISING & TRACKERS BLOCKER V7
+# UBOL-STRIPPED — SMART AND LEAN ADVERTISING & TRACKERS BLOCKER (version 7)
 
 
 uBol-stripped blocks ads, trackers, and privacy threats while you browse — without slowing your browser down. It works silently in the background from the moment you install it. It offers AdGuard-like functionality with uBO-lite efficiency AND has some unique features like the Privacy Inspector and DDG Tracker Radar.
