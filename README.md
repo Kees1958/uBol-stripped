@@ -43,8 +43,8 @@ COSMETIC ELEMENT PICKER (is similar to uBO-lite's element picker)
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/b5fe08c2-9ac5-4367-bdb5-5399146eb633" />
 
 
-DDG TRACKER RADAR (based on DuckDuckGo tracker database)
-<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/2379852c-6109-4d56-a9b3-3e628abdcc09" />
+Dynamic DNR filtering (inspired by uBO Mv2 dynamic filtering, based on DuckDuckGo tracker database)
+<img width="921" height="653" alt="image" src="https://github.com/user-attachments/assets/1c7b2b65-5a44-4fae-9dee-58b1b31dc619" />
 
 
 PRIVACY INSPECTOR (inspired on JShelter fingerprint protection)
@@ -52,11 +52,12 @@ PRIVACY INSPECTOR (inspired on JShelter fingerprint protection)
 
 
 MANAGE CUSTOM RULES (central place to manage/delete your custom rules)
-<img width="898" height="766" alt="image" src="https://github.com/user-attachments/assets/b2f7e26d-1483-4f44-83e6-ac84e886b734" />
+<img width="926" height="716" alt="image" src="https://github.com/user-attachments/assets/d630747b-87ff-475f-9304-c36437e3d774" />
 
 
 FILTER (BLOCK) LISTS (optionally add anti-adblock and an EU-langauge filter)
-<img width="909" height="749" alt="image" src="https://github.com/user-attachments/assets/bffe1433-6771-4e63-91c6-8de1f8523de1" />
+<img width="888" height="797" alt="image" src="https://github.com/user-attachments/assets/97f9b62c-4a7b-4260-a15d-baa08d8eef49" />
+
 
 
 ALLOW (WHITE) LIST (is simular to AdGuard's Mv3 allow list)
@@ -64,7 +65,8 @@ ALLOW (WHITE) LIST (is simular to AdGuard's Mv3 allow list)
 
 
 SECURITY & PRIVACY (extra protection for advanced users)
-<img width="857" height="776" alt="image" src="https://github.com/user-attachments/assets/48c38696-fbad-47b3-869f-8048a1235724" />
+<img width="878" height="742" alt="image" src="https://github.com/user-attachments/assets/a333b0f3-1ed3-4adb-b81e-b2302c9687c5" />
+
 
 
 
