@@ -1,7 +1,7 @@
-# UBOL-STRIPPED — SMART AND LEAN ADVERTISING & TRACKERS BLOCKER (version 7)
+# UBOL-STRIPPED — SMART AND LEAN ADVERTISING & TRACKERS BLOCKER WITH DYNAMIC DNR FILTERING (version 7)
 
 
-uBol-stripped blocks ads, trackers, and privacy threats while you browse — without slowing your browser down. It works silently in the background from the moment you install it. It offers AdGuard-like functionality with uBO-lite efficiency AND has some unique features like the Privacy Inspector and DDG Tracker Radar.
+uBol-stripped blocks ads, trackers, and privacy threats while you browse — without slowing your browser down. It works silently in the background from the moment you install it. It offers AdGuard-like functionality with uBO-lite efficiency AND has some unique features like the Dynamic DNR filter and Privacy Inspector.
 
 IMPORT ABP RULES
 Based on AdGuard's user rules panel. You can paste your own ABP filter rules into it (up to 5,000 rules). It also processes all uBO-lite and all AdGuard scriptlets used in the AG Base filter.
@@ -9,8 +9,10 @@ Based on AdGuard's user rules panel. You can paste your own ABP filter rules int
 COSMETIC ELEMENT PICKER
 This is uBO's element picker (only a popup is added to explain how it works). Draw a box around any annoying element on a page to permanently hide it.
 
-DDG TRACKER RADAR
-A new, easy to use DNR rule creator (user interface inspired by NoScript): watch live which external services a website contacts. The DuckDuckGo radar tracker data base is used to identify trackers, pause and select which DNR resource to block (and repeat when necessary). 
+DYNAMIC DNR FILTER
+A new, easy to use DNR rule creator (user interface inspired by uBO Mv2 dynamic filtering) for all third-party or only 3P-code (scripts, frames, websockets) per domain. It has some features better than
+the original: indication of critical resource (better not block it) and 'known in the DuckDuckGo tracker radar database' (data base provided by DDG). This helps you to decide whether to strip the website
+you are currently browsing further from unnecessary third-party domains. 
 
 PRIVACY INSPECTOR
 Inspired by the work of the JShelter project. Protect yourself against fingerprinting, see what tracking techniques are used on a website, and simply block them by selecting that fingerprinting mechanism (or choose Block All). Each signal now also shows a live breakage-risk indicator, with a color indicator so you can see at a glance how likely a given protection is to break the site before you apply it.
