@@ -20,7 +20,6 @@ Inspired by the work of the JShelter project. Protect yourself against fingerpri
 MANAGE CUSTOM RULES
 One place to manager your custom cosmetic, DNR and scriptlets created with above features.
 
-
 FILTER (BLOCK) LISTS
 By default uBol-stripped uses three well-curated filter lists: Kees1958 (most used, EU-US), AdGuard Base filter, and AdGuard parameter protection. Only rules with a country code (TLD) belonging to Five Eyes countries and the extended EU-zone are used (others are silently dropped, as well as generic cosmetic rules, for performance reasons). Rules for websites not in Chrome's top 1 million used websites are also silently dropped. Optionally you can enable the AdGuard anti-adblock list. Language filters from AG and EasyList for EU countries are enabled automatically based on your browser's language setting (you can turn this off if you'd like).
 
@@ -52,12 +51,11 @@ PRIVACY INSPECTOR (inspired on JShelter fingerprint protection)
 
 
 MANAGE CUSTOM RULES (central place to manage/delete your custom rules)
-<img width="1280" height="800" alt="Manage custom rules" src="https://github.com/user-attachments/assets/375b0b2f-26a2-4d1d-a7a5-a6aee793f6ed" />
+<img width="890" height="749" alt="image" src="https://github.com/user-attachments/assets/00187258-0d57-4727-b2eb-31a635ceb03e" />
 
 
 FILTER (BLOCK) LISTS (optionally add anti-adblock and an EU-langauge filter)
 <img width="888" height="797" alt="image" src="https://github.com/user-attachments/assets/97f9b62c-4a7b-4260-a15d-baa08d8eef49" />
-
 
 
 ALLOW (WHITE) LIST (is simular to AdGuard's Mv3 allow list)
