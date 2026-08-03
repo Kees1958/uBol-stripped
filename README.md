@@ -44,7 +44,8 @@ COSMETIC ELEMENT PICKER (is similar to uBO-lite's element picker)
 
 
 Dynamic DNR filtering (inspired by uBO Mv2 dynamic filtering, based on DuckDuckGo tracker database)
-<img width="1280" height="800" alt="Dynamic DNR filtering" src="https://github.com/user-attachments/assets/6d9e95c0-c182-4669-b36f-4a0c4056d600" />
+<img width="1280" height="800" alt="Dynamic DNR filtering" src="https://github.com/user-attachments/assets/200915ad-8fec-4ed1-9fda-97feb030e39b" />
+
 
 
 PRIVACY INSPECTOR (inspired on JShelter fingerprint protection)
