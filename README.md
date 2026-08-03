@@ -47,13 +47,12 @@ Dynamic DNR filtering (inspired by uBO Mv2 dynamic filtering, based on DuckDuckG
 <img width="1280" height="800" alt="Dynamic DNR filtering" src="https://github.com/user-attachments/assets/200915ad-8fec-4ed1-9fda-97feb030e39b" />
 
 
-
 PRIVACY INSPECTOR (inspired on JShelter fingerprint protection)
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/4bd5adcc-a73b-44d8-8d07-13a4de5cf3d6" />
 
 
 MANAGE CUSTOM RULES (central place to manage/delete your custom rules)
-<img width="926" height="716" alt="image" src="https://github.com/user-attachments/assets/d630747b-87ff-475f-9304-c36437e3d774" />
+<img width="1280" height="800" alt="Manage custom rules" src="https://github.com/user-attachments/assets/375b0b2f-26a2-4d1d-a7a5-a6aee793f6ed" />
 
 
 FILTER (BLOCK) LISTS (optionally add anti-adblock and an EU-langauge filter)
