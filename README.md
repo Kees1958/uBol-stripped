@@ -43,7 +43,7 @@ COSMETIC ELEMENT PICKER (is similar to uBO-lite's element picker)
 
 
 Dynamic DNR filtering (inspired by uBO Mv2 dynamic filtering, based on DuckDuckGo tracker database)
-<img width="1280" height="800" alt="Dynamic DNR filtering" src="https://github.com/user-attachments/assets/200915ad-8fec-4ed1-9fda-97feb030e39b" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/c64d0367-57ea-4170-9ea3-8ce32a45d947" />
 
 
 PRIVACY INSPECTOR (inspired on JShelter fingerprint protection)
@@ -51,7 +51,7 @@ PRIVACY INSPECTOR (inspired on JShelter fingerprint protection)
 
 
 MANAGE CUSTOM RULES (central place to manage/delete your custom rules)
-<img width="890" height="749" alt="image" src="https://github.com/user-attachments/assets/00187258-0d57-4727-b2eb-31a635ceb03e" />
+<img width="898" height="766" alt="image" src="https://github.com/user-attachments/assets/a82c1e94-2f66-4294-b039-0a0efa0f03bc" />
 
 
 FILTER (BLOCK) LISTS (optionally add anti-adblock and an EU-langauge filter)
