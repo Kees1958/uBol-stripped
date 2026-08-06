@@ -55,7 +55,7 @@ MANAGE CUSTOM RULES (central place to manage/delete your custom rules)
 
 
 FILTER (BLOCK) LISTS (optionally add anti-adblock and an EU-langauge filter)
-<img width="888" height="797" alt="image" src="https://github.com/user-attachments/assets/97f9b62c-4a7b-4260-a15d-baa08d8eef49" />
+<img width="889" height="783" alt="image" src="https://github.com/user-attachments/assets/11674ff0-1e2f-433e-b088-3a0e650ef42a" />
 
 
 ALLOW (WHITE) LIST (is simular to AdGuard's Mv3 allow list)
