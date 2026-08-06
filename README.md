@@ -21,7 +21,7 @@ MANAGE CUSTOM RULES
 One place to manager your custom cosmetic, DNR and scriptlets created with above features.
 
 FILTER (BLOCK) LISTS
-By default uBol-stripped uses three well-curated filter lists: Kees1958 (most used, EU-US), AdGuard Base filter, and AdGuard parameter protection. Only rules with a country code (TLD) belonging to Five Eyes countries and the extended EU-zone are used (others are silently dropped, as well as generic cosmetic rules, for performance reasons). Rules for websites not in Chrome's top 1 million used websites are also silently dropped. Optionally you can enable the AdGuard anti-adblock list. Language filters from AG and EasyList for EU countries are enabled automatically based on your browser's language setting (you can turn this off if you'd like).
+By default uBol-stripped uses three well-curated filter lists: AdGuard Base filter and my own Kees1958 most used, EU-US advertising & tracking networks and remove tracking parameters. Only rules with a country code (TLD) belonging to Five Eyes countries and the extended EU-zone are used (others are silently dropped, as well as generic cosmetic rules, for performance reasons). Rules for websites not in Chrome's top 1 million used websites are also silently dropped. 
 
 ALLOW  (WHITE) LIST
 Based on AdGuard's allowlist. Easily copy and paste domains into the allow list to disable filtering on that domain (uBO-lite also has a filtering-modes panel, but that's hidden behind the developer's option).
