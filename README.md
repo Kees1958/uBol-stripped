@@ -56,7 +56,7 @@ PRIVACY INSPECTOR (inspired on JShelter fingerprint protection)
 
 
 MANAGE CUSTOM RULES (central place to manage/delete your custom rules)
-<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/3bd87aac-1e43-4ef3-8b41-3288d78f46ee" />
+<img width="914" height="773" alt="image" src="https://github.com/user-attachments/assets/04a47801-ee3e-4506-9872-ec121f0d1662" />
 
 
 FILTER (BLOCK) LISTS (optionally add anti-adblock and an EU-langauge filter)
