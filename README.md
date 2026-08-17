@@ -68,7 +68,8 @@ ALLOW (WHITE) LIST (is simular to AdGuard's Mv3 allow list)
 
 
 SECURITY & PRIVACY (extra protection for advanced users)
-<img width="878" height="742" alt="image" src="https://github.com/user-attachments/assets/a333b0f3-1ed3-4adb-b81e-b2302c9687c5" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/9d2bfca8-3e53-4e25-873e-006f4feeb6c8" />
+
 
 
 
