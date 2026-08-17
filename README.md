@@ -42,6 +42,7 @@ IMPORT ABP RULES (is similar to AdGuard's Mv3 user rules)
 COSMETIC ELEMENT PICKER (is similar to uBO-lite's element picker)
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/b5fe08c2-9ac5-4367-bdb5-5399146eb633" />
 
+
 COOKIE-CLICKER (inspired by consent-o-matic only leaving the choice to the user)
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/9e8f31fb-8f38-4c0f-a285-87b93a626c1a" />
 
@@ -55,7 +56,7 @@ PRIVACY INSPECTOR (inspired on JShelter fingerprint protection)
 
 
 MANAGE CUSTOM RULES (central place to manage/delete your custom rules)
-<img width="914" height="778" alt="image" src="https://github.com/user-attachments/assets/08b11e7b-4fd4-4eca-8435-076b2677c18a" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/3bd87aac-1e43-4ef3-8b41-3288d78f46ee" />
 
 
 FILTER (BLOCK) LISTS (optionally add anti-adblock and an EU-langauge filter)
