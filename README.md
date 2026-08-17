@@ -10,7 +10,7 @@ COSMETIC ELEMENT PICKER
 This is uBO's element picker (only a popup is added to explain how it works). Draw a box around any annoying element on a page to permanently hide it.
 
 COOKIE CONSENT CLICKER
-Automate your cookie consent. Simply launch cookie-clicker and click on accept or decline button and save the rule. Next time you open the website the cookie handling will be automated. Simple as that.
+Automate your cookie consent on the websites you visit often. Simply launch the Cookie-clicker and click on the button (accept or decline cookies) and a popup appears asking you whether you want to save this rule for this website. Next time you open the website the cookie handling will be automated
 
 DYNAMIC DNR FILTER
 A new, easy to use DNR rule creator (user interface inspired by uBO Mv2 dynamic filtering) for all third-party or only 3P-code (scripts, frames, websockets) per domain. It has some features better than the original: indication whether the third-party domain is in the DuckDuckGo tracker radar database' (data base provided by DDG). A color shows whether it has very low website breakage risk (green), low to medium (yellow) and high risk when this tracker is also a critical resource (red). When you block a 3P-domain it is only for the website you were browsing when you launched Dynamic DNR Filter.
@@ -41,6 +41,9 @@ IMPORT ABP RULES (is similar to AdGuard's Mv3 user rules)
 
 COSMETIC ELEMENT PICKER (is similar to uBO-lite's element picker)
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/b5fe08c2-9ac5-4367-bdb5-5399146eb633" />
+
+COOKIE-CLICKER (inspired by consent-o-matic only leaving the choice to the user)
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/9e8f31fb-8f38-4c0f-a285-87b93a626c1a" />
 
 
 Dynamic DNR filtering (inspired by uBO Mv2 dynamic filtering, based on DuckDuckGo tracker database)
