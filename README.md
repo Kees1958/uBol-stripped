@@ -51,7 +51,7 @@ Dynamic DNR filtering (inspired by uBO Mv2 dynamic filtering, based on DuckDuckG
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/c64d0367-57ea-4170-9ea3-8ce32a45d947" />
 
 
-PRIVACY INSPECTOR (inspired on JShelter fingerprint protection)
+PRIVACY INSPECTOR (protections inspired on JShelter project, user interface on Noscript Mv3)
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/4bd5adcc-a73b-44d8-8d07-13a4de5cf3d6" />
 
 
