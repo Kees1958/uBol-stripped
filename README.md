@@ -44,7 +44,7 @@ COSMETIC ELEMENT PICKER (is similar to uBO-lite's element picker)
 
 
 COOKIE-CLICKER (inspired by consent-o-matic only leaving the choice to the user)
-<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/0b508d87-9202-428d-a66f-916b685eb552" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/de54f73a-5ae6-4a30-9248-35622d5e5b44" />
 
 
 Dynamic DNR filtering (inspired by uBO Mv2 dynamic filtering, based on DuckDuckGo tracker database)
