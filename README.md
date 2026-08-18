@@ -40,7 +40,7 @@ IMPORT ABP RULES (is similar to AdGuard's Mv3 user rules)
 
 
 COSMETIC ELEMENT PICKER (is similar to uBO-lite's element picker)
-<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/b5fe08c2-9ac5-4367-bdb5-5399146eb633" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/959ab327-b3c1-49ff-b0fa-30e9481d6d51" />
 
 
 COOKIE-CLICKER (inspired by consent-o-matic only leaving the choice to the user)
