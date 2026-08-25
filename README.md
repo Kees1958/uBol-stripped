@@ -1,7 +1,10 @@
-# UBOL-STRIPPED — SMART AND LEAN ADVERTISING & TRACKERS BLOCKER WITH DYNAMIC DNR FILTERING (version 8.1)
+# UBOL-STRIPPED — SMART AND LEAN ADVERTISING & TRACKERS BLOCKER WITH DYNAMIC DNR FILTERING (version 8.5)
 
 
 uBol-stripped blocks ads, trackers, and privacy threats while you browse — without slowing your browser down. It works silently in the background from the moment you install it. It offers AdGuard-like functionality with uBO-lite efficiency AND has some unique features like the Dynamic DNR filter and Privacy Inspector.
+
+WORRY-FREE SAFE SURFING
+Choose how long you want to enable the power tools in balanced settings for seamless and safe random surfing 
 
 IMPORT ABP RULES
 Based on AdGuard's user rules panel. You can paste your own ABP filter rules into it (up to 5,000 rules). It also processes all uBO-lite and all AdGuard scriptlets used in the AG Base filter.
@@ -34,6 +37,9 @@ Chrome webstore: https://chromewebstore.google.com/detail/ubol-stripped/femdnbck
 
 
 VISUALS
+WORRY-FREE SAFE SURFING
+<img width="465" height="420" alt="image" src="https://github.com/user-attachments/assets/f2c08643-21f2-4e86-91bb-9433f8c8c6f9" />
+
 
 IMPORT ABP RULES (is similar to AdGuard's Mv3 user rules)
 <img width="872" height="743" alt="image" src="https://github.com/user-attachments/assets/9384cffd-36d8-4fa7-bcaa-53a12e152cef" />
@@ -60,7 +66,7 @@ MANAGE CUSTOM RULES (central place to manage/delete your custom rules)
 
 
 FILTER (BLOCK) LISTS (optionally add anti-adblock and an EU-langauge filter)
-<img width="889" height="783" alt="image" src="https://github.com/user-attachments/assets/11674ff0-1e2f-433e-b088-3a0e650ef42a" />
+<img width="869" height="666" alt="image" src="https://github.com/user-attachments/assets/a0e2131b-9fc2-47e4-898f-f75a8a7d5617" />
 
 
 ALLOW (WHITE) LIST (is simular to AdGuard's Mv3 allow list)
