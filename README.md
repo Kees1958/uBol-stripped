@@ -48,6 +48,7 @@ Chrome webstore: https://chromewebstore.google.com/detail/ubol-stripped/femdnbck
 
 VISUALS
 WORRY-FREE SAFE SURFING
+
 <img width="465" height="420" alt="image" src="https://github.com/user-attachments/assets/f2c08643-21f2-4e86-91bb-9433f8c8c6f9" />
 
 
