@@ -4,33 +4,43 @@
 uBol-stripped blocks ads, trackers, and privacy threats while you browse — without slowing your browser down. It works silently in the background from the moment you install it. It offers AdGuard-like functionality with uBO-lite efficiency AND has some unique features like the Dynamic DNR filter and Privacy Inspector.
 
 WORRY-FREE SAFE SURFING
+
 Choose how long you want to enable the power tools in balanced settings for seamless and safe random surfing 
 
 IMPORT ABP RULES
+
 Based on AdGuard's user rules panel. You can paste your own ABP filter rules into it (up to 5,000 rules). It also processes all uBO-lite and all AdGuard scriptlets used in the AG Base filter.
 
 COSMETIC ELEMENT PICKER
+
 This is uBO's element picker (only a popup is added to explain how it works). Draw a box around any annoying element on a page to permanently hide it.
 
 COOKIE CONSENT CLICKER
+
 Automate your cookie consent on the websites you visit often. Simply launch the Cookie-clicker and click on the button (accept or decline cookies) and a popup appears asking you whether you want to save this rule for this website. Next time you open the website the cookie handling will be automated. For casual surfing you can temporarily use the never consent option (for 10, 30 or 60 minutes).
 
 DYNAMIC DNR FILTER
+
 A new, easy to use DNR rule creator (user interface inspired by uBO Mv2 dynamic filtering) for all third-party or only 3P-code (scripts, frames, websockets) per domain. It has some features better than the original: indication whether the third-party domain is in the DuckDuckGo tracker radar database' (data base provided by DDG). A color shows whether it has very low website breakage risk (green), low to medium (yellow) and high risk when this tracker is also a critical resource (red). When you block a 3P-domain it is only for the website you were browsing when you launched Dynamic DNR Filter.
 
 PRIVACY INSPECTOR
+
 Inspired by the work of the JShelter project. Protect yourself against fingerprinting, see what tracking techniques are used on a website, and simply block them by selecting that fingerprinting mechanism (or choose Block All). Each signal now also shows a live breakage-risk indicator, with a color indicator so you can see at a glance how likely a given protection is to break the site before you apply it.
 
 MANAGE CUSTOM RULES
+
 One place to manager your custom cosmetic, DNR and scriptlets created with above features.
 
 FILTER (BLOCK) LISTS
+
 By default uBol-stripped uses three well-curated filter lists: AdGuard Base filter and my own Kees1958 most used, EU-US advertising & tracking networks and remove tracking parameters. Only rules with a country code (TLD) belonging to Five Eyes countries and the extended EU-zone are used (others are silently dropped, as well as generic cosmetic rules, for performance reasons). Rules for websites not in Chrome's top 1 million used websites are also silently dropped. 
 
 ALLOW  (WHITE) LIST
+
 Based on AdGuard's allowlist. Easily copy and paste domains into the allow list to disable filtering on that domain (uBO-lite also has a filtering-modes panel, but that's hidden behind the developer's option).
 
 SECURITY & PRIVACY
+
 Enable additional Security & Privacy protections with very low website-breakage risk. These options provide real-world protection — unlike uBO-Lite's and AG MV3's malware lists, which only refresh every 12 hours due to MV3 restrictions, making them near-useless. Better to use a DNS with malware protection and enable Safe Browsing alongside this.
 
 Chrome webstore: https://chromewebstore.google.com/detail/ubol-stripped/femdnbckdgobaelpmbbajpidneljkjaa?pli=1
