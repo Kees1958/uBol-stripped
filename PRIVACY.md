@@ -23,7 +23,7 @@ Cosmetic filters (rules that hide page elements or run a scriptlet you authored)
 
 When you toggle filtering on or off for a site from the extension's popup, the extension updates the set of active DNR rules for that domain. Nothing is sent anywhere.
 
-The "Dynamic DNR filtering" panel works the same way: while it's open, it lists the third-party connections the current tab makes and lets you block or allow specific ones, per site. That per-site list is the same kind of local, on-device state as the per-site filtering toggle above and is never transmitted anywhere.
+The "uBO dynamic filtering" panel works the same way: while it's open, it lists the third-party connections the current tab makes and lets you block or allow specific ones, per site. That per-site list is the same kind of local, on-device state as the per-site filtering toggle above — see Data Storage below — and is never transmitted anywhere.
 
 Third-Party Services
 uBlock Stripped does not use any third-party analytics, tracking, or advertising services. Filter lists are retrieved from GitHub. All other processing happens locally within your browser using Chrome's built-in extension APIs.
@@ -48,5 +48,5 @@ uBlock Stripped does not upload, transmit, or share:
 Changes to This Privacy Policy
 This Privacy Policy may be updated from time to time. Any changes will be reflected by updating the "Last Updated" date at the top of this document.
 
-Changes to This Privacy Policy
-This Privacy Policy may be updated from time to time. Any changes will be reflected by updating the "Last Updated" date at the top of this document.
+Third-Party Data Attribution
+This extension bundles a compacted subset of DuckDuckGo's Tracker Radar dataset (used only for the Privacy Inspector's own local, on-device display — never transmitted anywhere) and some cookie-consent-handling logic adapted from DuckDuckGo's autoconsent project. Full attribution and license terms for both are in THIRD_PARTY_LICENSES.md.
