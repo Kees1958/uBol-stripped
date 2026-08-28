@@ -70,6 +70,7 @@ MANAGE CUSTOM RULES (central place to manage/delete your custom rules)
 
 FILTER (BLOCK) LISTS (optionally add anti-adblock and an EU-langauge filter)
 <img width="863" height="977" alt="image" src="https://github.com/user-attachments/assets/d6af6025-8bb1-475c-bc73-e02ae618ca5d" />
+
 NOTE: Apply "Accept" for consent platforms that hide their decline option is a works in progress, expect improvements with future updates.
 
 ALLOW (WHITE) LIST (is simular to AdGuard's Mv3 allow list)
