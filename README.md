@@ -1,47 +1,40 @@
 # UBOL-STRIPPED — SMART AND LEAN ADVERTISING & TRACKERS BLOCKER WITH DYNAMIC DNR FILTERING (version 8.6)
 
+UBOL-STRIPPED — SMART AND LEAN ADVERTISING & TRACKERS BLOCKER
 
-uBol-stripped blocks ads, trackers, and privacy threats while you browse — without slowing your browser down. It works silently in the background from the moment you install it. It offers AdGuard-like functionality with uBO-lite efficiency AND has some unique features like the Dynamic DNR filter and Privacy Inspector.
+WARNING: THIS EXTENSION OFFERS EXTRA SECURITY & PRIVACY PROTECTION AND HAS THREE UNIQUE FEATURES (COOKIE CONSENT CLICKER, DYNAMIC DNR FILTER AND PRIVACY INSPECTOR), BUT IT ONLY USES FILTER LISTS FOR PEOPLE LIVING IN 5-EYES COUNTRIES OR EXTENDED EU-ZONE. DO NOT INSTALL WHEN YOU LIVE SOMEWHERE ELSE!
+
+uBol-stripped blocks ads, trackers, and privacy threats while you browse — without slowing your browser down. It works silently in the background from the moment you install it. It offers AdGuard-like functionality with uBO-lite efficiency AND has some unique features like Worry Free-Safe Surfing, Privacy Inspector, Dynamic DNR filtering and Cookie consent clicker. 
 
 WORRY-FREE SAFE SURFING
-
-One-tap protection boost for a chosen session (20/60/session) when browsing somewhere unfamiliar. Auto-dismisses cookie banners, adds extra tracking blocklists (39,000+ domains), and blocks third-party scripts/frames from unfamiliar regions.
-
+One-click protection boost for a chosen session (20/60 min/session) when doing random surfing. It tries to auto-dismisses cookie banners and adds extra blocklists and additional security.
+ 
 IMPORT ABP RULES
-
 Based on AdGuard's user rules panel. You can paste your own ABP filter rules into it (up to 5,000 rules). It also processes all uBO-lite and all AdGuard scriptlets used in the AG Base filter.
 
 COSMETIC ELEMENT PICKER
-
 This is uBO's element picker (only a popup is added to explain how it works). Draw a box around any annoying element on a page to permanently hide it.
 
 COOKIE CONSENT CLICKER
-
-Automate your cookie consent on the websites you visit often. Simply launch the Cookie-clicker and click on the button (accept or decline cookies) and a popup appears asking you whether you want to save this rule for this website. Next time you open the website the cookie handling will be automated. For casual surfing you can temporarily use the never consent option (for 10, 30 or 60 minutes).
+Automate your cookie consent on the websites you visit often. Simply launch the Cookie-clicker and click on the (accept) button and create a rule for it. Next time you open the website the cookie prompt will be clicked away. 
 
 DYNAMIC DNR FILTER
-
-A new, easy to use DNR rule creator (user interface inspired by uBO Mv2 dynamic filtering) for all third-party or only 3P-code (scripts, frames, websockets) per domain. It has some features better than the original: indication whether the third-party domain is in the DuckDuckGo tracker radar database' (data base provided by DDG). A color shows whether it has very low website breakage risk (green), low to medium (yellow) and high risk when this tracker is also a critical resource (red). When you block a 3P-domain it is only for the website you were browsing when you launched Dynamic DNR Filter.
+A new, easy to use DNR rule creator for all third-party content or only 3P-code (scripts, frames) per domain. With a switch you easily see what domains are allowed or blocked. The Dynamic DNR filter popup is inspired on uBO Mv2 matrix. 
 
 PRIVACY INSPECTOR
-
-Inspired by the work of the JShelter project. Protect yourself against fingerprinting, see what tracking techniques are used on a website, and simply block them by selecting that fingerprinting mechanism (or choose Block All). Each signal now also shows a live breakage-risk indicator, with a color indicator so you can see at a glance how likely a given protection is to break the site before you apply it.
+Inspired by the work of the JShelter project. Protect yourself against fingerprinting, see what tracking techniques are used on a website, and simply block them by selecting that fingerprinting mechanism (or choose Block All). .
 
 MANAGE CUSTOM RULES
-
-One place to manager your custom cosmetic, DNR and scriptlets created with above features.
+One place to manager your custom cosmetic, DNR and scriptlets created with above features. It has a smart filter to view all the rules for the domain you enter in the search fiels. 
 
 FILTER (BLOCK) LISTS
-
-By default uBol-stripped uses three well-curated filter lists: AdGuard Base filter and my own Kees1958 most used, EU-US advertising & tracking networks and remove tracking parameters. Only rules with a country code (TLD) belonging to Five Eyes countries and the extended EU-zone are used (others are silently dropped, as well as generic cosmetic rules, for performance reasons). Rules for websites not in Chrome's top 1 million used websites are also silently dropped. 
+By default it uses well curated blocklists. Anti-tracking from Disconnect, Ghostery and Kees1958 and adblocking from AdGuard base. It also has anti-adblock and anti-admiral list. Based on your browser's language setting the  country filters from AG and EasyList for EU countries are enabled automatically (you can add more or remove them also manually).
 
 ALLOW  (WHITE) LIST
-
 Based on AdGuard's allowlist. Easily copy and paste domains into the allow list to disable filtering on that domain (uBO-lite also has a filtering-modes panel, but that's hidden behind the developer's option).
 
 SECURITY & PRIVACY
-
-Enable additional Security & Privacy protections with very low website-breakage risk. These options provide real-world protection — unlike uBO-Lite's and AG MV3's malware lists, which only refresh every 12 hours due to MV3 restrictions, making them near-useless. Better to use a DNS with malware protection and enable Safe Browsing alongside this.
+Has an option to delete browser history at start (except passwords) and eight additional Security & Privacy protections with very low website-breakage risk. 
 
 Chrome webstore: https://chromewebstore.google.com/detail/ubol-stripped/femdnbckdgobaelpmbbajpidneljkjaa?pli=1
 
@@ -77,8 +70,8 @@ MANAGE CUSTOM RULES (central place to manage/delete your custom rules)
 
 
 FILTER (BLOCK) LISTS (optionally add anti-adblock and an EU-langauge filter)
-<img width="888" height="745" alt="image" src="https://github.com/user-attachments/assets/4e0ccb44-1ff0-4011-9cdb-15243028c41b" />
-
+<img width="863" height="977" alt="image" src="https://github.com/user-attachments/assets/d6af6025-8bb1-475c-bc73-e02ae618ca5d" />
+NOTE: Apply "Accept" for consent platforms that hide their decline option is a works in progress, expect improvements with future updates.
 
 ALLOW (WHITE) LIST (is simular to AdGuard's Mv3 allow list)
 <img width="930" height="477" alt="image" src="https://github.com/user-attachments/assets/b08616f5-d7da-4c6e-ae0c-48a7e2002392" />
