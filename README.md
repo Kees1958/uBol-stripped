@@ -6,7 +6,7 @@ WARNING: THIS EXTENSION OFFERS EXTRA SECURITY & PRIVACY PROTECTION AND HAS THREE
 uBol-stripped blocks ads, trackers, and privacy threats while you browse — without slowing your browser down. It works silently in the background from the moment you install it. It offers AdGuard-like functionality with uBO-lite efficiency AND has some unique features like Worry Free-Safe Surfing, Privacy Inspector, Dynamic DNR filtering and Cookie consent clicker. 
 
 WORRY-FREE SAFE SURFING
-One-click protection boost for a chosen session (20/60 min/session) when doing random surfing. It tries to auto-dismisses cookie banners and adds extra blocklists and additional security.
+One-click protection boost for a chosen session (20/60 min/session) when doing random surfing. It tries to auto-dismisses cookie banners, adds extra blocklists and additional security protections (which you can enable in the Filter block lists panel).
  
 IMPORT ABP RULES
 Based on AdGuard's user rules panel. You can paste your own ABP filter rules into it (up to 5,000 rules). It also processes all uBO-lite and all AdGuard scriptlets used in the AG Base filter.
@@ -69,7 +69,7 @@ MANAGE CUSTOM RULES (central place to manage/delete your custom rules)
 
 
 FILTER (BLOCK) LISTS (optionally add anti-adblock and an EU-langauge filter)
-<img width="881" height="931" alt="image" src="https://github.com/user-attachments/assets/7117dc21-8630-40f5-91b5-ba0d0b8d89f2" />
+<img width="879" height="967" alt="image" src="https://github.com/user-attachments/assets/e6d67bde-d963-46a8-ac21-d1648c5df454" />
 
 
 ALLOW (WHITE) LIST (is simular to AdGuard's Mv3 allow list)
