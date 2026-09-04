@@ -57,7 +57,7 @@ COOKIE-CLICKER (inspired by consent-o-matic only leaving the choice to the user)
 
 
 Dynamic DNR filtering (inspired by uBO Mv2 dynamic filtering, based on DuckDuckGo tracker database)
-<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/c64d0367-57ea-4170-9ea3-8ce32a45d947" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/cd980622-023e-4996-9e9a-559674a89cfc" />
 
 
 PRIVACY INSPECTOR (protections inspired on JShelter project, user interface on Noscript Mv3)
