@@ -27,7 +27,7 @@ MANAGE CUSTOM RULES
 One place to manager your custom cosmetic, DNR and scriptlets created with above features. It has a smart filter to view all the rules for the domain you enter in the search fiels. 
 
 FILTER (BLOCK) LISTS
-By default it uses well curated blocklists. Anti-tracking from Disconnect, Ghostery and Kees1958 and adblocking from AdGuard base. It also has anti-adblock and anti-admiral list. Based on your browser's language setting the  country filters from AG and EasyList for EU countries are enabled automatically (you can add more or remove them also manually).
+By default it uses well curated blocklists. Kees1958 and adblocking from AdGuard base. It also has anti-adblock and anti-admiral list. Based on your browser's language setting the  country filters from AG and EasyList for EU countries are enabled automatically (you can add more or remove them also manually).
 
 ALLOW  (WHITE) LIST
 Based on AdGuard's allowlist. Easily copy and paste domains into the allow list to disable filtering on that domain (uBO-lite also has a filtering-modes panel, but that's hidden behind the developer's option).
@@ -69,7 +69,7 @@ MANAGE CUSTOM RULES (central place to manage/delete your custom rules)
 
 
 FILTER (BLOCK) LISTS (optionally add anti-adblock and an EU-langauge filter)
-<img width="769" height="989" alt="image" src="https://github.com/user-attachments/assets/3751adac-1437-4f5e-85f7-0177fedbaba9" />
+<img width="903" height="1001" alt="image" src="https://github.com/user-attachments/assets/fed45487-13bd-4750-ad3c-f738c5c29bc7" />
 
 
 ALLOW (WHITE) LIST (is simular to AdGuard's Mv3 allow list)
