@@ -61,7 +61,7 @@ Dynamic DNR filtering (inspired by uBO Mv2 dynamic filtering, based on DuckDuckG
 
 
 PRIVACY INSPECTOR (protections inspired on JShelter project, user interface on Noscript Mv3)
-<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/4bd5adcc-a73b-44d8-8d07-13a4de5cf3d6" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/af9b45b8-11dd-48df-8383-e8f037bda064" />
 
 
 MANAGE CUSTOM RULES (central place to manage/delete your custom rules)
