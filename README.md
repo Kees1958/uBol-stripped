@@ -21,7 +21,7 @@ DYNAMIC DNR FILTER
 A new, easy to use DNR rule creator for all third-party content or only 3P-code (scripts, frames) per domain. With a switch you easily see what domains are allowed or blocked. The Dynamic DNR filter popup is inspired on uBO Mv2 matrix. 
 
 PRIVACY INSPECTOR
-Inspired by the work of the JShelter project. Protect yourself against fingerprinting, see what tracking techniques are used on a website, and simply block them by selecting that fingerprinting mechanism (or choose Block All). .
+Inspired by the work of the JShelter project. Protect yourself against fingerprinting, see what tracking techniques are used on a website, and simply block them by selecting that fingerprinting mechanism (or choose block level low-risk, medium or all).
 
 MANAGE CUSTOM RULES
 One place to manager your custom cosmetic, DNR and scriptlets created with above features. It has a smart filter to view all the rules for the domain you enter in the search fiels. 
