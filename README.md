@@ -1,4 +1,4 @@
-# UBOL-STRIPPED — SMART AND LEAN ADVERTISING & TRACKERS BLOCKER WITH DYNAMIC DNR FILTERING (coming version 9.3)
+# UBOL-STRIPPED — SMART AND LEAN ADVERTISING & TRACKERS BLOCKER WITH DYNAMIC DNR FILTERING (coming version 9.4)
 UBOL-STRIPPED — SMART AND LEAN ADVERTISING & TRACKERS BLOCKER
 
 WARNING: THIS EXTENSION OFFERS EXTRA SECURITY & PRIVACY PROTECTION AND HAS THREE UNIQUE FEATURES (COOKIE CONSENT CLICKER, DYNAMIC DNR FILTER AND PRIVACY INSPECTOR), BUT IT ONLY USES FILTER LISTS FOR PEOPLE LIVING IN 5-EYES COUNTRIES OR EXTENDED EU-ZONE. DO NOT INSTALL WHEN YOU LIVE SOMEWHERE ELSE!
@@ -45,39 +45,50 @@ WORRY-FREE SAFE SURFING
 
 
 IMPORT ABP RULES (is similar to AdGuard's Mv3 user rules)
+
 <img width="872" height="743" alt="image" src="https://github.com/user-attachments/assets/9384cffd-36d8-4fa7-bcaa-53a12e152cef" />
 
 
 COSMETIC ELEMENT PICKER (is similar to uBO-lite's element picker)
+
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/959ab327-b3c1-49ff-b0fa-30e9481d6d51" />
 
 
 COOKIE-CLICKER (inspired by consent-o-matic only leaving the choice to the user)
+
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/de54f73a-5ae6-4a30-9248-35622d5e5b44" />
 
 
 Dynamic DNR filtering (inspired by uBO Mv2 dynamic filtering, based on DuckDuckGo tracker database)
+
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/cd980622-023e-4996-9e9a-559674a89cfc" />
 
 
 PRIVACY INSPECTOR (protections inspired on JShelter project, user interface on Noscript Mv3)
+
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/af9b45b8-11dd-48df-8383-e8f037bda064" />
 
 
 MANAGE CUSTOM RULES (central place to manage/delete your custom rules)
+
 <img width="914" height="773" alt="image" src="https://github.com/user-attachments/assets/04a47801-ee3e-4506-9872-ec121f0d1662" />
 
 
 FILTER (BLOCK) LISTS (optionally add anti-adblock and an EU-langauge filter)
-<img width="903" height="1001" alt="image" src="https://github.com/user-attachments/assets/fed45487-13bd-4750-ad3c-f738c5c29bc7" />
+
+<img width="883" height="947" alt="image" src="https://github.com/user-attachments/assets/681e64c7-c970-44ef-be75-b0acd9458583" />
+
 
 
 ALLOW (WHITE) LIST (is simular to AdGuard's Mv3 allow list)
+
 <img width="930" height="477" alt="image" src="https://github.com/user-attachments/assets/b08616f5-d7da-4c6e-ae0c-48a7e2002392" />
 
 
 SECURITY & PRIVACY (extra protection for advanced users)
-<img width="910" height="785" alt="image" src="https://github.com/user-attachments/assets/7ff9cc26-538f-437a-950c-7ba9ee41a762" />
+
+<img width="789" height="608" alt="image" src="https://github.com/user-attachments/assets/fefc0f27-1f9c-4657-94ba-9f31c3c10612" />
+
 
 
 
