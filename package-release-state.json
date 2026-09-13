@@ -1,17 +1,17 @@
 {
   "extension": {
-    "hash": "75f7493d9369c903776750822c90e871cbb34d5dcc5a0d2e5de210f875a55b71",
-    "version": "9.4.8",
+    "hash": "9420b0e1fc3650b76cb1b4b91b2fd85e832f0073c8bbc1c6aa16a3e397ee1e76",
+    "version": "9.5.0",
     "files": 282
   },
   "tools": {
-    "hash": "23c76b475a0164a043c9dc6ee707f4c8fc85fefacff8587427d932d5c323be8e",
-    "version": "1.7.17",
-    "files": 46
+    "hash": "81b57611d8e933333ea21edcd9a4c8fbb8da7fbc783554f39d4c1e5f1fbc0194",
+    "version": "1.7.19",
+    "files": 47
   },
   "docs": {
-    "hash": "2df02e097e27eb3ccf19787b743e2b16cc71dff7588a548beebd1d26138cc6d1",
-    "version": "9.4.8",
-    "files": 9
+    "hash": "0e36b4c423764ddeadb563621bf7b681a03b9097d3053dd3a7741a3c316de5c8",
+    "version": "9.5.0",
+    "files": 10
   }
 }
