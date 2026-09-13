@@ -1,9 +1,11 @@
 # UBOL-STRIPPED — SMART AND LEAN ADVERTISING & TRACKERS BLOCKER WITH DYNAMIC DNR FILTERING 
 UBOL-STRIPPED — SMART AND LEAN ADVERTISING & TRACKERS BLOCKER
 
-WARNING: THIS EXTENSION OFFERS EXTRA SECURITY & PRIVACY PROTECTION AND HAS THREE UNIQUE FEATURES (COOKIE CONSENT CLICKER, DYNAMIC DNR FILTER AND PRIVACY INSPECTOR), BUT IT ONLY USES FILTER LISTS FOR PEOPLE LIVING IN 5-EYES COUNTRIES OR EXTENDED EU-ZONE. DO NOT INSTALL WHEN YOU LIVE SOMEWHERE ELSE!
+WARNING: THIS EXTENSION OFFERS EXTRA SECURITY & PRIVACY PROTECTION AND HAS SOME UNIQUE FEATURES (WORRY-FREE SAFE SURFING, COOKIE CONSENT CLICKER, DYNAMIC DNR FILTER AND PRIVACY INSPECTOR), DUE TO TECHNICAL REASONS I HAD TO LIMIT THE SCOPE OF THE FILTERS TO 5EYES COUNTRIES AND EXTENDED EU-ZONE.
 
-uBol-stripped blocks ads, trackers, and privacy threats while you browse — without slowing your browser down. It works silently in the background from the moment you install it. It offers AdGuard-like functionality with uBO-lite efficiency AND has some unique features like Worry Free-Safe Surfing, Privacy Inspector, Dynamic DNR filtering and Cookie consent clicker. 
+FOR PEOPLE LIVING OUTSIDE THIS REGION I HAVE DEVELOPED ADSHIELD EXTRA (WHICH CAN BE USED ALONGSIDE ANY ADBLOCKER TO USE THE ABOVE EXTRA POWER TOOLS): https://github.com/Kees1958/AdShield-Extra-Power-Tools
+
+uBol-stripped blocks ads, trackers, and privacy threats while you browse — without slowing your browser down. It works silently in the background from the moment you install it. It offers AdGuard-like functionality with uBO-lite efficiency AND has some unique features like the Worry-free Safe surfing, Cookie consent clicker, Privacy Inspector and Dynamic DNR filtering. 
 
 WORRY-FREE SAFE SURFING
 One-click protection boost for a chosen session (20/60 min/session) when doing random surfing. It tries to auto-dismisses cookie banners, adds extra blocklists and additional security protections (which you can enable in the Filter block lists panel).
@@ -27,12 +29,12 @@ MANAGE CUSTOM RULES
 One place to manager your custom cosmetic, DNR and scriptlets created with above features. It has a smart filter to view all the rules for the domain you enter in the search fiels. 
 
 FILTER (BLOCK) LISTS
-By default it uses well curated blocklists. Kees1958 and adblocking from AdGuard base. It also has anti-adblock and anti-admiral list. Based on your browser's language setting the  country filters from AG and EasyList for EU countries are enabled automatically (you can add more or remove them also manually).
+By default it uses well curated blocklists. Anti-tracking from Disconnect, Kees1958 and adblocking from AdGuard base. It also has anti-adblock and anti-admiral list.  Based on your browser's language setting the  country filters from AG and EasyList for EU countries are enabled automatically (you can add more or remove them also manually).
 
 ALLOW  (WHITE) LIST
 Based on AdGuard's allowlist. Easily copy and paste domains into the allow list to disable filtering on that domain (uBO-lite also has a filtering-modes panel, but that's hidden behind the developer's option).
 
-SECURITY & PRIVACY
+PRIVACY & SECURITY
 Has an option to delete browser history at start (except passwords) and eight additional Security & Privacy protections with very low website-breakage risk. 
 
 Chrome webstore: https://chromewebstore.google.com/detail/ubol-stripped/femdnbckdgobaelpmbbajpidneljkjaa?pli=1
