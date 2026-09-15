@@ -1,10 +1,6 @@
 # UBOL-STRIPPED — SMART AND LEAN ADVERTISING & TRACKERS BLOCKER WITH DYNAMIC DNR FILTERING 
 UBOL-STRIPPED — SMART AND LEAN ADVERTISING & TRACKERS BLOCKER
 
-WARNING: THIS EXTENSION OFFERS EXTRA SECURITY & PRIVACY PROTECTION AND HAS SOME UNIQUE FEATURES (WORRY-FREE SAFE SURFING, COOKIE CONSENT CLICKER, DYNAMIC DNR FILTER AND PRIVACY INSPECTOR), DUE TO TECHNICAL REASONS I HAD TO LIMIT THE SCOPE OF THE FILTERS TO 5EYES COUNTRIES AND EXTENDED EU-ZONE.
-
-FOR PEOPLE LIVING OUTSIDE THIS REGION I HAVE DEVELOPED ADSHIELD EXTRA (WHICH CAN BE USED ALONGSIDE ANY ADBLOCKER TO USE THE ABOVE EXTRA POWER TOOLS): https://github.com/Kees1958/AdShield-Extra-Power-Tools
-
 uBol-stripped blocks ads, trackers, and privacy threats while you browse — without slowing your browser down. It works silently in the background from the moment you install it. It offers AdGuard-like functionality with uBO-lite efficiency AND has some unique features like the Worry-free Safe surfing, Cookie consent clicker, Privacy Inspector and Dynamic DNR filtering. 
 
 WORRY-FREE SAFE SURFING
