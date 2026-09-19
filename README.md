@@ -78,10 +78,9 @@ FILTER (BLOCK) LISTS (optionally add anti-adblock and an EU-langauge filter)
 
 
 
-
 ALLOW (WHITE) LIST (is simular to AdGuard's Mv3 allow list)
 
-<img width="930" height="477" alt="image" src="https://github.com/user-attachments/assets/b08616f5-d7da-4c6e-ae0c-48a7e2002392" />
+<img width="930" height="477" alt="image" src="https://github.com/user-attachments/assets/84ff30ae-0e9b-434a-8f55-610d68217316" />
 
 
 PRIVACY & SECURITY (extra protection for advanced users)
