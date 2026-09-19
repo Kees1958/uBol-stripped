@@ -1,0 +1,17 @@
+{
+  "extension": {
+    "hash": "9117970289dd2b9e47cfdb22049b91c21e8dd22f8bef4d906b08e604b9473861",
+    "version": "9.6.4",
+    "files": 294
+  },
+  "tools": {
+    "hash": "936425dea797bc96353d267bace4f63154d57f7f4128b14a6bebdce531fcbd1c",
+    "version": "1.7.28",
+    "files": 52
+  },
+  "docs": {
+    "hash": "612f31959903459a951b32c09ca8430d60c6288995074e369a36a97a66612b2e",
+    "version": "9.6.4",
+    "files": 10
+  }
+}
