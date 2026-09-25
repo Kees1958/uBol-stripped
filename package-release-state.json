@@ -1,17 +1,35 @@
 {
   "extension": {
-    "hash": "e6b19d6f09bc221351d46fa33530ca5cef90ceb2af0492ea18264446a0531e55",
-    "version": "9.7.4",
-    "files": 298
+    "hash": "0e6466ad9c3b708645d72bb25de34b9544dfb472f7bb22a66d9b2875ed77cc1c",
+    "version": "9.7.6",
+    "files": 298,
+    "shippedPermissions": {
+      "permissions": [
+        "alarms",
+        "browsingData",
+        "contextMenus",
+        "declarativeNetRequest",
+        "offscreen",
+        "scripting",
+        "storage",
+        "webNavigation",
+        "webRequest"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "optional_permissions": [],
+      "optional_host_permissions": []
+    }
   },
   "tools": {
-    "hash": "399169fa40e1462eaaaacbce1c7c10599f5087e811b460c539f07645fb6b1dad",
-    "version": "1.7.34",
-    "files": 56
+    "hash": "6b0ade3451ff584a4ae8292e190a48555b0221e3acea1ee04a26541622b6b441",
+    "version": "1.7.36",
+    "files": 65
   },
   "docs": {
-    "hash": "72bb08b6d3ced5f9f318ae8401ebe8e7c88cddd7d2bd56b3b03a14f2e2e504cb",
-    "version": "9.7.4",
+    "hash": "8a57e95134565e485161036c4f7bd4bcff47efd5c36f00027cc1f2bd9f492ee7",
+    "version": "9.7.6",
     "files": 11
   }
 }
