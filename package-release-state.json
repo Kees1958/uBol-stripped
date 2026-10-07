@@ -1,8 +1,8 @@
 {
   "extension": {
-    "hash": "8447980113b1fe7c484deab23c41865591163f02fdfdfe58bd1532835d4a51c7",
-    "version": "10.0.4",
-    "files": 302,
+    "hash": "5673e26951f3f3dc156137792eaaab01fa4c19ff46df4398164186de933a11f1",
+    "version": "10.2.0",
+    "files": 307,
     "shippedPermissions": {
       "permissions": [
         "alarms",
@@ -23,13 +23,13 @@
     }
   },
   "tools": {
-    "hash": "87b996c31a08dd97d76021902ab0be6c942c8a88ec8c895ca33f5c92c4f63451",
-    "version": "2.0.4",
+    "hash": "3a93adcd594b79b8da2f709bafabb0c2c7b3dffcbbdbd6f3fa4118a20863c880",
+    "version": "2.0.8",
     "files": 94
   },
   "docs": {
-    "hash": "eb4746cd636b166e7d1d19a726693db16d049ca0ff28f85abe5fe617b427bb65",
-    "version": "10.0.4",
+    "hash": "ad8ff052bbe0c5e30e4856c4fa511368d494d21c950ccc1098856bb3305299d3",
+    "version": "10.2.0",
     "files": 11
   }
 }
