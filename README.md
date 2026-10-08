@@ -73,7 +73,7 @@ MANAGE CUSTOM RULES (central place to manage/delete your custom rules)
 
 FILTER (BLOCK) LISTS (enable or disable filter lists and add country specific filters)
 
-<img width="788" height="999" alt="image" src="https://github.com/user-attachments/assets/5b2279a5-b687-4716-a360-ae823001996d" />
+<img width="831" height="913" alt="image" src="https://github.com/user-attachments/assets/3578275d-bbe4-47a2-b763-f0bd6b1d489f" />
 
 
 ALLOW (WHITE) LIST (is simular to AdGuard's Mv3 allow list)
