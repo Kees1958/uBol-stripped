@@ -1,7 +1,6 @@
-# UBOL-STRIPPED — SMART AND LEAN ADVERTISING & TRACKERS BLOCKER WITH DYNAMIC DNR FILTERING 
-UBOL-STRIPPED — SMART AND LEAN ADVERTISING & TRACKERS BLOCKER
+# UBLOCK DYNAMIC — SMART AND LEAN ADVERTISING & TRACKERS BLOCKER WITH DYNAMIC DNR FILTERING 
 
-uBol-stripped blocks ads, trackers, and privacy threats while you browse — without slowing your browser down. It works silently in the background from the moment you install it. It offers AdGuard-like functionality with uBO-lite efficiency AND has some unique features like the Worry-free Safe surfing, Cookie consent clicker, Privacy Inspector and Dynamic DNR filtering. 
+uBlock Dynamic blocks ads, trackers, and privacy threats while you browse — without slowing your browser down. It works silently in the background from the moment you install it. It offers AdGuard-like functionality with uBO-lite efficiency AND has some unique features like the Worry-free Safe surfing, Cookie consent clicker, Privacy Inspector and Dynamic DNR filtering. 
 
 WORRY-FREE SAFE SURFING
 One-click protection boost for a chosen session (20/60 min/session) when doing random surfing. It tries to auto-dismisses cookie banners, adds extra blocklists and additional security protections (which you can enable in the Filter block lists panel).
