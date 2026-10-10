@@ -23,12 +23,12 @@
     }
   },
   "tools": {
-    "hash": "7e78af8582237fdb6a435e9ef1b3cc061c101837df00da9b364255125e62994d",
-    "version": "2.0.15",
-    "files": 102
+    "hash": "8de680d1cdf3f49844949c0063f69da9046f47cb48296da44b7634aba7498e0f",
+    "version": "2.0.16",
+    "files": 104
   },
   "docs": {
-    "hash": "759d7be71aac9092e8f5ed5f93d2ce3da16033edc3578241349a59697c154a17",
+    "hash": "81521556b9f4f30aa0851953df2604264473d6f2c73a010576906e7e2564d84f",
     "version": "10.1.9",
     "files": 12
   }
