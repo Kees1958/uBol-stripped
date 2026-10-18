@@ -1,38 +1,56 @@
-# UBLOCK DYNAMIC — SMART AND LEAN ADVERTISING & TRACKERS BLOCKER WITH DYNAMIC DNR FILTERING 
+# UBLOCK DYNAMIC — ad blocker
+
+SMART AND LEAN ADVERTISING & TRACKERS BLOCKER WITH DYNAMIC DNR FILTERING 
+Chrome webstore: https://chromewebstore.google.com/detail/ubol-stripped/femdnbckdgobaelpmbbajpidneljkjaa?pli=1
 
 uBlock Dynamic blocks ads, trackers, and privacy threats while you browse — without slowing your browser down. It works silently in the background from the moment you install it. It offers AdGuard-like functionality with uBO-lite efficiency AND has some unique features like the Worry-free Safe surfing, Cookie consent clicker, Privacy Inspector and Dynamic DNR filtering. 
 
 WORRY-FREE SAFE SURFING
+
 One-click protection boost for a chosen session (20/60 min/session) when doing random surfing. It tries to auto-dismisses cookie banners, adds extra blocklists and additional security protections (which you can enable in the Filter block lists panel).
  
 IMPORT ABP RULES
+
 Based on AdGuard's user rules panel. You can paste your own ABP filter rules into it (up to 5,000 rules). It also processes all uBO-lite and all AdGuard scriptlets used in the AG Base filter.
 
+
 COSMETIC ELEMENT PICKER
+
 This is uBO's element picker (only a popup is added to explain how it works). Draw a box around any annoying element on a page to permanently hide it.
 
+
 COOKIE CONSENT CLICKER
+
 Automate your cookie consent on the websites you visit often. Simply launch the Cookie-clicker and click on the (accept) button and create a rule for it. Next time you open the website the cookie prompt will be clicked away. 
 
+
 DYNAMIC DNR FILTER
+
 A new, easy to use DNR rule creator for all third-party content or only 3P-code (scripts, frames) per domain. With a switch you easily see what domains are allowed or blocked. The Dynamic DNR filter popup is inspired on uBO Mv2 matrix. 
 
 PRIVACY INSPECTOR
+
 Inspired by the work of the JShelter project. Protect yourself against fingerprinting, see what tracking techniques are used on a website, and simply block them by selecting that fingerprinting mechanism (or choose block level low-risk, medium or all).
 
+
 MANAGE CUSTOM RULES
+
 One place to manager your custom cosmetic, DNR and scriptlets created with above features. It has a smart filter to view all the rules for the domain you enter in the search fiels. 
 
+
 FILTER (BLOCK) LISTS
+
 By default it uses well curated blocklists. Anti-tracking from Disconnect, Kees1958 and adblocking from AdGuard base. It also has anti-adblock and anti-admiral list.  Based on your browser's language setting the  country filters from AG and EasyList for EU countries are enabled automatically (you can add more or remove them also manually).
 
 ALLOW  (WHITE) LIST
 Based on AdGuard's allowlist. Easily copy and paste domains into the allow list to disable filtering on that domain (uBO-lite also has a filtering-modes panel, but that's hidden behind the developer's option).
 
 PRIVACY & SECURITY
-Has an option to delete browser history at start (except passwords) and eight additional Security & Privacy protections with very low website-breakage risk. 
+Has an option to delete browser history at start (except passwords) and block tracking pings. 
+All security protections are moved to 3P Matrix - content firewall (
 
-Chrome webstore: https://chromewebstore.google.com/detail/ubol-stripped/femdnbckdgobaelpmbbajpidneljkjaa?pli=1
+
+
 
 
 
@@ -81,8 +99,9 @@ ALLOW (WHITE) LIST (is simular to AdGuard's Mv3 allow list)
 <img width="930" height="477" alt="image" src="https://github.com/user-attachments/assets/84ff30ae-0e9b-434a-8f55-610d68217316" />
 
 
-PRIVACY & SECURITY (extra protection for advanced users)
+PRIVACY & SECURITY 
 
-<img width="863" height="883" alt="image" src="https://github.com/user-attachments/assets/ae8119c4-099a-4b8a-8958-54f89c8daac2" />
+<img width="887" height="308" alt="image" src="https://github.com/user-attachments/assets/a7a78918-d6b4-4b88-8851-b4506d6b0357" />
+
 
 
