@@ -43,11 +43,12 @@ FILTER (BLOCK) LISTS
 By default it uses well curated blocklists. Anti-tracking from Disconnect, Kees1958 and adblocking from AdGuard base. It also has anti-adblock and anti-admiral list.  Based on your browser's language setting the  country filters from AG and EasyList for EU countries are enabled automatically (you can add more or remove them also manually).
 
 ALLOW  (WHITE) LIST
+
 Based on AdGuard's allowlist. Easily copy and paste domains into the allow list to disable filtering on that domain (uBO-lite also has a filtering-modes panel, but that's hidden behind the developer's option).
 
-PRIVACY & SECURITY
-Has an option to delete browser history at start (except passwords) and block tracking pings. 
-All security protections are moved to 3P Matrix - content firewall (
+Options
+
+Choose what you want to clean at browser start 
 
 
 
@@ -91,7 +92,7 @@ MANAGE CUSTOM RULES (central place to manage/delete your custom rules)
 
 FILTER (BLOCK) LISTS (enable or disable filter lists and add country specific filters)
 
-<img width="831" height="913" alt="image" src="https://github.com/user-attachments/assets/3578275d-bbe4-47a2-b763-f0bd6b1d489f" />
+<img width="917" height="844" alt="image" src="https://github.com/user-attachments/assets/30424506-57ad-4a73-a10d-59b51bc18a47" />
 
 
 ALLOW (WHITE) LIST (is simular to AdGuard's Mv3 allow list)
@@ -99,9 +100,10 @@ ALLOW (WHITE) LIST (is simular to AdGuard's Mv3 allow list)
 <img width="930" height="477" alt="image" src="https://github.com/user-attachments/assets/84ff30ae-0e9b-434a-8f55-610d68217316" />
 
 
-PRIVACY & SECURITY 
+OPTIONS
 
-<img width="887" height="308" alt="image" src="https://github.com/user-attachments/assets/a7a78918-d6b4-4b88-8851-b4506d6b0357" />
+<img width="828" height="590" alt="image" src="https://github.com/user-attachments/assets/6c3f7c25-5f08-4408-a262-5c595fb1d169" />
+
 
 
 
