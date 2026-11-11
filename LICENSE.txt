@@ -21,8 +21,8 @@ account (sources, licences, what was verified and what could not be):
     the Bulgarian list (no licence found).
   - Code under vendor/ and lib/: a subset of vendor/autoconsent adapted from
     duckduckgo/autoconsent (MPL-2.0); a further subset adapted from
-    Consent-O-Matic (MIT); CodeMirror (MIT); csstree (MIT); s14e-serializer
-    (Apache-2.0); punycode.js (MIT); RegexAnalyzer (licence not verified);
+    Consent-O-Matic (MIT); CodeMirror (MIT); csstree (MIT); punycode.js
+    (MIT); RegexAnalyzer (licence not verified);
     Inter font (SIL OFL 1.1); two Font Awesome 4 glyphs (SIL OFL 1.1, not
     verified).
 
