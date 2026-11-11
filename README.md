@@ -58,8 +58,8 @@ Clear history and more at browser startup. When you clear cookies on start and b
 
 
 SEAMLESS SURFING
+<img width="459" height="269" alt="image" src="https://github.com/user-attachments/assets/249099a4-fe1d-4900-b421-5f02e864c0ac" />
 
-<img width="479" height="424" alt="image" src="https://github.com/user-attachments/assets/09ff40cb-6c4f-4d7e-b3a9-096616cac90a" />
 
 
 IMPORT ABP RULES (is similar to AdGuard's Mv3 user rules)
