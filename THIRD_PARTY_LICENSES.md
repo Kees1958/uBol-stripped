@@ -12,20 +12,19 @@ to exist; every licence re-read from the upstream repository's own
 `LICENSE` file or the list's own header where reachable). Where a licence
 could **not** be verified from the build environment, the entry says so
 explicitly instead of guessing — see "Unverified" markers, and the
-summary table under "Upstream filter lists". This is a record of what
+section "Filter lists compiled into the shipped rulesets". This is a record of what
 was found, not legal advice.
 
 **Two constraints that apply to the extension as a whole**, because of
 what it bundles:
 - **NonCommercial.** The shipped extension contains data under
-  CC BY-NC-SA 4.0 (DuckDuckGo Tracker Radar, Disconnect, the Polish
-  filter list) and Peter Lowe's list (McRae General Public License —
+  CC BY-NC-SA 4.0 (DuckDuckGo Tracker Radar, the Polish filter list)
+  and Peter Lowe's list (McRae General Public License —
   "nothing that could be construed as making anybody any money"). The
   extension therefore must not be sold or monetised; the separately-
   licensed data files are not relicensed to GPL-3.0 by being bundled.
 - **ShareAlike.** The compiled ruleset/data files derived from those
-  sources (`rulesets/ruleset_disconnect_other.json`,
-  `rulesets/ruleset_easylist_polish.json`, `js/data/tracker-radar-data.json`,
+  sources (`rulesets/ruleset_easylist_polish.json`, `js/data/tracker-radar-data.json`,
   and the CC BY-SA lists below) stay under their source's terms if
   redistributed on their own.
 
@@ -213,9 +212,16 @@ for the history of this dataset's prior removal and this restoration.
   notice in a location (such as a LICENSE file in a relevant
   directory)"* — which is what `vendor/autoconsent/LICENSE` now does.
 
-- **`js/scripting/autodeny-snippets.generated.js`** is compiled at
-  build time from both files above (see `tools/build-autodeny-bundle.mjs`)
-  and inherits the same mixed status — the MPL-2.0-derived portion
+- **`js/scripting/autodeny-snippets.generated.js`** (decline) and, since
+  10.7.1, **`js/scripting/autoaccept-snippets.generated.js`** (accept) are
+  compiled at build time from both files above (see
+  `tools/build-autodeny-bundle.mjs`) and inherit the same mixed status. The
+  10.7.1 accept data (`rules.json` `accept` fields and `EVAL_ACCEPT_ALL`) was
+  written for this project against each CMP's public accept-all button or API;
+  it adds no third-party source. Because it lives in the two files above, which
+  contain MPL-2.0-covered code, it is distributed under MPL-2.0 too (MPL-2.0 is
+  file-level copyleft); `vendor/autoconsent/LICENSE` already covers it, and
+  MPL-2.0 is compatible with this project's GPL-3.0 — the MPL-2.0-derived portion
   flows through into the generated file along with the hand-authored
   and MIT-derived portions.
 
@@ -249,184 +255,38 @@ Consent-O-Matic's own rule set beyond these three pilot batches.
 
 ---
 
-<!-- RETIRED (found stale in the 9.7.3 audit) — "Disconnect ConsentManagers
-     (1 domain, added 8.5.4)": a single curated domain, `transcend.io`,
-     sourced from Disconnect's `ConsentManagers` category and added by
-     `buildWorryFreeExtraBlocklistSourceText()` to the Worry-free extra
-     blocklist. That function was removed in 9.1.7 together with the whole
-     extra blocklist (see tools/build-rulesets.mjs's own RETIRED comment),
-     and nothing in the build now reads Disconnect's `ConsentManagers`
-     category; `rulesets/ruleset_disconnect_other.json` has no
-     `transcend.io` entry. The entry described a mechanism that no longer
-     exists, so it was removed rather than left claiming an attribution
-     for content that is not shipped. Disconnect's remaining use (the
-     Advertising / Cryptomining / Fingerprinting categories) is documented
-     in the next section. -->
+## Filter lists compiled into the shipped rulesets
 
----
+The rulesets (`rulesets/*.json` and their cosmetic and scriptlet files) are
+compiled at build time from public third-party filter lists — for example
+AdGuard's filters (https://github.com/AdguardTeam/AdguardFilters, GPL-3.0),
+including, since 10.7.1, the tracking-server exceptions from its
+SpywareFilter allowlist. No copy of a source list is kept in any zip; each
+list keeps its own licence, and bundling does not relicense it to GPL-3.0.
+The licences among the sources are GPL-3.0, LGPL-3.0, MIT, CC BY 4.0,
+CC BY-SA 4.0, CC BY-NC-SA 4.0, public domain and a few list-specific ones.
 
-## Anti-tracking, Ads & Tracking Networks lists (Kees1958 + Disconnect)
+Attributions and notices that some of those licences require:
 
-Two separately-selectable static rulesets. Originally five (Kees1958,
-Disconnect ads, Disconnect other, Ghostery ads, Ghostery other), reduced
-in stages — Ghostery removed entirely (see CHANGELOG), Disconnect's two
-lists re-merged into one (Advertising folded into the
-Analytics/Cryptomining/Fingerprinting list, Analytics itself dropped —
-see CHANGELOG for the exact category change):
+- **Polish filters** (github.com/MajkiIT/polish-ads-filter) — CC BY-NC-SA 4.0,
+  © Certyficate IT: NonCommercial and ShareAlike.
+- **Peter Lowe's Ad and tracking server list** (pgl.yoyo.org) — McRae General
+  Public License: no use that makes anybody any money.
+- **hufilter** (github.com/hufilter/hufilter) — CC BY 4.0.
+- **EasyList Czech and Slovak** (github.com/tomasko126/easylistczechandslovak) and
+  **Latvian List** (github.com/Latvian-List/adblock-latvian) — CC BY-SA 4.0: ShareAlike.
+- **Dandelion Sprout's Nordic Filters and Serbo-Croatian List**
+  (github.com/DandelionSprout/adfilt) — Dandelicence, licence text:
+  https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
+- **MIT-licensed lists** keep their copyright notices in their own
+  repositories: Macedonian adBlock Filters (github.com/DeepSpaceHarbor/Macedonian-adBlock-Filters),
+  ROad-Block (github.com/tcptomato/ROad-Block), LanikSJ's ubo-filters
+  (github.com/LanikSJ/ubo-filters).
 
-- **Kees1958 most-used EU+US ads & tracking networks**
-  - **File:** none kept — downloaded at build time by
-    `tools/build/kees1958-source.mjs` (10.2.0) and compiled into
-    `ruleset_kees1958`.
-  - **Source:** Kees1958's own `EU_US_MV3_most_common_ad+tracking_
-    networks.txt` (https://github.com/Kees1958/W3C_annual_most_used_
-    survey_blocklist).
-  - **Licence: none stated — Unverified.** This entry used to say "per
-    that repository's own README"; the 9.7.3 audit re-read that README,
-    looked for LICENSE files under the usual names, and checked the
-    GitHub repository page: no licence or licence statement exists in
-    any of them. Note that `Kees1958` is also the copyright holder named
-    in three of this project's own source files (`Home:
-    https://github.com/Kees1958/uBol-stripped`) — if the list author and
-    this project's author are the same person, the list is first-party and
-    this is a non-issue; that identity is not something the code can
-    confirm, so it is recorded as a question, not assumed.
-  - **No safety filter applied** — used as-is, per explicit request (see
-    CHANGELOG). Previously cross-referenced against the reviewList
-    safety filter described below; that filtering was removed for this
-    list specifically.
-- **Kees1958 Suspicious websites — RETIRED 10.3.0.** (10.2.0) Same repository and
-  licence status as the entry above; was merged with HaGeZi DynDNS into
-  `rulesets/ruleset_suspicious_hosting.json` (`tools/build/suspicious-hosting.mjs`).
-  That ruleset and its build script are deleted along with the Worry-free tiers and
-  Privacy & Security tab's extra protections (moved to the owner's separate
-  "3P-Matrix — content firewall" extension — see CHANGELOG_HISTORY.md's 10.3.0
-  entry). Nothing in the shipped extension derives from Kees1958's "Suspicious
-  websites" list anymore; kept here as history, not a current attribution.
-- **Disconnect (Cryptomining, Fingerprinting)**
-  - **File:** none kept — `services.json` is downloaded at build time by
-    `tools/build/disconnect-source.mjs` (10.2.1) and compiled into
-    `ruleset_disconnect_other`.
-  - **Source:** Disconnect's `services.json` — `Cryptomining`,
-    `FingerprintingInvasive`, `FingerprintingGeneral` categories,
-    combined into one selectable list per explicit request.
-    `Analytics` (previously included) dropped entirely, not just from
-    the title. `Advertising` (previously included) dropped entirely in
-    10.5.0, per explicit request (WARNING FOR IMPLEMENTATION IMPACT —
-    see CHANGELOG): roughly 315 ad-tech companies / 445 domains that
-    were not already covered by any other shipped list are no longer
-    blocked via this toggle.
-  - **No safety filter applied** — used as-is, per explicit request (see
-    CHANGELOG). Previously cross-referenced against a reviewList safety
-    filter (as two separate lists, pre-merge); that filtering was
-    removed when the two lists were merged, and the underlying
-    cross-reference mechanism itself was removed entirely in a later
-    release (see below) once nothing else in the codebase still read it.
-  - **License:** [Creative Commons Attribution-NonCommercial-ShareAlike
-    4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-
-Kees1958's own list carries its own separate license terms, not CC
-BY-NC-SA 4.0.
-
-**Safety filter — removed entirely, not just unwired.** The `reviewList`
-cross-reference mechanism (`tools/data/top1m-tracker-crossref.json` /
-`tools/build-top1m-crossref.mjs`) was deleted, and its Top-1M/Tracker-Domain
-Crossref attribution entry was removed from this document with it (both
-files confirmed absent in the 9.7.3 audit). **Correction:** an earlier
-version of this paragraph also said the DuckDuckGo Tracker Radar dataset
-(`js/data/tracker-radar-data.json` / `tools/build-tracker-radar.mjs`) was
-deleted along with the Matrix panel's "known DDG Tracker" column. That is
-no longer true — the dataset was later restored and is shipped and read
-by `js/core/tracker-radar-lookup.js` and the Matrix panel (checked: the
-file holds 2,103 domains / 700 entities, matching the entry above). Its
-attribution entry ("DuckDuckGo Tracker Radar", near the top of this document) is
-therefore required and current.
-
-**History:** originally one merged file (`ruleset_kees1958` alone,
-"Merged Anti-tracking list (Kees1958 + Disconnect + Ghostery)") — split
-into five independently-selectable lists (v9.1.1/v9.1.7) to allow
-narrowing a filter-list issue down to one specific source, then reduced
-back down to these two (this release) — Ghostery removed, Disconnect's
-two lists re-merged, per explicit request in both cases.
-
----
-
-## HaGeZi DNS blocklists (added 9.7.3)
-
-- **HaGeZi's Multi light (TOP-N curated only DNR)** — `ruleset_hagezi_light`
-  - **File:** `rulesets/ruleset_hagezi_light.json` (generated by
-    `tools/build-rulesets.mjs`, live-fetched at build time — no local
-    copy of the source list is kept in this repository).
-  - **License:** the underlying list is HaGeZi's, licensed under the
-    [GNU General Public License v3.0](https://github.com/hagezi/dns-blocklists/blob/main/LICENSE)
-    — the same license as this project itself. The cbuijs/hagezi
-    repository has no LICENSE or README file of its own (checked
-    2026-10-31: both return 404), so no separate license is stated for
-    the TOP-N curation; it is treated as a GPL-3.0 derivative of
-    HaGeZi's list.
-  - **How it is used:** each `||domain^` entry is compiled unchanged
-    into `requestDomains` block rules (4,000 domains per rule). No entry
-    is edited or added. Entries under a top-level domain outside this
-    project's scope (generic TLDs plus 5-eyes/EU/extended-EU country
-    codes — the same scope its Worry-free tracking-server lists use) are
-    left out; see `tools/build-rulesets.mjs`, `buildWorryFreeLists()`.
-- **HaGeZi's DynDNS — RETIRED 10.3.0.** (10.2.0, same repository, same license —
-  `adblock/dyndns.txt`) Was merged with Kees1958's "Suspicious websites" into
-  `rulesets/ruleset_suspicious_hosting.json`. That ruleset is deleted along with the
-  Worry-free tiers and Privacy & Security tab's extra protections — see
-  CHANGELOG_HISTORY.md's 10.3.0 entry. Nothing in the shipped extension derives from
-  HaGeZi's DynDNS list anymore; kept here as history, not a current attribution.
-- **`ad-shield.txt`** (same repository, same license) is one of the three
-  sources merged into `ruleset_antiadmiral` (see `tools/build-rulesets.mjs`,
-  `ANTI_ADMIRAL_SOURCES`). It was in use before this entry existed but
-  was not documented here; recorded now for completeness.
-
-**Attribution:**
-
-> "HaGeZi's Multi LIGHT" and `ad-shield.txt` by HaGeZi and contributors,
-> available at https://github.com/hagezi/dns-blocklists, licensed under
-> GPL-3.0. The TOP-N curated version of Multi LIGHT used since 10.5.2 is
-> by Chris Buijs, available at https://github.com/cbuijs/hagezi. ("HaGeZi's DynDNS" was also attributed here through 10.2.x — RETIRED
-> 10.3.0, see above.)
-
----
-
-## Upstream filter lists compiled into the shipped rulesets (added in the 9.7.3 audit)
-
-`tools/build-rulesets.mjs` fetches each list live at build time and compiles it
-into `rulesets/*.json` (DNR rules) and, where the list has cosmetic/scriptlet
-rules, `rulesets/*-cosmetic-specific.json` / `*-scriptlets.js`. Until this
-audit only Kees1958, Disconnect, HaGeZi and the Tracker Radar were documented;
-every other source below was missing. "Verified" means the licence text or the
-list's own header was read for this audit; "Unverified" means it could not be
-established from the build environment and needs a human check.
-
-| List (ruleset id) | Source | Licence | Status |
-|---|---|---|---|
-| AdGuard Base + its adult and country-overflow buckets, AdGuard tracking servers, AdGuard anti-adblock (`ruleset_adguard_base`, `_base_adult`, `ruleset_agbase_overflow_*`, `_adguard_tracking_servers`, `_adguard_antiadblock`) | github.com/AdguardTeam/AdguardFilters | GPL-3.0 | Verified (repository `LICENSE`) |
-| AdGuard Dutch / German / French / Spanish (`ruleset_adguard_dutch` … `_spanish`, `_french_removeparam`) | github.com/AdguardTeam/FiltersRegistry | LGPL-3.0 | Verified (repository `LICENSE`) |
-| AdGuard Scriptlets library (`js/resources/ag-scriptlets-corelibs.json`, v2.5.1, and the scriptlet code inlined in `rulesets/*-scriptlets.js`) | npm `@adguard/scriptlets` / github.com/AdguardTeam/Scriptlets | GPL-3.0 | Verified (repository `LICENSE`) |
-| EasyList adult ad-servers (`ruleset_easylist_adservers`) and EasyPrivacy Admiral list (part of `ruleset_antiadmiral`) | github.com/easylist/easylist | Published on easylist.to/pages/licence.html (the repository README only points there; that site is not reachable from the build environment) | **Unverified** — check that page |
-| EasyList Italian, EasyList Portuguese (`ruleset_easylist_italian`, `_portuguese`) | github.com/easylist/easylistitaly, …/easylistportuguese | No `LICENSE`, README licence text or list-header licence line found | **Unverified** — presumably EasyList's terms, not confirmed |
-| EasyList Czech & Slovak (`ruleset_easylist_czech_slovak`) | github.com/tomasko126/easylistczechandslovak | CC BY-SA 4.0 | Verified (`LICENSE` + list header) — ShareAlike |
-| Latvian List, part of the Baltic states filter (`ruleset_easylist_latvian`) | github.com/Latvian-List/adblock-latvian | CC BY-SA 4.0 | Verified (list header; no `LICENSE` file) — ShareAlike |
-| Finnish EasyList addition, part of the Baltic states filter (`ruleset_easylist_latvian`, 10.4.5) | github.com/finnish-easylist-addition/finnish-easylist-addition (`Finland_adb.txt`) | Public domain (Unlicense) | Verified (repository `LICENSE`) |
-| hufilter, Hungarian filter (`ruleset_hungarian`, 10.4.5) | github.com/hufilter/hufilter (`sections/`) | CC BY 4.0 — attribution required (credited here) | Verified (repository `LICENSE`) |
-| AdGuard and EasyList annoyances — AdGuard part (`ruleset_annoyances`; sources `AnnoyancesFilter/Popups/sections/popups_specific.txt`, `push-notifications_general.txt`, `subscriptions_specific.txt`) | github.com/AdguardTeam/AdguardFilters | GPL-3.0 | Verified (repository `LICENSE` fetched during the 9.9.0 work; the lists carry no licence header of their own) |
-| AdGuard and EasyList annoyances — EasyList part (`ruleset_annoyances`; sources `fanboy-addon/fanboy_notifications_specific_hide.txt`, `fanboy_newsletter_specific_hide.txt`, `fanboy_annoyance_specific_hide.txt`) | github.com/easylist/easylist | Published on easylist.to/pages/licence.html (no root `LICENSE` file in the repository, the README only points there, and the lists carry no licence header; that site is not reachable from the build environment) | **Unverified** — check that page |
-| EasyList Lithuanian, part of the Baltic states filter since 10.4.5 (`ruleset_easylist_latvian`; the former `ruleset_easylist_lithuanian` is retired) | github.com/EasyList-Lithuania/easylist_lithuania | GPL-3.0 | Verified (`LICENSE` + list header) |
-| EasyList Polish (`ruleset_easylist_polish`) | github.com/MajkiIT/polish-ads-filter | **CC BY-NC-SA 4.0**, © Certyficate IT | Verified (`LICENSE` + list header) — **NonCommercial** + ShareAlike |
-| Dandelion Sprout's Nordic Filters (`ruleset_easylist_nordic`) | github.com/DandelionSprout/adfilt | "Dandelicence" v1.4 — permissive, but (near-)unmodified redistributions must keep the licence text or a link to it (https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md, given here), the maintainers' names may not be used to endorse products, and such copies may not be sold as a standalone paid product in quantities below 500,000 | Verified (`LICENSE.md` + list header) |
-| Bulgarian Adblock List, part of the Balkan filter (`ruleset_easylist_bulgarian`) | github.com/KokichaKolevTM/BG-Adblock-list | No `LICENSE` file, README statement or header licence found | **Unverified** |
-| Dandelion Sprout's Serbo-Croatian List, part of the Balkan filter (`ruleset_easylist_bulgarian`, 10.4.5) | github.com/DandelionSprout/adfilt (`SerboCroatianList.txt`) | "Dandelicence" — same terms as the Nordic Filters row above (licence link given there) | Verified (repository `LICENSE.md`) |
-| Macedonian adBlock Filters, part of the Balkan filter (`ruleset_easylist_bulgarian`, 10.4.5) | github.com/DeepSpaceHarbor/Macedonian-adBlock-Filters | MIT, © 2016 | Verified (repository `LICENSE`) |
-| ROad-Block (light), part of the Balkan filter (`ruleset_easylist_bulgarian`, 10.4.5) | github.com/tcptomato/ROad-Block (`road-block-filters-light.txt`) | MIT, © 2019 ROad Block | Verified (repository `LICENSE`) |
-| Anti-Admiral's LanikSJ source (part of `ruleset_antiadmiral`) | github.com/LanikSJ/ubo-filters (`getadmiral-domains.txt`) | MIT, © 2016-2026 LanikSJ | Verified (repository `LICENSE`) |
-| Peter Lowe's Ad and tracking server list (`ruleset_peterlowe`) | pgl.yoyo.org, fetched via github.com/uBlockOrigin/uAssets `thirdparties/pgl.yoyo.org/as/serverlist` | McRae General Public License 4.r53 — as quoted in uAssets' own README for that directory: use or redistribution "in any manner that could possibly be construed as making anybody any money" is forbidden (effectively NonCommercial). uAssets itself is GPL-3.0 | Verified (uAssets README; the pgl.yoyo.org licence page itself is not reachable from the build environment) |
-| Kees1958 lists | see the Kees1958 + Disconnect section above | none stated | **Unverified** |
-| Disconnect | see the Kees1958 + Disconnect section above | CC BY-NC-SA 4.0 (`licence` field of Disconnect's `services.json`, re-read in this audit) | Verified |
-| HaGeZi | see the HaGeZi section above | GPL-3.0 | Verified |
-| CrUX top-1M (`zakird/crux-top-lists`) | github.com/zakird/crux-top-lists | Repository has no licence file | Build-time only: read into memory to validate `$domain=example.*` wildcard expansions; per `tools/build-rulesets.mjs` no CrUX data is written into any shipped file — only the confirmed expansions (facts about specific domains). Nothing to attribute unless that changes |
+A few sources state no licence that could be verified (some EasyList country
+lists and the Bulgarian list); the per-list audit record is in the project
+history (CHANGELOG_HISTORY.md, 9.7.3 audit). Disconnect is no longer used
+(removed 10.7.1).
 
 ## Country and time-zone data (`js/data/country-data/`, added 10.4.5)
 
@@ -439,9 +299,9 @@ established from the build environment and needs a human check.
 
 | Component | Where | Licence | Status |
 |---|---|---|---|
+| AdGuard Scriptlets library (moved here from the filter-list table, 10.7.1) | `js/resources/ag-scriptlets-corelibs.json` and the scriptlet code inlined in `rulesets/*-scriptlets.js`; from npm `@adguard/scriptlets` / github.com/AdguardTeam/Scriptlets | GPL-3.0 | Verified (repository `LICENSE`) |
 | CodeMirror 6 (bundle built for uBlock Origin) + codemirror-quickstart | `lib/codemirror/cm6.bundle.ubol.min.js`, licences bundled as `lib/codemirror/codemirror.LICENSE` (MIT, © 2018-2021 Marijn Haverbeke and others) and `codemirror-quickstart.LICENSE` (MIT, © 2025 Bryan Gillespie) | MIT | Verified (both licence files present and read). Loaded by `dashboard/dashboard.html` |
 | RegexAnalyzer v1.2.0 by foo123 | `lib/regexanalyzer/regex.js`; loaded by `js/offscreen/compile-filters.html` | Not stated in the file, its repository (no `LICENSE` under the usual names, none in the README, `package.json` not found) or its GitHub page | **Unverified** — needs a human check with the upstream author |
-| s14e-serializer by Raymond Hill | `lib/s14e-serializer.js` | Apache-2.0, © 2024 Raymond Hill (header names the licence and the upstream repository; upstream `LICENSE` re-read) | Verified. **Note: nothing in the tree imports this file** (only `knip.json` mentions `lib/**`, as an ignore) — a shipped file with no consumer; either remove it or keep it knowingly |
 | punycode.js v1.3.2 by Mathias Bynens | `js/util/punycode.js` (carries only the `/*! https://mths.be/punycode v1.3.2 by @mathias */` banner) | MIT — full notice below, because MIT requires it to accompany copies and the file itself does not | Verified (upstream `LICENSE-MIT.txt`) |
 | Font Awesome 4 glyph outlines (two icons, `angle-up` and `power-off`), via uBlock Origin's `fa-icons.js` | `js/ui/fa-icons.js`; sizing metrics in `css/fa-icons.css` ("Generated from the FontAwesome 4 glyph metrics") | Font Awesome 4.x publishes its glyphs under SIL OFL 1.1 (© Dave Gandy) | **Unverified** — recalled from Font Awesome's published terms, not re-read here. The `ph-` / `md-` branches of `fa-icons.js` point at `/img/photon.svg` / `material-design.svg`, which are not shipped and are used by nothing — no Photon or Material Design artwork is bundled |
 
@@ -461,29 +321,17 @@ established from the build environment and needs a human check.
   header from anyone else (checked by searching every `tools/` file for
   `Copyright`); the only third-party licence obligations in the build
   come from the *content* it fetches, listed above.
-- (10.2.0/10.2.1) The former generated copies `tools/data/kees1958-only-source.txt` and
-  `tools/data/disconnect-other-source.txt` no longer exist: both lists are downloaded
-  by the build itself, so no copy of either is kept in any zip.
+- Every filter list is downloaded by the build itself, so no copy of a source
+  list is kept in any zip.
 - **npm devDependencies** (`package.json` / `package-lock.json`: 530 packages;
   430 MIT, 39 ISC, 15 Apache-2.0, 25 BSD-2/3-Clause, 9 BlueOak-1.0.0, the rest
   MIT-0 / Python-2.0 / CC0 / one MPL-2.0 (`postcss-values-parser`) and two with
   no licence field). **None is bundled into the extension or the tools zip**
   (only `package.json`/`package-lock.json`, not `node_modules`), so none
   needs attribution here. `@adguard/scriptlets` is the one npm package whose
-  *output* does ship (see the table above) and is fetched from the registry
+  *output* does ship (see "Vendored libraries" above) and is fetched from the registry
   at build time, not installed as a devDependency.
 - **Not third-party:** the toolbar/extension icons in `img/` were generated
   for this project (see CHANGELOG_HISTORY.md 9.7.2).
 
 ---
-
-<!-- RETIRED (v9.1.7) — "Worry-free social media block list (Disconnect
-     + Ghostery)" removed entirely, per explicit request, along with the
-     "Enable extra blocklist" grouped checkbox and the EasyList adult
-     ad-servers + transcend.io list it also used to cover. Neither
-     ruleset_worryfree_social nor ruleset_worryfree_extra exist anymore
-     — see js/core/dnr-budgets.js's WORRY_FREE_SOCIAL_RULES_BASE_ID /
-     WORRY_FREE_EXTRA_RULES_BASE_ID retirement comments for the full
-     history. No attribution entry needed here since nothing in the
-     shipped extension derives from Disconnect's Social category or
-     Ghostery's social_media category anymore. -->
