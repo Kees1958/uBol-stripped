@@ -58,6 +58,7 @@ Clear history and more at browser startup. When you clear cookies on start and b
 
 
 SEAMLESS SURFING
+
 <img width="459" height="269" alt="image" src="https://github.com/user-attachments/assets/249099a4-fe1d-4900-b421-5f02e864c0ac" />
 
 
