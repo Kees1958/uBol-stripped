@@ -1,24 +1,33 @@
 NOTE: this project's own code is licensed under the GPL-3.0 terms below.
 It is derived from uBlock Origin / uBlock Origin Lite / uMatrix by Raymond
-Hill (GPL-3.0-or-later); the per-file copyright headers are kept.
+Hill (GPL-3.0-or-later). Every file that began as one of his keeps his
+copyright line and the GPL notice, next to this project's own copyright
+line and a "based on ..., modified" notice (THIRD_PARTY_LICENSES.md has
+the code-origin table).
 
 It also bundles third-party content that KEEPS ITS OWN LICENSE. This note
 summarises it; THIRD_PARTY_LICENSES.md is the full, canonical, per-entry
 account (sources, licences, what was verified and what could not be):
 
   - Data under CC BY-NC-SA 4.0 (NonCommercial + ShareAlike): the compacted
-    DuckDuckGo Tracker Radar dataset (js/data/tracker-radar-data.json), the
-    Disconnect-sourced list (ruleset_disconnect_other) and the Polish
-    filter list (ruleset_easylist_polish).
+    DuckDuckGo Tracker Radar dataset (js/data/tracker-radar-data.json) and
+    the Polish filter list (ruleset_easylist_polish).
   - Peter Lowe's ad and tracking server list (ruleset_peterlowe): McRae
     General Public License, which forbids use or redistribution that makes
     anybody money.
   - Filter lists compiled at build time into rulesets/: AdGuard (GPL-3.0 /
-    LGPL-3.0), AdGuard Scriptlets (GPL-3.0), HaGeZi (GPL-3.0), EasyList
+    LGPL-3.0), HaGeZi (GPL-3.0), EasyList
     family (own terms; several unverified), Czech/Slovak and Latvian lists
     (CC BY-SA 4.0), Lithuanian list (GPL-3.0), LanikSJ (MIT), Dandelion
     Sprout's Nordic list (Dandelicence), Kees1958 (no licence stated) and
     the Bulgarian list (no licence found).
+  - Scriptlet code: AdGuard Scriptlets by the AdGuard team (GPL-3.0,
+    https://github.com/AdguardTeam/Scriptlets), bundled unchanged in
+    js/generated/custom-scriptlets/, rulesets/scriptlet-library.js and
+    -entity.js, and js/resources/ag-scriptlets-corelibs.json; plus a few
+    scriptlets adapted from uBlock Origin (GPL-3.0-or-later). Each of these
+    generated files names its source: a header comment in the .js files,
+    "source" and "license" fields in the .json file.
   - Code under vendor/ and lib/: a subset of vendor/autoconsent adapted from
     duckduckgo/autoconsent (MPL-2.0); a further subset adapted from
     Consent-O-Matic (MIT); CodeMirror (MIT); csstree (MIT); punycode.js
