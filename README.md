@@ -117,7 +117,8 @@ MANAGE CUSTOM RULES
 
 FILTER (BLOCK) LISTS
 
-<img width="909" height="929" alt="image" src="https://github.com/user-attachments/assets/01553989-d065-4b95-8329-40e1c068cba4" />
+<img width="1378" height="802" alt="image" src="https://github.com/user-attachments/assets/4fd55a4e-743e-4eaf-9fbc-c4b41f808062" />
+
 
 .
 
