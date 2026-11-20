@@ -1,58 +1,46 @@
 # UBLOCK DYNAMIC — ad blocker
 
-uBLOCK DYNAMIC— SMART AND LEAN ADVERTISING & TRACKERS BLOCKER
+uBLOCK DYNAMIC — SMART, LEAN AD AND TRACKER BLOCKER
 
-This extension blocks ads, trackers, and privacy threats while you browse — without slowing your browser down. It works silently in the background from the moment you install it. It offers AdGuard-like functionality with uBO-lite efficiency AND has some unique features like the Worry-free surfing, Cookie consent clicker, Fingerprint Inspector and Dynamic DNR filtering.
+Blocks advertisements and  trackers. Your browser stays fast and does this without requiring user script permissions.  Secure by default. Want to know what happens behind the scenes of a website. Tick "I am an advanced user" in Options to show the power tools.
 
+It brings AdGuard's power with the speed of uBlock Origin Lite. And it adds tools you won't find in other adblockers. Seamless surfing, Ad leftover cleaner, Cookie consent clicker, DNR tracking filter and Fingerprint Inspector.
 
-SEAMLESS  SURFING
-
-Seamless surfing enables additional anti-tracking filters and tries to auto-dismisses cookie banners (inspired by Ghostery's never consent). When you click on it you can choose to auto decline or auto-accept cookies. Cookie prompts missed bu seamless surfing can be automated with the Cookie consent clicker
-
+SEAMLESS SURFING
+Seamless surfing tries to click away cookie banners for you and turns on extra anti-tracking filters. It is on from the start. You choose the answer: accept, decline, or accept where it can and decline everywhere else. Inspired by Ghostery's Never-Consent.
 
 COOKIE CONSENT CLICKER
+A banner slipped through? Click its button once. The extension remembers. Next visit, the banner is gone. Inspired by Consent-O-Matic.
 
-Automate your cookie consent on the websites you visit often. Simply launch the Cookie-clicker and click on the (accept) button and create a rule for it. Next time you open the website the cookie prompt will be clicked away (inspired by Consent-O-matic)
+AD LEFTOVER CLEANER
+Blocked ads can leave empty boxes behind. One click clears them. See what it removed. Undo it, or keep it for that site. Powered by the general hiding rules of EasyList and AdGuard.
 
- 
-IMPORT ABP RULES
+COSMETIC ELEMENT PICKER
+uBlock Origin's element picker. Point at anything annoying. Hide  empty ad place holders missed by the adblock filters and Ad leftover cleaner.
 
-Based on AdGuard's user rules panel. You can paste your own ABP filter rules into it (up to 5,000 rules). It also processes all uBO-lite and all AdGuard scriptlets used in the AG Base filter.
-
-
-COSMETIC ELEMENT 
-
-This is uBO's element picker (only a popup is added to explain how it works). Draw a box around any annoying element on a page to permanently hide it.
-
-
-DYNAMIC DNR FILTER
-
-A new, easy to use DNR rule creator for all third-party content or only 3P-code (scripts, frames) per domain. With a switch you easily see what domains are allowed or blocked. The Dynamic DNR filter matrix popup panel is inspired on uBO Mv2 matrix (uBO's advanced dynamic filtering). 
-
+DNR TRACKING FILTER
+Decide which third parties a site may load. Block or allow everything from a domain, or only its scripts and frames. One switch shows what is blocked and what is allowed. Inspired by uBlock Origin's classic matrix.
 
 FINGERPRINT INSPECTOR
+See how a site tries to fingerprint you. Block each technique with one click, or pick a level: low risk, medium or all. Inspired by JShelter.
 
-Inspired by the work of the JShelter project. Protect yourself against fingerprinting, see what tracking techniques are used on a website, and simply block them by selecting that fingerprinting mechanism (or choose block level low-risk, medium or all).
-
+IMPORT ABP RULES
+Paste your own filter rules, up to 5,000. Works with uBlock Origin Lite and AdGuard scriptlets,  EXCEPT scriptlets requiring trust, accepting raw javascript or long input parameters (can all be misused). Modelled on AdGuard's user rules (and copied by uBOL recently :-).
 
 MANAGE CUSTOM RULES
-
-One place to manager your custom cosmetic, DNR and scriptlets created with above features. It has a smart filter to view all the rules for the domain you enter in the search field.
-
+All the rules created by the power tools in one place: hiding cosmetic elements, cookie clicks, DNR tracking filter and fingerprint blocks. Type a domain to see only its rules.
 
 FILTER (BLOCK) LISTS
+Only well maintained lists. AdGuard Base for ads. Anti-tracking lists. Anti-adblock and anti-Admiral lists. Country lists from AdGuard and EasyList switch on automatically to match your browser's language. Add or remove them as you like.
 
-By default it uses well curated blocklists. Anti-tracking from Disconnect, Kees1958 and adblocking from AdGuard base. It also has anti-adblock and anti-admiral list.  Based on your browser's language setting the  country filters from AG and EasyList for EU countries are enabled automatically (you can add more or remove them also manually).
-
-
-ALLOW  (WHITE) LIST
-
-Based on AdGuard's allowlist. Easily copy and paste domains into the allow list to disable filtering on that domain (uBO-lite also has a filtering-modes panel, but that's hidden behind the developer's option).
-
+ALLOW (WHITE) LIST
+Trust a site? Paste its domain. Filtering stops there. Based on AdGuard's allowlist.
 
 OPTIONS
 
-Clear history and more at browser startup. When you clear cookies on start and block third-party cookies in your browser, the privacy exposure is inconsiderable. 
+Clear history, cookies and more at browser startup. When you clear cookies on start and block third-party cookies in your browser, you don´t need to worry about tracking through cookies anymore.
+
+Open source: https://github.com/Kees1958/uBol-stripped  
 
 
 
