@@ -124,7 +124,8 @@ FILTER (BLOCK) LISTS
 
 ALLOW (WHITE) LIST 
 
-<img width="930" height="477" alt="image" src="https://github.com/user-attachments/assets/84ff30ae-0e9b-434a-8f55-610d68217316" />
+<img width="930" height="477" alt="image" src="https://github.com/user-attachments/assets/457dbaec-09a5-4f99-8777-b7d95ab53079" />
+
 
 .
 
