@@ -1,4 +1,4 @@
-# UBLOCK DYNAMIC — ad blocker
+# UBLOCK DYNAMIC — ad blocker 
 
 uBLOCK DYNAMIC — SMART, LEAN AD AND TRACKER BLOCKER
 
@@ -64,56 +64,64 @@ Clear history, cookies and more at browser startup. When you clear cookies on st
 Chrome web store: https://chromewebstore.google.com/detail/ublock-dynamic-%E2%80%94-ad-block/femdnbckdgobaelpmbbajpidneljkjaa?pli=1
 
 
+# IMAGES
 
+ICON POPUP
+<img width="1256" height="438" alt="image" src="https://github.com/user-attachments/assets/62cfbc69-d48e-429d-8e2f-7737fdabbc14" />
+
+.
 SEAMLESS SURFING
+<img width="466" height="572" alt="image" src="https://github.com/user-attachments/assets/7f5aae7e-9e9a-4852-b971-aa64387c4a5e" />
 
-<img width="459" height="269" alt="image" src="https://github.com/user-attachments/assets/249099a4-fe1d-4900-b421-5f02e864c0ac" />
-
-
-
-IMPORT ABP RULES (is similar to AdGuard's Mv3 user rules)
-
-<img width="872" height="743" alt="image" src="https://github.com/user-attachments/assets/9384cffd-36d8-4fa7-bcaa-53a12e152cef" />
-
-
-COSMETIC ELEMENT PICKER (is similar to uBO-lite's element picker)
-
-<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/959ab327-b3c1-49ff-b0fa-30e9481d6d51" />
-
-
-COOKIE-CLICKER (inspired by consent-o-matic only leaving the choice to the user)
+.
+COOKIE CONSENT CLICKER 
 
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/de54f73a-5ae6-4a30-9248-35622d5e5b44" />
 
+.
+AD LEFT OVER CLEANER
 
-Dynamic DNR filtering (inspired by uBO Mv2 dynamic filtering, based on DuckDuckGo tracker database)
+<img width="991" height="149" alt="image" src="https://github.com/user-attachments/assets/eb4a86a1-0449-41b7-85b6-4b2de3205165" />
 
-<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/cd980622-023e-4996-9e9a-559674a89cfc" />
+.
+COSMETIC ELEMENT PICKER 
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/959ab327-b3c1-49ff-b0fa-30e9481d6d51" />
+
+.
+DNR TRACKING FILTER
+<img width="903" height="512" alt="image" src="https://github.com/user-attachments/assets/f034df2f-9f49-48f8-ac6b-4779353d3b7a" />
+
+.
+FINGERPRINT INSPECTOR
+<img width="900" height="512" alt="image" src="https://github.com/user-attachments/assets/b71afac5-0257-40ca-b262-6c8d225821f9" />
+
+.
+IMPORT ABP RULES  
+
+<img width="849" height="718" alt="image" src="https://github.com/user-attachments/assets/65f7929a-fe98-447b-b9cf-9964d9a76b24" />
 
 
-FINGERPRINT INSPECTOR (protections inspired on JShelter project, user interface on Noscript Mv3)
-
-<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/af9b45b8-11dd-48df-8383-e8f037bda064" />
-
-
-MANAGE CUSTOM RULES (central place to manage/delete your custom rules)
+.
+MANAGE CUSTOM RULES 
 
 <img width="914" height="773" alt="image" src="https://github.com/user-attachments/assets/04a47801-ee3e-4506-9872-ec121f0d1662" />
 
 
-FILTER (BLOCK) LISTS (enable or disable filter lists and add country specific filters)
+FILTER (BLOCK) LISTS
 
-<img width="917" height="844" alt="image" src="https://github.com/user-attachments/assets/30424506-57ad-4a73-a10d-59b51bc18a47" />
+<img width="909" height="929" alt="image" src="https://github.com/user-attachments/assets/01553989-d065-4b95-8329-40e1c068cba4" />
 
-
-ALLOW (WHITE) LIST (is simular to AdGuard's Mv3 allow list)
+.
+ALLOW (WHITE) LIST 
 
 <img width="930" height="477" alt="image" src="https://github.com/user-attachments/assets/84ff30ae-0e9b-434a-8f55-610d68217316" />
 
-
+.
 OPTIONS
 
-<img width="828" height="590" alt="image" src="https://github.com/user-attachments/assets/6c3f7c25-5f08-4408-a262-5c595fb1d169" />
+<img width="890" height="656" alt="image" src="https://github.com/user-attachments/assets/a4fe1d23-9b0a-4dbc-9abb-f8b4fec998f4" />
+
 
 
 
