@@ -49,8 +49,7 @@ All the rules created by the power tools in one place: hiding cosmetic elements,
 
 FILTER (BLOCK) LISTS
 
-Only well maintained lists. AdGuard Base for ads. Peter Low's for trackers and wel curated additional anti-tracking lists. anti-adblock and anti-Admiral lists. Country lists from AdGuard and EasyList are combined and switch on automatically to match your browser's language. Add or remove them as you like.
-
+Only well maintained lists from several sources are used to provide best coverage with lowest website breakage risk and lowest number of rules (less is more). Country lists from AdGuard and EasyList are combined and switch on automatically to match your browser's language. Add or remove them as you like.
 
 ALLOW (WHITE) LIST
 
@@ -112,7 +111,7 @@ IMPORT ABP RULES
 
 MANAGE CUSTOM RULES 
 
-<img width="914" height="773" alt="image" src="https://github.com/user-attachments/assets/04a47801-ee3e-4506-9872-ec121f0d1662" />
+
 
 .
 
