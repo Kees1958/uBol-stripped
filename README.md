@@ -14,32 +14,32 @@ Seamless surfing tries to click away cookie banners for you and turns on extra a
 
 COOKIE CONSENT CLICKER
 
-A banner slipped through? Click its button once. The extension remembers. Next visit, the banner is gone. Inspired by Consent-O-Matic.
+Did a cookie prompt slipped through? Click its button once. The extension remembers. Next visit, the cookie prompt is gone. Inspired by Consent-O-Matic.
 
 
 AD LEFTOVER CLEANER
 
-Blocked ads can leave empty boxes behind. One click clears them. See what it removed. Undo it, or keep it for that site. Powered by the general hiding rules of EasyList and AdGuard.
+Blocked advertisements can leave empty boxes behind. Ad leftover cleans them with one clock. See what it removed. Undo it, or keep it for that site. Powered by the general hiding rules of EasyList and AdGuard only applied smart per website.
 
 
 COSMETIC ELEMENT PICKER
 
-uBlock Origin's element picker. Point at anything annoying. Hide  empty ad place holders missed by the adblock filters and Ad leftover cleaner.
+uBlock Origin's element picker (only with a better explanation at start). Point at anything annoying. Hide  empty ad place holders missed by the adblock filters and Ad leftover cleaner.
 
 
 DNR TRACKING FILTER
 
-Decide which third parties a site may load. Block or allow everything from a domain, or only its scripts and frames. One switch shows what is blocked and what is allowed. Inspired by uBlock Origin's classic matrix.
+Decide which third parties a site may load. To help you decide, it shows whether this domain is linsted in the DuckDuckGo tarcker databas. Block or allow everything from a domain, or only its scripts and frames. One switch shows what is blocked and what is allowed. Inspired by uBlock Origin's Mv2 classic (dynamic filtering) matrix.
 
 
 FINGERPRINT INSPECTOR
 
-See how a site tries to fingerprint you. Block each technique with one click, or pick a level: low risk, medium or all. Inspired by JShelter.
+See how a site tries to fingerprint you. Block each technique with one click, or pick a level: low breakage risk, medium or all. Inspired by the work of the JShelter project, only applied on-demand per domain to prevent undesired by effects (and keep browsing fast).
 
 
 IMPORT ABP RULES
 
-Paste your own filter rules, up to 5,000. Works with uBlock Origin Lite and AdGuard scriptlets,  EXCEPT scriptlets requiring trust, accepting raw javascript or long input parameters (can all be misused). Modelled on AdGuard's user rules (and copied by uBOL recently :-).
+Paste your own filter rules, up to 5,000. Works with uBlock Origin Lite and AdGuard scriptlets,  EXCEPT scriptlets requiring trust, accepting raw javascript or long input parameters (can all be misused). Modelled on AdGuard's user rules (and recently copied by uBOL :-).
 
 
 MANAGE CUSTOM RULES
@@ -49,7 +49,7 @@ All the rules created by the power tools in one place: hiding cosmetic elements,
 
 FILTER (BLOCK) LISTS
 
-Only well maintained lists. AdGuard Base for ads. Anti-tracking lists. Anti-adblock and anti-Admiral lists. Country lists from AdGuard and EasyList switch on automatically to match your browser's language. Add or remove them as you like.
+Only well maintained lists. AdGuard Base for ads. Peter Low's for trackers and wel curated additional anti-tracking lists. anti-adblock and anti-Admiral lists. Country lists from AdGuard and EasyList are combined and switch on automatically to match your browser's language. Add or remove them as you like.
 
 
 ALLOW (WHITE) LIST
@@ -61,8 +61,7 @@ OPTIONS
 
 Clear history, cookies and more at browser startup. When you clear cookies on start and block third-party cookies in your browser, you don´t need to worry about tracking through cookies anymore.
 
-Open source: https://github.com/Kees1958/uBol-stripped  
-
+Chrome web store: https://chromewebstore.google.com/detail/ublock-dynamic-%E2%80%94-ad-block/femdnbckdgobaelpmbbajpidneljkjaa?pli=1
 
 
 
