@@ -70,29 +70,36 @@ ICON POPUP
 <img width="1256" height="438" alt="image" src="https://github.com/user-attachments/assets/62cfbc69-d48e-429d-8e2f-7737fdabbc14" />
 
 .
+
 SEAMLESS SURFING
+
 <img width="466" height="572" alt="image" src="https://github.com/user-attachments/assets/7f5aae7e-9e9a-4852-b971-aa64387c4a5e" />
 
 .
+
 COOKIE CONSENT CLICKER 
 
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/de54f73a-5ae6-4a30-9248-35622d5e5b44" />
 
 .
+
 AD LEFT OVER CLEANER
 
 <img width="991" height="149" alt="image" src="https://github.com/user-attachments/assets/eb4a86a1-0449-41b7-85b6-4b2de3205165" />
 
 .
+
 COSMETIC ELEMENT PICKER 
 
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/959ab327-b3c1-49ff-b0fa-30e9481d6d51" />
 
 .
+
 DNR TRACKING FILTER
 <img width="903" height="512" alt="image" src="https://github.com/user-attachments/assets/f034df2f-9f49-48f8-ac6b-4779353d3b7a" />
 
 .
+
 FINGERPRINT INSPECTOR
 <img width="900" height="512" alt="image" src="https://github.com/user-attachments/assets/b71afac5-0257-40ca-b262-6c8d225821f9" />
 
@@ -101,23 +108,26 @@ IMPORT ABP RULES
 
 <img width="849" height="718" alt="image" src="https://github.com/user-attachments/assets/65f7929a-fe98-447b-b9cf-9964d9a76b24" />
 
-
 .
+
 MANAGE CUSTOM RULES 
 
 <img width="914" height="773" alt="image" src="https://github.com/user-attachments/assets/04a47801-ee3e-4506-9872-ec121f0d1662" />
 
+.
 
 FILTER (BLOCK) LISTS
 
 <img width="909" height="929" alt="image" src="https://github.com/user-attachments/assets/01553989-d065-4b95-8329-40e1c068cba4" />
 
 .
+
 ALLOW (WHITE) LIST 
 
 <img width="930" height="477" alt="image" src="https://github.com/user-attachments/assets/84ff30ae-0e9b-434a-8f55-610d68217316" />
 
 .
+
 OPTIONS
 
 <img width="890" height="656" alt="image" src="https://github.com/user-attachments/assets/a4fe1d23-9b0a-4dbc-9abb-f8b4fec998f4" />
